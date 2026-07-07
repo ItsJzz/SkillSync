@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Coding Problems JSON</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .problem { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 8px; }
+        .problem-title { font-size: 1.3em; font-weight: bold; color: #27ae60; margin-bottom: 10px; }
+        .language-section { margin: 10px 0; padding: 10px; background: #f8f9fa; border-radius: 5px; }
+        pre { background: #2d2d2d; color: #f8f8f2; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Coding Problems Test</h1>
+    <div id="output"></div>
+
+    <script>
+        async function testProblems() {
+            try {
+                const response = await fetch('coding_problems.json');
+                const data = await response.json();
+                
+                const output = document.getElementById('output');
+                output.innerHTML = `<p><strong>Total Problems Loaded: ${data.problems.length}</strong></p>`;
+                
+                data.problems.forEach(problem => {
+                    const problemDiv = document.createElement('div');
+                    problemDiv.className = 'problem';
+                    
+                    problemDiv.innerHTML = `
+                        <div class="problem-title">${problem.id}. ${problem.title}</div>
+                        <div><strong>Difficulty:</strong> ${problem.difficulty}</div>
+                        <div><strong>Description:</strong> ${problem.description}</div>
+                        <div><strong>Hint:</strong> ${problem.hint}</div>
+                        <div style="margin-top: 10px;"><strong>Available Languages:</strong> ${Object.keys(problem.languages).join(', ')}</div>
+                        
+                        ${Object.keys(problem.languages).map(lang => `
+                            <div class="language-section">
+                                <strong>${lang.toUpperCase()}</strong>
+                                <pre>${problem.languages[lang].skeleton}</pre>
+                                <div><em>Test Cases: ${problem.languages[lang].testCases.length}</em></div>
+                            </div>
+                        `).join('')}
+                    `;
+                    
+                    output.appendChild(problemDiv);
+                });
+                
+            } catch (error) {
+                document.getElementById('output').innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+            }
+        }
+        
+        testProblems();
+    </script>
+</body>
+</html>

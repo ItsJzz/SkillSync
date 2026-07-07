@@ -1,0 +1,3288 @@
+=======================================================
+SAMPLE QUESTIONS FOR SKILLSYNC DATABASE
+=======================================================
+INSTRUCTIONS:
+1. Copy the questions for each topic separately
+2. Paste them into add_questions.php
+3. Select the correct Topic ID, Class Level, and Question Type
+4. Use the format exactly as shown below
+
+=======================================================
+TOPIC ID: 13 - Introduction to OOP Concepts
+=======================================================
+
+--- BEGINNER LEVEL - QUIZ QUESTIONS ---
+Class Level: Beginner
+Question Type: Quiz question
+
+1. What does OOP stand for?
+A. Object Oriented Programming
+B. Organized Object Programming
+C. Optional Object Processing
+✅ Answer: A
+
+2. Which of the following is a fundamental principle of OOP?
+A. Inheritance
+B. Compilation
+C. Debugging
+✅ Answer: A
+
+3. What is a class in OOP?
+A. A running program
+B. A blueprint for creating objects
+C. A database table
+✅ Answer: B
+
+4. What is an object in OOP?
+A. A variable
+B. An instance of a class
+C. A method
+✅ Answer: B
+
+5. In Java, what keyword is used to create a new object?
+A. create
+B. new
+C. object
+✅ Answer: B
+
+6. What is the main benefit of using OOP?
+A. Faster execution
+B. Code reusability and organization
+C. Less memory usage
+✅ Answer: B
+
+7. Which of these is NOT a pillar of OOP?
+A. Encapsulation
+B. Inheritance
+C. Compilation
+✅ Answer: C
+
+8. What is encapsulation in OOP?
+A. Creating multiple objects
+B. Hiding internal details of a class
+C. Inheriting from another class
+✅ Answer: B
+
+9. What is inheritance in OOP?
+A. Creating new objects
+B. A class acquiring properties from another class
+C. Hiding data
+✅ Answer: B
+
+10. What is polymorphism in OOP?
+A. Having multiple constructors
+B. Same interface, different implementations
+C. Creating private methods
+✅ Answer: B
+
+11. Which access modifier makes a member accessible only within the same class?
+A. public
+B. protected
+C. private
+✅ Answer: C
+
+12. What is a constructor in OOP?
+A. A method that destroys objects
+B. A special method called when creating objects
+C. A variable in a class
+✅ Answer: B
+
+13. What is the difference between a class and an object?
+A. They are the same thing
+B. Class is a blueprint, object is an instance
+C. Class stores data, object stores methods
+✅ Answer: B
+
+14. Which keyword is used for inheritance in Java?
+A. inherits
+B. extends
+C. implements
+✅ Answer: B
+
+15. What happens when you call a method on an object?
+A. The object is destroyed
+B. The method executes using the object's data
+C. A new object is created
+✅ Answer: B
+
+--- BEGINNER LEVEL - SIMULATION QUESTIONS ---
+Class Level: Beginner
+Question Type: Simulation question
+
+1. Given this class definition, what will happen when you create an object?
+class Student {
+    String name;
+    int age;
+}
+Student s = new Student();
+A. Compilation error
+B. Object created with default values
+C. Runtime error
+✅ Answer: B
+
+2. What is the output of this code?
+class Car {
+    String brand = "Toyota";
+}
+Car myCar = new Car();
+System.out.println(myCar.brand);
+A. null
+B. Toyota
+C. Compilation error
+✅ Answer: B
+
+3. Which line correctly creates an object of class Book?
+class Book {
+    String title;
+    String author;
+}
+A. Book.title = "Java Guide";
+B. Book myBook = new Book();
+C. Book();
+✅ Answer: B
+
+4. What will this code print?
+class Person {
+    String name;
+}
+Person p = new Person();
+p.name = "John";
+System.out.println(p.name);
+A. null
+B. John
+C. Compilation error
+✅ Answer: B
+
+5. Given this class, what is the correct way to access the field 'price'?
+class Product {
+    public double price;
+}
+Product item = new Product();
+A. item->price
+B. item.price
+C. item::price
+✅ Answer: B
+
+6. What happens when you run this code?
+class Animal {
+    void makeSound() {
+        System.out.println("Some sound");
+    }
+}
+Animal a = new Animal();
+a.makeSound();
+A. Prints "Some sound"
+B. Compilation error
+C. Runtime error
+✅ Answer: A
+
+7. Which constructor call is correct for this class?
+class Rectangle {
+    int width, height;
+    Rectangle(int w, int h) {
+        width = w;
+        height = h;
+    }
+}
+A. Rectangle r = new Rectangle();
+B. Rectangle r = new Rectangle(5, 10);
+C. Rectangle r = Rectangle(5, 10);
+✅ Answer: B
+
+8. What will be the value of 'count' after this code executes?
+class Counter {
+    int count = 0;
+    void increment() {
+        count++;
+    }
+}
+Counter c = new Counter();
+c.increment();
+c.increment();
+A. 0
+B. 1
+C. 2
+✅ Answer: C
+
+9. What is the output of this inheritance example?
+class Parent {
+    void display() {
+        System.out.println("Parent");
+    }
+}
+class Child extends Parent {
+}
+Child c = new Child();
+c.display();
+A. Parent
+B. Child
+C. Compilation error
+✅ Answer: A
+
+10. Which method call is correct for this class?
+class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+Calculator calc = new Calculator();
+A. calc.add(5, 3)
+B. Calculator.add(5, 3)
+C. add(5, 3)
+✅ Answer: A
+
+11. What will this polymorphism example print?
+class Animal {
+    void sound() { System.out.println("Animal sound"); }
+}
+class Dog extends Animal {
+    void sound() { System.out.println("Bark"); }
+}
+Animal a = new Dog();
+a.sound();
+A. Animal sound
+B. Bark
+C. Compilation error
+✅ Answer: B
+
+12. What is the result of accessing a private field from outside the class?
+class Example {
+    private int value = 10;
+}
+Example e = new Example();
+System.out.println(e.value);
+A. Prints 10
+B. Prints 0
+C. Compilation error
+✅ Answer: C
+
+13. What happens with this encapsulation example?
+class Account {
+    private double balance = 1000;
+    public double getBalance() {
+        return balance;
+    }
+}
+Account acc = new Account();
+System.out.println(acc.getBalance());
+A. Compilation error
+B. Prints 1000.0
+C. Prints 0.0
+✅ Answer: B
+
+14. Which object creation is valid for this class?
+class Phone {
+    String model;
+    Phone(String m) {
+        model = m;
+    }
+}
+A. Phone p = new Phone();
+B. Phone p = new Phone("iPhone");
+C. Phone p = Phone("iPhone");
+✅ Answer: B
+
+15. What will this method overriding example output?
+class Vehicle {
+    void start() { System.out.println("Vehicle starts"); }
+}
+class Car extends Vehicle {
+    void start() { System.out.println("Car starts"); }
+}
+Car c = new Car();
+c.start();
+A. Vehicle starts
+B. Car starts
+C. Both messages
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - QUIZ QUESTIONS ---
+Class Level: Intermediate
+Question Type: Quiz question
+
+1. What is method overloading in Java?
+A. Overriding a method in subclass
+B. Having multiple methods with same name but different parameters
+C. Making a method private
+✅ Answer: B
+
+2. Which of these demonstrates proper encapsulation?
+A. Public fields with private methods
+B. Private fields with public getter/setter methods
+C. All fields and methods public
+✅ Answer: B
+
+3. What is the super keyword used for in Java?
+A. To create a new object
+B. To call parent class constructor or methods
+C. To make a method static
+✅ Answer: B
+
+4. What is the difference between abstract class and interface?
+A. No difference
+B. Abstract class can have implementation, interface cannot (pre-Java 8)
+C. Interface can have constructor, abstract class cannot
+✅ Answer: B
+
+5. What is method overriding in inheritance?
+A. Creating multiple methods with same name
+B. Redefining a parent class method in child class
+C. Making a method final
+✅ Answer: B
+
+6. Which access modifier allows access within package and subclasses?
+A. private
+B. protected
+C. default
+✅ Answer: B
+
+7. What is composition in OOP?
+A. Inheriting from multiple classes
+B. Having objects as members of another class
+C. Making all methods abstract
+✅ Answer: B
+
+8. What does the final keyword do when applied to a class?
+A. Makes all methods abstract
+B. Prevents the class from being inherited
+C. Makes the class static
+✅ Answer: B
+
+9. What is the purpose of static methods?
+A. They belong to the class, not instances
+B. They can access private fields
+C. They cannot be overridden
+✅ Answer: A
+
+10. What is a singleton pattern?
+A. A class that can have only one instance
+B. A class with single method
+C. A class that extends only one parent
+✅ Answer: A
+
+11. What happens if you don't provide a constructor in a class?
+A. Compilation error
+B. Java provides a default constructor
+C. Objects cannot be created
+✅ Answer: B
+
+12. What is the instanceof operator used for?
+A. Creating new instances
+B. Checking if an object is an instance of a specific class
+C. Comparing object values
+✅ Answer: B
+
+13. What is the difference between == and .equals() in Java?
+A. No difference
+B. == compares references, .equals() compares content
+C. == compares content, .equals() compares references
+✅ Answer: B
+
+14. What is a nested class in Java?
+A. A class that inherits from another class
+B. A class defined inside another class
+C. A class with multiple constructors
+✅ Answer: B
+
+15. What is the purpose of the this keyword?
+A. To call static methods
+B. To refer to the current object instance
+C. To create new objects
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - SIMULATION QUESTIONS ---
+Class Level: Intermediate
+Question Type: Simulation question
+
+1. What will this method overloading example output?
+class Calculator {
+    int add(int a, int b) { return a + b; }
+    double add(double a, double b) { return a + b; }
+}
+Calculator calc = new Calculator();
+System.out.println(calc.add(5, 3));
+A. 8
+B. 8.0
+C. Compilation error
+✅ Answer: A
+
+2. What is the output of this inheritance chain?
+class A {
+    void method() { System.out.println("A"); }
+}
+class B extends A {
+    void method() { System.out.println("B"); }
+}
+class C extends B {
+    void method() { System.out.println("C"); }
+}
+C obj = new C();
+obj.method();
+A. A
+B. B
+C. C
+✅ Answer: C
+
+3. What happens with this constructor chaining?
+class Parent {
+    Parent() { System.out.println("Parent"); }
+}
+class Child extends Parent {
+    Child() { System.out.println("Child"); }
+}
+Child c = new Child();
+A. Child
+B. Parent Child
+C. Parent
+✅ Answer: B
+
+4. What will this static method example print?
+class Example {
+    static int count = 0;
+    static void increment() { count++; }
+}
+Example.increment();
+Example.increment();
+System.out.println(Example.count);
+A. 0
+B. 1
+C. 2
+✅ Answer: C
+
+5. What is the result of this abstract class usage?
+abstract class Shape {
+    abstract void draw();
+}
+class Circle extends Shape {
+    void draw() { System.out.println("Drawing circle"); }
+}
+Circle c = new Circle();
+c.draw();
+A. Compilation error
+B. Drawing circle
+C. Runtime error
+✅ Answer: B
+
+6. What happens with this interface implementation?
+interface Drawable {
+    void draw();
+}
+class Square implements Drawable {
+    public void draw() { System.out.println("Drawing square"); }
+}
+Square s = new Square();
+s.draw();
+A. Drawing square
+B. Compilation error
+C. Runtime error
+✅ Answer: A
+
+7. What will this super keyword example output?
+class Parent {
+    void display() { System.out.println("Parent display"); }
+}
+class Child extends Parent {
+    void display() {
+        super.display();
+        System.out.println("Child display");
+    }
+}
+Child c = new Child();
+c.display();
+A. Child display
+B. Parent display Child display
+C. Parent display
+✅ Answer: B
+
+8. What is the output of this encapsulation example?
+class BankAccount {
+    private double balance = 1000;
+    public void deposit(double amount) { balance += amount; }
+    public double getBalance() { return balance; }
+}
+BankAccount acc = new BankAccount();
+acc.deposit(500);
+System.out.println(acc.getBalance());
+A. 1000.0
+B. 1500.0
+C. 500.0
+✅ Answer: B
+
+9. What happens with this final method override attempt?
+class Parent {
+    final void display() { System.out.println("Parent"); }
+}
+class Child extends Parent {
+    void display() { System.out.println("Child"); }
+}
+A. Prints Child
+B. Prints Parent
+C. Compilation error
+✅ Answer: C
+
+10. What will this instanceof example return?
+class Animal {}
+class Dog extends Animal {}
+Dog d = new Dog();
+System.out.println(d instanceof Animal);
+A. true
+B. false
+C. Compilation error
+✅ Answer: A
+
+11. What is the output of this method hiding example?
+class Parent {
+    static void display() { System.out.println("Parent static"); }
+}
+class Child extends Parent {
+    static void display() { System.out.println("Child static"); }
+}
+Child.display();
+A. Parent static
+B. Child static
+C. Compilation error
+✅ Answer: B
+
+12. What happens with this constructor overloading?
+class Student {
+    String name;
+    Student() { name = "Unknown"; }
+    Student(String n) { name = n; }
+}
+Student s1 = new Student();
+Student s2 = new Student("John");
+System.out.println(s1.name + " " + s2.name);
+A. null John
+B. Unknown John
+C. John Unknown
+✅ Answer: B
+
+13. What will this composition example output?
+class Engine {
+    void start() { System.out.println("Engine started"); }
+}
+class Car {
+    Engine engine = new Engine();
+    void start() { engine.start(); }
+}
+Car c = new Car();
+c.start();
+A. Car started
+B. Engine started
+C. Compilation error
+✅ Answer: B
+
+14. What is the result of this equals() method override?
+class Person {
+    String name;
+    Person(String n) { name = n; }
+    public boolean equals(Object obj) {
+        return name.equals(((Person)obj).name);
+    }
+}
+Person p1 = new Person("John");
+Person p2 = new Person("John");
+System.out.println(p1.equals(p2));
+A. true
+B. false
+C. Compilation error
+✅ Answer: A
+
+15. What happens with this nested class example?
+class Outer {
+    class Inner {
+        void display() { System.out.println("Inner class"); }
+    }
+}
+Outer outer = new Outer();
+Outer.Inner inner = outer.new Inner();
+inner.display();
+A. Compilation error
+B. Inner class
+C. Runtime error
+✅ Answer: B
+
+=======================================================
+TOPIC ID: 14 - Classes and Objects
+=======================================================
+
+--- BEGINNER LEVEL - QUIZ QUESTIONS ---
+Class Level: Beginner
+Question Type: Quiz question
+
+1. What is a class in programming?
+A. A function
+B. A template for creating objects
+C. A variable
+✅ Answer: B
+
+2. What is an object?
+A. A class
+B. An instance of a class
+C. A method
+✅ Answer: B
+
+3. Which keyword is used to create a new object in Java?
+A. create
+B. new
+C. make
+✅ Answer: B
+
+4. What are attributes in a class?
+A. Methods
+B. Variables that store data
+C. Constructors
+✅ Answer: B
+
+5. What are methods in a class?
+A. Variables
+B. Functions that define behavior
+C. Objects
+✅ Answer: B
+
+6. How do you access a public field of an object?
+A. object->field
+B. object.field
+C. object::field
+✅ Answer: B
+
+7. What is a constructor?
+A. A method that destroys objects
+B. A special method that initializes objects
+C. A regular method
+✅ Answer: B
+
+8. Can a class have multiple constructors?
+A. No, only one
+B. Yes, through constructor overloading
+C. Only in special cases
+✅ Answer: B
+
+9. What happens when you don't define a constructor?
+A. Compilation error
+B. Java provides a default constructor
+C. Objects cannot be created
+✅ Answer: B
+
+10. What is the difference between instance and static variables?
+A. No difference
+B. Instance variables belong to objects, static to class
+C. Static variables are faster
+✅ Answer: B
+
+11. How do you call a static method?
+A. object.method()
+B. ClassName.method()
+C. new ClassName().method()
+✅ Answer: B
+
+12. What is the this keyword used for?
+A. Creating new objects
+B. Referring to the current object
+C. Calling static methods
+✅ Answer: B
+
+13. Can you create an object without using the new keyword?
+A. Yes, always
+B. No, never in Java
+C. Only for primitive types
+✅ Answer: B
+
+14. What is object initialization?
+A. Destroying an object
+B. Setting initial values when creating an object
+C. Copying an object
+✅ Answer: B
+
+15. What happens when an object goes out of scope in Java?
+A. Manual deletion required
+B. Garbage collector handles it
+C. Memory leak occurs
+✅ Answer: B
+
+--- BEGINNER LEVEL - SIMULATION QUESTIONS ---
+Class Level: Beginner
+Question Type: Simulation question
+
+1. What will this class definition create?
+class Student {
+    String name;
+    int age;
+    String course;
+}
+A. A template for student objects
+B. A student object
+C. A compilation error
+✅ Answer: A
+
+2. What is the output when creating this object?
+class Car {
+    String brand = "Toyota";
+    Car() {
+        System.out.println("Car created");
+    }
+}
+Car myCar = new Car();
+A. Nothing
+B. Car created
+C. Toyota
+✅ Answer: B
+
+3. Which object creation is correct for this class?
+class Book {
+    String title;
+    String author;
+    int pages;
+}
+A. Book myBook = new Book();
+B. Book myBook = Book();
+C. new Book myBook = Book();
+✅ Answer: A
+
+4. What will this code print?
+class Person {
+    String name;
+    void introduce() {
+        System.out.println("Hello, I'm " + name);
+    }
+}
+Person p = new Person();
+p.name = "Alice";
+p.introduce();
+A. Hello, I'm null
+B. Hello, I'm Alice
+C. Compilation error
+✅ Answer: B
+
+5. What happens when you access an uninitialized String field?
+class Example {
+    String message;
+}
+Example e = new Example();
+System.out.println(e.message);
+A. Empty string
+B. null
+C. Compilation error
+✅ Answer: B
+
+6. What is the result of this constructor call?
+class Rectangle {
+    int width, height;
+    Rectangle(int w, int h) {
+        width = w;
+        height = h;
+    }
+}
+Rectangle r = new Rectangle(10, 5);
+A. width=10, height=5
+B. width=5, height=10
+C. Compilation error
+✅ Answer: A
+
+7. What will this static variable example output?
+class Counter {
+    static int count = 0;
+    Counter() {
+        count++;
+    }
+}
+Counter c1 = new Counter();
+Counter c2 = new Counter();
+System.out.println(Counter.count);
+A. 0
+B. 1
+C. 2
+✅ Answer: C
+
+8. What is the output of this method call?
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+}
+Calculator calc = new Calculator();
+System.out.println(calc.add(3, 7));
+A. 37
+B. 10
+C. Compilation error
+✅ Answer: B
+
+9. What happens with this object reference?
+class Phone {
+    String model;
+}
+Phone phone1 = new Phone();
+phone1.model = "iPhone";
+Phone phone2 = phone1;
+phone2.model = "Samsung";
+System.out.println(phone1.model);
+A. iPhone
+B. Samsung
+C. null
+✅ Answer: B
+
+10. What will this constructor overloading example create?
+class Student {
+    String name;
+    int age;
+    Student(String n) { name = n; age = 18; }
+    Student(String n, int a) { name = n; age = a; }
+}
+Student s = new Student("John", 20);
+A. name="John", age=18
+B. name="John", age=20
+C. Compilation error
+✅ Answer: B
+
+11. What is the result of calling this method?
+class Circle {
+    double radius;
+    Circle(double r) { radius = r; }
+    double getArea() { return 3.14 * radius * radius; }
+}
+Circle c = new Circle(5);
+System.out.println(c.getArea());
+A. 15.7
+B. 78.5
+C. 25
+✅ Answer: B
+
+12. What happens with this this keyword usage?
+class Employee {
+    String name;
+    Employee(String name) {
+        this.name = name;
+    }
+}
+Employee emp = new Employee("Alice");
+System.out.println(emp.name);
+A. null
+B. Alice
+C. Compilation error
+✅ Answer: B
+
+13. What will this static method call output?
+class MathUtils {
+    static int square(int n) {
+        return n * n;
+    }
+}
+System.out.println(MathUtils.square(4));
+A. 4
+B. 8
+C. 16
+✅ Answer: C
+
+14. What is the result of this object comparison?
+class Point {
+    int x, y;
+    Point(int x, int y) { this.x = x; this.y = y; }
+}
+Point p1 = new Point(1, 2);
+Point p2 = new Point(1, 2);
+System.out.println(p1 == p2);
+A. true
+B. false
+C. Compilation error
+✅ Answer: B
+
+15. What happens when you modify an object through a method?
+class Account {
+    double balance;
+    Account(double b) { balance = b; }
+    void deposit(double amount) { balance += amount; }
+}
+Account acc = new Account(100);
+acc.deposit(50);
+System.out.println(acc.balance);
+A. 100.0
+B. 150.0
+C. 50.0
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - QUIZ QUESTIONS ---
+Class Level: Intermediate
+Question Type: Quiz question
+
+1. What is the difference between instance and class variables?
+A. No difference
+B. Instance variables are unique per object, class variables are shared
+C. Class variables are faster
+✅ Answer: B
+
+2. What is constructor chaining?
+A. Creating multiple objects
+B. Calling one constructor from another
+C. Linking classes together
+✅ Answer: B
+
+3. What is the purpose of the finalize() method?
+A. To initialize objects
+B. Called before garbage collection
+C. To create constructors
+✅ Answer: B
+
+4. What happens if you define a constructor with parameters but no default constructor?
+A. Java creates a default constructor automatically
+B. Objects can only be created with parameters
+C. Compilation error occurs
+✅ Answer: B
+
+5. What is object cloning in Java?
+A. Creating identical object references
+B. Creating a copy of an object
+C. Destroying an object
+✅ Answer: B
+
+6. What is the difference between shallow and deep copying?
+A. No difference
+B. Shallow copies references, deep copies actual objects
+C. Deep copying is faster
+✅ Answer: B
+
+7. What is the purpose of static initializer blocks?
+A. To initialize instance variables
+B. To initialize static variables when class is loaded
+C. To create objects
+✅ Answer: B
+
+8. What is method chaining?
+A. Calling multiple methods sequentially
+B. Returning 'this' to allow consecutive method calls
+C. Overloading methods
+✅ Answer: B
+
+9. What is the singleton design pattern implementation requirement?
+A. Multiple constructors
+B. Private constructor and static instance method
+C. Public constructor
+✅ Answer: B
+
+10. What is the difference between composition and aggregation?
+A. No difference
+B. Composition implies ownership, aggregation implies usage
+C. Aggregation is faster
+✅ Answer: B
+
+11. What happens when you override the toString() method?
+A. Object comparison changes
+B. String representation of object changes
+C. Object creation changes
+✅ Answer: B
+
+12. What is the purpose of the equals() and hashCode() contract?
+A. Performance optimization
+B. Proper object comparison and hashing
+C. Memory management
+✅ Answer: B
+
+13. What is an immutable class?
+A. A class that cannot be extended
+B. A class whose objects cannot be modified after creation
+C. A class with only static methods
+✅ Answer: B
+
+14. What is the builder pattern used for?
+A. Inheriting from multiple classes
+B. Creating complex objects step by step
+C. Destroying objects
+✅ Answer: B
+
+15. What is dependency injection in object creation?
+A. Creating objects manually
+B. Providing dependencies from external source
+C. Using static methods only
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - SIMULATION QUESTIONS ---
+Class Level: Intermediate
+Question Type: Simulation question
+
+1. What will this constructor chaining example output?
+class Vehicle {
+    String type;
+    Vehicle() { this("Unknown"); }
+    Vehicle(String type) { 
+        this.type = type;
+        System.out.println("Vehicle: " + type);
+    }
+}
+Vehicle v = new Vehicle();
+A. Vehicle: null
+B. Vehicle: Unknown
+C. Compilation error
+✅ Answer: B
+
+2. What is the result of this static initializer block?
+class Config {
+    static String value;
+    static {
+        value = "Initialized";
+        System.out.println("Static block executed");
+    }
+}
+System.out.println(Config.value);
+A. Static block executed, Initialized
+B. Initialized
+C. null
+✅ Answer: A
+
+3. What will this method chaining example return?
+class StringBuilder {
+    String content = "";
+    StringBuilder append(String s) { content += s; return this; }
+    String build() { return content; }
+}
+StringBuilder sb = new StringBuilder();
+String result = sb.append("Hello").append(" World").build();
+A. Hello
+B. Hello World
+C. Compilation error
+✅ Answer: B
+
+4. What happens with this singleton implementation?
+class Singleton {
+    private static Singleton instance;
+    private Singleton() {}
+    public static Singleton getInstance() {
+        if (instance == null) instance = new Singleton();
+        return instance;
+    }
+}
+Singleton s1 = Singleton.getInstance();
+Singleton s2 = Singleton.getInstance();
+System.out.println(s1 == s2);
+A. true
+B. false
+C. Compilation error
+✅ Answer: A
+
+5. What is the output of this toString() override?
+class Student {
+    String name;
+    int age;
+    Student(String n, int a) { name = n; age = a; }
+    public String toString() { return name + "(" + age + ")"; }
+}
+Student s = new Student("Alice", 20);
+System.out.println(s);
+A. Student@hashcode
+B. Alice(20)
+C. Alice 20
+✅ Answer: B
+
+6. What will this composition example output?
+class Engine {
+    String type;
+    Engine(String t) { type = t; }
+    void start() { System.out.println(type + " engine started"); }
+}
+class Car {
+    Engine engine;
+    Car(String engineType) { engine = new Engine(engineType); }
+    void start() { engine.start(); }
+}
+Car car = new Car("V8");
+car.start();
+A. Engine started
+B. V8 engine started
+C. Car started
+✅ Answer: B
+
+7. What happens with this equals() method implementation?
+class Person {
+    String name;
+    Person(String n) { name = n; }
+    public boolean equals(Object obj) {
+        if (obj instanceof Person) {
+            return name.equals(((Person)obj).name);
+        }
+        return false;
+    }
+}
+Person p1 = new Person("John");
+Person p2 = new Person("John");
+System.out.println(p1.equals(p2));
+A. true
+B. false
+C. Compilation error
+✅ Answer: A
+
+8. What is the result of this immutable class usage?
+class Point {
+    private final int x, y;
+    Point(int x, int y) { this.x = x; this.y = y; }
+    public int getX() { return x; }
+    public int getY() { return y; }
+}
+Point p = new Point(3, 4);
+System.out.println(p.getX() + "," + p.getY());
+A. 0,0
+B. 3,4
+C. Compilation error
+✅ Answer: B
+
+9. What will this factory method pattern output?
+class ShapeFactory {
+    static Shape createShape(String type) {
+        if (type.equals("circle")) return new Circle();
+        return new Square();
+    }
+}
+class Circle { public String toString() { return "Circle"; } }
+class Square { public String toString() { return "Square"; } }
+Shape s = ShapeFactory.createShape("circle");
+System.out.println(s);
+A. Circle
+B. Square
+C. Compilation error
+✅ Answer: A
+
+10. What happens with this object copying?
+class Data {
+    int value;
+    Data(int v) { value = v; }
+    Data copy() { return new Data(value); }
+}
+Data d1 = new Data(10);
+Data d2 = d1.copy();
+d2.value = 20;
+System.out.println(d1.value + "," + d2.value);
+A. 20,20
+B. 10,20
+C. 10,10
+✅ Answer: B
+
+11. What is the output of this nested class example?
+class Outer {
+    private String message = "Hello";
+    class Inner {
+        void display() { System.out.println(message); }
+    }
+    void createInner() { new Inner().display(); }
+}
+Outer outer = new Outer();
+outer.createInner();
+A. null
+B. Hello
+C. Compilation error
+✅ Answer: B
+
+12. What will this static nested class example output?
+class Outer {
+    static String message = "Static Hello";
+    static class StaticInner {
+        void display() { System.out.println(message); }
+    }
+}
+Outer.StaticInner inner = new Outer.StaticInner();
+inner.display();
+A. null
+B. Static Hello
+C. Compilation error
+✅ Answer: B
+
+13. What happens with this builder pattern implementation?
+class Computer {
+    String cpu, ram, storage;
+    private Computer(Builder b) { cpu=b.cpu; ram=b.ram; storage=b.storage; }
+    static class Builder {
+        String cpu, ram, storage;
+        Builder setCpu(String c) { cpu=c; return this; }
+        Builder setRam(String r) { ram=r; return this; }
+        Computer build() { return new Computer(this); }
+    }
+}
+Computer c = new Computer.Builder().setCpu("Intel").setRam("8GB").build();
+System.out.println(c.cpu);
+A. null
+B. Intel
+C. Compilation error
+✅ Answer: B
+
+14. What is the result of this anonymous class usage?
+abstract class Animal {
+    abstract void makeSound();
+}
+Animal a = new Animal() {
+    void makeSound() { System.out.println("Unknown sound"); }
+};
+a.makeSound();
+A. Compilation error
+B. Unknown sound
+C. Nothing
+✅ Answer: B
+
+15. What will this object initialization block output?
+class Example {
+    String value;
+    {
+        value = "Initialized";
+        System.out.println("Instance block executed");
+    }
+    Example() { System.out.println("Constructor executed"); }
+}
+Example e = new Example();
+A. Constructor executed
+B. Instance block executed, Constructor executed
+C. Instance block executed
+✅ Answer: B
+
+=======================================================
+TOPIC ID: 15 - Encapsulation
+=======================================================
+
+--- BEGINNER LEVEL - QUIZ QUESTIONS ---
+Class Level: Beginner
+Question Type: Quiz question
+
+1. What is encapsulation in OOP?
+A. Inheriting from multiple classes
+B. Hiding internal implementation details
+C. Creating multiple objects
+✅ Answer: B
+
+2. Which access modifier provides the highest level of data hiding?
+A. public
+B. protected
+C. private
+✅ Answer: C
+
+3. What is the main purpose of encapsulation?
+A. To make code run faster
+B. To protect data from unauthorized access
+C. To reduce memory usage
+✅ Answer: B
+
+4. What are getter methods used for?
+A. Setting values of private fields
+B. Retrieving values of private fields
+C. Creating new objects
+✅ Answer: B
+
+5. What are setter methods used for?
+A. Getting values of private fields
+B. Setting values of private fields
+C. Destroying objects
+✅ Answer: B
+
+6. Which keyword makes a field accessible only within the same class?
+A. public
+B. private
+C. protected
+✅ Answer: B
+
+7. What is data hiding in encapsulation?
+A. Deleting data permanently
+B. Making data members private
+C. Storing data in files
+✅ Answer: B
+
+8. What happens when you try to access a private field directly from outside the class?
+A. The value is returned
+B. Compilation error occurs
+C. Runtime error occurs
+✅ Answer: B
+
+9. What is the benefit of using private fields with public methods?
+A. Faster execution
+B. Controlled access to data
+C. Less memory usage
+✅ Answer: B
+
+10. Which access modifier allows access within the same package?
+A. private
+B. default (package-private)
+C. protected
+✅ Answer: B
+
+11. What is the principle behind encapsulation?
+A. "Hide what you can, expose what you must"
+B. "Make everything public"
+C. "Use only static methods"
+✅ Answer: A
+
+12. Can private methods be accessed from outside the class?
+A. Yes, always
+B. No, never
+C. Only with special keywords
+✅ Answer: B
+
+13. What is the purpose of validation in setter methods?
+A. To make code slower
+B. To ensure data integrity
+C. To create more objects
+✅ Answer: B
+
+14. What does the protected access modifier allow?
+A. Access only within the same class
+B. Access within package and subclasses
+C. Public access everywhere
+✅ Answer: B
+
+15. Which practice best demonstrates encapsulation?
+A. Making all fields public
+B. Making fields private and providing public methods
+C. Using only static variables
+✅ Answer: B
+
+--- BEGINNER LEVEL - SIMULATION QUESTIONS ---
+Class Level: Beginner
+Question Type: Simulation question
+
+1. What happens when you try to access this private field?
+class Student {
+    private String name;
+}
+Student s = new Student();
+System.out.println(s.name);
+A. Prints null
+B. Compilation error
+C. Prints empty string
+✅ Answer: B
+
+2. What is the output of this encapsulated class?
+class BankAccount {
+    private double balance = 1000.0;
+    public double getBalance() {
+        return balance;
+    }
+}
+BankAccount acc = new BankAccount();
+System.out.println(acc.getBalance());
+A. 0.0
+B. 1000.0
+C. Compilation error
+✅ Answer: B
+
+3. What will this setter method do?
+class Person {
+    private int age;
+    public void setAge(int age) {
+        if (age > 0) this.age = age;
+    }
+    public int getAge() { return age; }
+}
+Person p = new Person();
+p.setAge(-5);
+System.out.println(p.getAge());
+A. -5
+B. 0
+C. Compilation error
+✅ Answer: B
+
+4. What happens with this protected field access?
+class Animal {
+    protected String species;
+}
+class Dog extends Animal {
+    void setSpecies() { species = "Canine"; }
+}
+Dog d = new Dog();
+d.setSpecies();
+A. Compilation error
+B. Sets species to "Canine"
+C. Runtime error
+✅ Answer: B
+
+5. What is the result of this getter method call?
+class Circle {
+    private double radius = 5.0;
+    public double getRadius() { return radius; }
+}
+Circle c = new Circle();
+System.out.println(c.getRadius());
+A. 0.0
+B. 5.0
+C. null
+✅ Answer: B
+
+6. What will this validation in setter do?
+class Temperature {
+    private int celsius;
+    public void setCelsius(int temp) {
+        if (temp >= -273) celsius = temp;
+    }
+    public int getCelsius() { return celsius; }
+}
+Temperature t = new Temperature();
+t.setCelsius(-300);
+System.out.println(t.getCelsius());
+A. -300
+B. 0
+C. -273
+✅ Answer: B
+
+7. What happens when accessing package-private field?
+package com.example;
+class Example {
+    int value = 10;
+}
+// In same package
+Example e = new Example();
+System.out.println(e.value);
+A. Compilation error
+B. 10
+C. 0
+✅ Answer: B
+
+8. What is the output of this encapsulation example?
+class Counter {
+    private int count = 0;
+    public void increment() { count++; }
+    public int getCount() { return count; }
+}
+Counter c = new Counter();
+c.increment();
+c.increment();
+System.out.println(c.getCount());
+A. 0
+B. 1
+C. 2
+✅ Answer: C
+
+9. What will this private method call result in?
+class Helper {
+    private void assist() { System.out.println("Helping"); }
+}
+Helper h = new Helper();
+h.assist();
+A. Prints "Helping"
+B. Compilation error
+C. Runtime error
+✅ Answer: B
+
+10. What happens with this field initialization?
+class Product {
+    private String name = "Unknown";
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+}
+Product p = new Product();
+System.out.println(p.getName());
+A. null
+B. Unknown
+C. Empty string
+✅ Answer: B
+
+11. What is the result of this boolean setter validation?
+class User {
+    private boolean active;
+    public void setActive(boolean active) { this.active = active; }
+    public boolean isActive() { return active; }
+}
+User u = new User();
+u.setActive(true);
+System.out.println(u.isActive());
+A. false
+B. true
+C. Compilation error
+✅ Answer: B
+
+12. What happens with this read-only property?
+class Book {
+    private final String isbn;
+    public Book(String isbn) { this.isbn = isbn; }
+    public String getIsbn() { return isbn; }
+}
+Book b = new Book("123456");
+System.out.println(b.getIsbn());
+A. null
+B. 123456
+C. Compilation error
+✅ Answer: B
+
+13. What will this encapsulated calculation return?
+class Rectangle {
+    private int length = 5, width = 3;
+    public int getArea() { return length * width; }
+}
+Rectangle r = new Rectangle();
+System.out.println(r.getArea());
+A. 8
+B. 15
+C. 0
+✅ Answer: B
+
+14. What is the output of this string encapsulation?
+class Message {
+    private String text;
+    public void setText(String text) {
+        this.text = text != null ? text : "Default";
+    }
+    public String getText() { return text; }
+}
+Message m = new Message();
+m.setText(null);
+System.out.println(m.getText());
+A. null
+B. Default
+C. Empty string
+✅ Answer: B
+
+15. What happens with this method chaining in encapsulation?
+class Builder {
+    private String value = "";
+    public Builder append(String s) { value += s; return this; }
+    public String build() { return value; }
+}
+Builder b = new Builder();
+System.out.println(b.append("Hello").append(" World").build());
+A. Hello
+B. Hello World
+C. Compilation error
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - QUIZ QUESTIONS ---
+Class Level: Intermediate
+Question Type: Quiz question
+
+1. What is the difference between encapsulation and data hiding?
+A. They are the same concept
+B. Encapsulation is broader, data hiding is one aspect
+C. Data hiding is broader than encapsulation
+✅ Answer: B
+
+2. What is the purpose of immutable classes in encapsulation?
+A. To allow unlimited modifications
+B. To prevent object state changes after creation
+C. To improve performance only
+✅ Answer: B
+
+3. How do you make a class immutable?
+A. Use only public fields
+B. Make fields final and provide no setters
+C. Use only static methods
+✅ Answer: B
+
+4. What is defensive copying in encapsulation?
+A. Copying public fields only
+B. Creating copies to prevent external modification
+C. Copying static variables
+✅ Answer: B
+
+5. What is the Law of Demeter in encapsulation?
+A. A class should know as little as possible about other classes
+B. All methods should be public
+C. All fields should be private
+✅ Answer: A
+
+6. What is tight coupling and how does encapsulation help?
+A. Encapsulation increases coupling
+B. Encapsulation reduces dependencies between classes
+C. Coupling is not related to encapsulation
+✅ Answer: B
+
+7. What is the purpose of package-private access?
+A. To hide from all other classes
+B. To allow access within the same package only
+C. To make everything public
+✅ Answer: B
+
+8. What is a data transfer object (DTO) in encapsulation?
+A. An object with business logic
+B. An object that carries data between processes
+C. An object with only static methods
+✅ Answer: B
+
+9. How does encapsulation support the Single Responsibility Principle?
+A. By making all methods public
+B. By keeping related data and behavior together
+C. By using only inheritance
+✅ Answer: B
+
+10. What is the difference between composition and encapsulation?
+A. They are the same
+B. Composition is about relationships, encapsulation is about hiding
+C. Composition is faster than encapsulation
+✅ Answer: B
+
+11. What is property-based encapsulation?
+A. Using only public fields
+B. Using getter/setter methods to control field access
+C. Using only constructors
+✅ Answer: B
+
+12. What is the benefit of using interfaces in encapsulation?
+A. They expose implementation details
+B. They define contracts without revealing implementation
+C. They make code slower
+✅ Answer: B
+
+13. What is information hiding principle?
+A. Hide all information from everyone
+B. Hide implementation details, expose only necessary interface
+C. Make everything public for transparency
+✅ Answer: B
+
+14. How does encapsulation support code maintainability?
+A. By making all fields public
+B. By allowing internal changes without affecting external code
+C. By using only static methods
+✅ Answer: B
+
+15. What is the role of access modifiers in encapsulation design?
+A. They are not important
+B. They control the level of access to class members
+C. They only affect performance
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - SIMULATION QUESTIONS ---
+Class Level: Intermediate
+Question Type: Simulation question
+
+1. What will this immutable class example output?
+class ImmutablePoint {
+    private final int x, y;
+    public ImmutablePoint(int x, int y) { this.x = x; this.y = y; }
+    public int getX() { return x; }
+    public int getY() { return y; }
+}
+ImmutablePoint p = new ImmutablePoint(3, 4);
+System.out.println(p.getX() + "," + p.getY());
+A. 0,0
+B. 3,4
+C. Compilation error
+✅ Answer: B
+
+2. What happens with this defensive copying?
+class SafeArray {
+    private int[] data;
+    public SafeArray(int[] array) { 
+        data = array.clone(); 
+    }
+    public int[] getData() { return data.clone(); }
+}
+int[] original = {1, 2, 3};
+SafeArray safe = new SafeArray(original);
+original[0] = 999;
+System.out.println(safe.getData()[0]);
+A. 999
+B. 1
+C. 0
+✅ Answer: B
+
+3. What is the output of this encapsulation validation?
+class Email {
+    private String address;
+    public void setAddress(String addr) {
+        if (addr != null && addr.contains("@")) {
+            address = addr;
+        }
+    }
+    public String getAddress() { return address; }
+}
+Email e = new Email();
+e.setAddress("invalid-email");
+System.out.println(e.getAddress());
+A. invalid-email
+B. null
+C. Empty string
+✅ Answer: B
+
+4. What will this lazy initialization pattern output?
+class ExpensiveObject {
+    private String data;
+    public String getData() {
+        if (data == null) {
+            data = "Initialized";
+        }
+        return data;
+    }
+}
+ExpensiveObject obj = new ExpensiveObject();
+System.out.println(obj.getData());
+A. null
+B. Initialized
+C. Empty string
+✅ Answer: B
+
+5. What happens with this builder pattern encapsulation?
+class Person {
+    private String name, email;
+    private Person(Builder b) { name = b.name; email = b.email; }
+    
+    static class Builder {
+        private String name, email;
+        public Builder setName(String n) { name = n; return this; }
+        public Builder setEmail(String e) { email = e; return this; }
+        public Person build() { return new Person(this); }
+    }
+    public String getName() { return name; }
+}
+Person p = new Person.Builder().setName("John").build();
+System.out.println(p.getName());
+A. null
+B. John
+C. Compilation error
+✅ Answer: B
+
+6. What is the result of this fluent interface?
+class Calculator {
+    private int value = 0;
+    public Calculator add(int n) { value += n; return this; }
+    public Calculator multiply(int n) { value *= n; return this; }
+    public int result() { return value; }
+}
+Calculator calc = new Calculator();
+System.out.println(calc.add(5).multiply(2).result());
+A. 7
+B. 10
+C. 0
+✅ Answer: B
+
+7. What will this singleton with encapsulation output?
+class DatabaseConnection {
+    private static DatabaseConnection instance;
+    private String connectionString = "Connected";
+    private DatabaseConnection() {}
+    
+    public static DatabaseConnection getInstance() {
+        if (instance == null) instance = new DatabaseConnection();
+        return instance;
+    }
+    public String getStatus() { return connectionString; }
+}
+DatabaseConnection db = DatabaseConnection.getInstance();
+System.out.println(db.getStatus());
+A. null
+B. Connected
+C. Compilation error
+✅ Answer: B
+
+8. What happens with this encapsulated collection?
+class Students {
+    private List<String> names = new ArrayList<>();
+    public void addStudent(String name) { names.add(name); }
+    public List<String> getStudents() { return new ArrayList<>(names); }
+}
+Students class = new Students();
+class.addStudent("Alice");
+List<String> list = class.getStudents();
+list.add("Bob");
+System.out.println(class.getStudents().size());
+A. 1
+B. 2
+C. 0
+✅ Answer: A
+
+9. What will this factory method with encapsulation create?
+class ShapeFactory {
+    public static Shape createCircle(double radius) {
+        return new Circle(radius);
+    }
+}
+class Circle implements Shape {
+    private double radius;
+    Circle(double r) { radius = r; }
+    public double getArea() { return 3.14 * radius * radius; }
+}
+Shape s = ShapeFactory.createCircle(5);
+System.out.println(s.getArea());
+A. 25.0
+B. 78.5
+C. 15.7
+✅ Answer: B
+
+10. What is the output of this method with parameter validation?
+class Age {
+    private int years;
+    public void setYears(int y) {
+        years = Math.max(0, Math.min(150, y));
+    }
+    public int getYears() { return years; }
+}
+Age age = new Age();
+age.setYears(200);
+System.out.println(age.getYears());
+A. 200
+B. 150
+C. 0
+✅ Answer: B
+
+11. What happens with this encapsulated enum?
+enum Status {
+    ACTIVE("Running"), INACTIVE("Stopped");
+    private final String description;
+    Status(String desc) { description = desc; }
+    public String getDescription() { return description; }
+}
+System.out.println(Status.ACTIVE.getDescription());
+A. ACTIVE
+B. Running
+C. Compilation error
+✅ Answer: B
+
+12. What will this nested class encapsulation output?
+class Outer {
+    private String message = "Hello";
+    public class Inner {
+        public String getMessage() { return message; }
+    }
+    public Inner createInner() { return new Inner(); }
+}
+Outer outer = new Outer();
+Outer.Inner inner = outer.createInner();
+System.out.println(inner.getMessage());
+A. null
+B. Hello
+C. Compilation error
+✅ Answer: B
+
+13. What is the result of this template method pattern?
+abstract class DataProcessor {
+    public final void process() {
+        load();
+        transform();
+        save();
+    }
+    protected abstract void transform();
+    private void load() { System.out.print("Load "); }
+    private void save() { System.out.print("Save"); }
+}
+class JsonProcessor extends DataProcessor {
+    protected void transform() { System.out.print("Transform "); }
+}
+new JsonProcessor().process();
+A. Transform Load Save
+B. Load Transform Save
+C. Save Load Transform
+✅ Answer: B
+
+14. What happens with this readonly property pattern?
+class Configuration {
+    private final Properties props = new Properties();
+    public Configuration() { props.setProperty("key", "value"); }
+    public String getProperty(String key) { return props.getProperty(key); }
+}
+Configuration config = new Configuration();
+System.out.println(config.getProperty("key"));
+A. null
+B. value
+C. key
+✅ Answer: B
+
+15. What will this observer pattern encapsulation output?
+class Subject {
+    private String state = "Initial";
+    private List<Observer> observers = new ArrayList<>();
+    public void addObserver(Observer o) { observers.add(o); }
+    public void setState(String s) { 
+        state = s; 
+        observers.forEach(o -> o.update(state));
+    }
+}
+interface Observer { void update(String state); }
+Subject s = new Subject();
+s.addObserver(state -> System.out.println(state));
+s.setState("Changed");
+A. Initial
+B. Changed
+C. Nothing
+✅ Answer: B
+
+=======================================================
+TOPIC ID: 16 - Inheritance
+=======================================================
+
+--- BEGINNER LEVEL - QUIZ QUESTIONS ---
+Class Level: Beginner
+Question Type: Quiz question
+
+1. What is inheritance in OOP?
+A. Creating multiple objects
+B. A mechanism where one class acquires properties of another
+C. Hiding data from other classes
+✅ Answer: B
+
+2. Which keyword is used for inheritance in Java?
+A. inherits
+B. extends
+C. implements
+✅ Answer: B
+
+3. What is the parent class also called?
+A. Child class
+B. Super class
+C. Sub class
+✅ Answer: B
+
+4. What is the child class also called?
+A. Super class
+B. Parent class
+C. Sub class
+✅ Answer: C
+
+5. What does a child class inherit from its parent?
+A. Only methods
+B. Only variables
+C. Both methods and variables (except private)
+✅ Answer: C
+
+6. Can a child class access private members of its parent class?
+A. Yes, always
+B. No, never
+C. Only with special keywords
+✅ Answer: B
+
+7. What is the super keyword used for?
+A. Creating new objects
+B. Accessing parent class members
+C. Making methods private
+✅ Answer: B
+
+8. What type of inheritance does Java support?
+A. Multiple inheritance
+B. Single inheritance
+C. Both single and multiple
+✅ Answer: B
+
+9. What is method overriding?
+A. Creating multiple methods with same name
+B. Redefining a parent method in child class
+C. Making methods private
+✅ Answer: B
+
+10. What happens when a child class method has the same name as parent method?
+A. Compilation error
+B. Child method overrides parent method
+C. Both methods execute
+✅ Answer: B
+
+11. What is the IS-A relationship in inheritance?
+A. Child IS-A parent
+B. Parent IS-A child
+C. Objects IS-A class
+✅ Answer: A
+
+12. Which access modifier allows inheritance but restricts outside access?
+A. private
+B. protected
+C. public
+✅ Answer: B
+
+13. What is multilevel inheritance?
+A. Multiple children from one parent
+B. Child inheriting from parent, which inherits from grandparent
+C. One child from multiple parents
+✅ Answer: B
+
+14. What is hierarchical inheritance?
+A. One parent, multiple children
+B. Multiple parents, one child
+C. Chain of inheritance
+✅ Answer: A
+
+15. What happens when you don't explicitly call super() in constructor?
+A. Compilation error
+B. Java automatically calls it
+C. Parent constructor is not called
+✅ Answer: B
+
+--- BEGINNER LEVEL - SIMULATION QUESTIONS ---
+Class Level: Beginner
+Question Type: Simulation question
+
+1. What will this inheritance example output?
+class Animal {
+    void sound() { System.out.println("Animal makes sound"); }
+}
+class Dog extends Animal {
+}
+Dog d = new Dog();
+d.sound();
+A. Compilation error
+B. Animal makes sound
+C. Nothing
+✅ Answer: B
+
+2. What happens with this method overriding?
+class Vehicle {
+    void start() { System.out.println("Vehicle starts"); }
+}
+class Car extends Vehicle {
+    void start() { System.out.println("Car starts"); }
+}
+Car c = new Car();
+c.start();
+A. Vehicle starts
+B. Car starts
+C. Both messages
+✅ Answer: B
+
+3. What is the output of this super keyword usage?
+class Parent {
+    void display() { System.out.println("Parent"); }
+}
+class Child extends Parent {
+    void display() { 
+        super.display();
+        System.out.println("Child");
+    }
+}
+Child c = new Child();
+c.display();
+A. Child
+B. Parent Child
+C. Parent
+✅ Answer: B
+
+4. What will this constructor inheritance show?
+class Animal {
+    Animal() { System.out.println("Animal created"); }
+}
+class Dog extends Animal {
+    Dog() { System.out.println("Dog created"); }
+}
+Dog d = new Dog();
+A. Dog created
+B. Animal created Dog created
+C. Animal created
+✅ Answer: B
+
+5. What happens with this field access?
+class Parent {
+    protected String name = "Parent";
+}
+class Child extends Parent {
+    void printName() { System.out.println(name); }
+}
+Child c = new Child();
+c.printName();
+A. null
+B. Parent
+C. Compilation error
+✅ Answer: B
+
+6. What is the result of this multilevel inheritance?
+class GrandParent {
+    void method() { System.out.println("GrandParent"); }
+}
+class Parent extends GrandParent {
+}
+class Child extends Parent {
+}
+Child c = new Child();
+c.method();
+A. Compilation error
+B. GrandParent
+C. Child
+✅ Answer: B
+
+7. What will this polymorphic behavior output?
+class Animal {
+    void move() { System.out.println("Animal moves"); }
+}
+class Bird extends Animal {
+    void move() { System.out.println("Bird flies"); }
+}
+Animal a = new Bird();
+a.move();
+A. Animal moves
+B. Bird flies
+C. Compilation error
+✅ Answer: B
+
+8. What happens with this private member access attempt?
+class Parent {
+    private int value = 10;
+}
+class Child extends Parent {
+    void getValue() { System.out.println(value); }
+}
+A. Prints 10
+B. Compilation error
+C. Prints 0
+✅ Answer: B
+
+9. What is the output of this method inheritance?
+class Calculator {
+    int add(int a, int b) { return a + b; }
+}
+class AdvancedCalculator extends Calculator {
+    int multiply(int a, int b) { return a * b; }
+}
+AdvancedCalculator calc = new AdvancedCalculator();
+System.out.println(calc.add(3, 4));
+A. 7
+B. 12
+C. Compilation error
+✅ Answer: A
+
+10. What will this hierarchical inheritance show?
+class Shape {
+    void draw() { System.out.println("Drawing shape"); }
+}
+class Circle extends Shape {
+}
+class Rectangle extends Shape {
+}
+Circle c = new Circle();
+c.draw();
+A. Drawing shape
+B. Drawing circle
+C. Compilation error
+✅ Answer: A
+
+11. What happens with this constructor chaining?
+class A {
+    A(int x) { System.out.println("A: " + x); }
+}
+class B extends A {
+    B() { super(5); System.out.println("B"); }
+}
+B b = new B();
+A. B A: 5
+B. A: 5 B
+C. Compilation error
+✅ Answer: B
+
+12. What is the result of this field hiding?
+class Parent {
+    String name = "Parent";
+}
+class Child extends Parent {
+    String name = "Child";
+    void printNames() {
+        System.out.println(name + " " + super.name);
+    }
+}
+Child c = new Child();
+c.printNames();
+A. Parent Parent
+B. Child Parent
+C. Child Child
+✅ Answer: B
+
+13. What will this instanceof check return?
+class Animal {}
+class Dog extends Animal {}
+Dog d = new Dog();
+System.out.println(d instanceof Animal);
+A. true
+B. false
+C. Compilation error
+✅ Answer: A
+
+14. What happens with this method parameter overriding?
+class Parent {
+    void print(String msg) { System.out.println("Parent: " + msg); }
+}
+class Child extends Parent {
+    void print(String msg) { System.out.println("Child: " + msg); }
+}
+Child c = new Child();
+c.print("Hello");
+A. Parent: Hello
+B. Child: Hello
+C. Both messages
+✅ Answer: B
+
+15. What is the output of this return type covariance?
+class Animal {
+    Animal getAnimal() { return new Animal(); }
+}
+class Dog extends Animal {
+    Dog getAnimal() { return new Dog(); }
+}
+Dog d = new Dog();
+System.out.println(d.getAnimal().getClass().getSimpleName());
+A. Animal
+B. Dog
+C. Compilation error
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - QUIZ QUESTIONS ---
+Class Level: Intermediate
+Question Type: Quiz question
+
+1. What is the difference between method overriding and method overloading?
+A. They are the same
+B. Overriding redefines inherited method, overloading creates multiple versions
+C. Overloading is faster than overriding
+✅ Answer: B
+
+2. What is early binding vs late binding in inheritance?
+A. Early binding is at compile time, late binding at runtime
+B. Late binding is faster
+C. They are the same concept
+✅ Answer: A
+
+3. What is the Liskov Substitution Principle?
+A. Child classes should be substitutable for parent classes
+B. Parent classes should inherit from children
+C. All methods should be overridden
+✅ Answer: A
+
+4. What is the diamond problem in inheritance?
+A. A problem with single inheritance
+B. Ambiguity arising from multiple inheritance
+C. A performance issue
+✅ Answer: B
+
+5. How does Java solve the diamond problem?
+A. By allowing multiple inheritance
+B. By supporting only single inheritance of classes
+C. By using only interfaces
+✅ Answer: B
+
+6. What is abstract class inheritance?
+A. Classes that cannot have abstract methods
+B. Classes that cannot be instantiated directly
+C. Classes that are always final
+✅ Answer: B
+
+7. What is the difference between composition and inheritance?
+A. No difference
+B. Composition is "has-a", inheritance is "is-a"
+C. Inheritance is always better
+✅ Answer: B
+
+8. What is method hiding in inheritance?
+A. Making methods private
+B. Static method in child with same signature as parent
+C. Removing methods from parent
+✅ Answer: B
+
+9. What is covariant return types?
+A. Returning same type always
+B. Child method can return subtype of parent's return type
+C. Not allowed in Java
+✅ Answer: B
+
+10. What is the template method pattern?
+A. Creating object templates
+B. Defining algorithm skeleton with overridable steps
+C. Using only abstract methods
+✅ Answer: B
+
+11. What is dynamic method dispatch?
+A. Calling methods at compile time
+B. Runtime determination of which method to call
+C. Creating methods dynamically
+✅ Answer: B
+
+12. What is the fragile base class problem?
+A. Base classes breaking easily
+B. Changes in base class breaking derived classes
+C. Derived classes are weak
+✅ Answer: B
+
+13. What is favor composition over inheritance principle?
+A. Always use inheritance
+B. Prefer has-a relationships over is-a when possible
+C. Never use inheritance
+✅ Answer: B
+
+14. What is sealed classes concept?
+A. Classes that cannot be opened
+B. Classes that restrict which classes can inherit from them
+C. Classes that are always abstract
+✅ Answer: B
+
+15. What is the purpose of protected constructors?
+A. To prevent object creation
+B. To allow only subclass instantiation
+C. To make constructors faster
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - SIMULATION QUESTIONS ---
+Class Level: Intermediate
+Question Type: Simulation question
+
+1. What will this abstract class inheritance output?
+abstract class Animal {
+    abstract void sound();
+    void sleep() { System.out.println("Sleeping"); }
+}
+class Cat extends Animal {
+    void sound() { System.out.println("Meow"); }
+}
+Cat c = new Cat();
+c.sound();
+c.sleep();
+A. Meow Sleeping
+B. Sleeping Meow
+C. Compilation error
+✅ Answer: A
+
+2. What happens with this method hiding vs overriding?
+class Parent {
+    static void staticMethod() { System.out.println("Parent static"); }
+    void instanceMethod() { System.out.println("Parent instance"); }
+}
+class Child extends Parent {
+    static void staticMethod() { System.out.println("Child static"); }
+    void instanceMethod() { System.out.println("Child instance"); }
+}
+Parent p = new Child();
+p.staticMethod();
+p.instanceMethod();
+A. Parent static Child instance
+B. Child static Child instance
+C. Parent static Parent instance
+✅ Answer: A
+
+3. What is the result of this covariant return type?
+class Animal {
+    Animal reproduce() { return new Animal(); }
+}
+class Dog extends Animal {
+    Dog reproduce() { return new Dog(); }
+}
+Animal a = new Dog();
+System.out.println(a.reproduce().getClass().getSimpleName());
+A. Animal
+B. Dog
+C. Compilation error
+✅ Answer: B
+
+4. What will this template method pattern output?
+abstract class DataProcessor {
+    public final void process() {
+        read();
+        transform();
+        write();
+    }
+    protected abstract void transform();
+    private void read() { System.out.print("Read "); }
+    private void write() { System.out.print("Write"); }
+}
+class XMLProcessor extends DataProcessor {
+    protected void transform() { System.out.print("XML "); }
+}
+new XMLProcessor().process();
+A. XML Read Write
+B. Read XML Write
+C. Read Write XML
+✅ Answer: B
+
+5. What happens with this constructor inheritance?
+class Vehicle {
+    String type;
+    Vehicle(String type) { 
+        this.type = type;
+        System.out.println("Vehicle: " + type);
+    }
+}
+class Car extends Vehicle {
+    Car() { 
+        super("Car");
+        System.out.println("Car created");
+    }
+}
+Car c = new Car();
+A. Car created Vehicle: Car
+B. Vehicle: Car Car created
+C. Vehicle: Car
+✅ Answer: B
+
+6. What is the output of this multiple interface inheritance?
+interface Flyable { default void fly() { System.out.println("Flying"); } }
+interface Swimmable { default void swim() { System.out.println("Swimming"); } }
+class Duck implements Flyable, Swimmable {
+}
+Duck d = new Duck();
+d.fly();
+d.swim();
+A. Flying Swimming
+B. Swimming Flying
+C. Compilation error
+✅ Answer: A
+
+7. What will this super constructor call output?
+class A {
+    A() { System.out.println("A default"); }
+    A(String s) { System.out.println("A: " + s); }
+}
+class B extends A {
+    B() { super("B"); System.out.println("B default"); }
+}
+B b = new B();
+A. A default B default
+B. A: B B default
+C. B default A: B
+✅ Answer: B
+
+8. What happens with this final method inheritance?
+class Parent {
+    final void display() { System.out.println("Parent display"); }
+}
+class Child extends Parent {
+    // Attempting to override
+}
+Child c = new Child();
+c.display();
+A. Compilation error if trying to override
+B. Parent display
+C. Child display
+✅ Answer: B
+
+9. What is the result of this protected access inheritance?
+package p1;
+public class Parent {
+    protected void method() { System.out.println("Protected method"); }
+}
+
+package p2;
+import p1.Parent;
+class Child extends Parent {
+    void test() { method(); }
+}
+Child c = new Child();
+c.test();
+A. Compilation error
+B. Protected method
+C. Runtime error
+✅ Answer: B
+
+10. What will this composition vs inheritance example show?
+class Engine {
+    void start() { System.out.println("Engine started"); }
+}
+class Car {
+    private Engine engine = new Engine();
+    void start() { engine.start(); }
+}
+// vs inheritance
+class SportsCar extends Car {
+}
+SportsCar sc = new SportsCar();
+sc.start();
+A. Compilation error
+B. Engine started
+C. SportsCar started
+✅ Answer: B
+
+11. What happens with this diamond problem simulation using interfaces?
+interface A { default void method() { System.out.println("A"); } }
+interface B extends A { default void method() { System.out.println("B"); } }
+interface C extends A { default void method() { System.out.println("C"); } }
+class D implements B, C {
+    public void method() { B.super.method(); }
+}
+D d = new D();
+d.method();
+A. A
+B. B
+C. Compilation error
+✅ Answer: B
+
+12. What is the output of this overriding with different access modifiers?
+class Parent {
+    protected void method() { System.out.println("Parent protected"); }
+}
+class Child extends Parent {
+    public void method() { System.out.println("Child public"); }
+}
+Parent p = new Child();
+p.method();
+A. Parent protected
+B. Child public
+C. Compilation error
+✅ Answer: B
+
+13. What will this instanceof chain return?
+class Animal {}
+class Mammal extends Animal {}
+class Dog extends Mammal {}
+Dog d = new Dog();
+System.out.println(d instanceof Animal);
+System.out.println(d instanceof Mammal);
+System.out.println(d instanceof Dog);
+A. false false true
+B. true true true
+C. true false true
+✅ Answer: B
+
+14. What happens with this method resolution in inheritance hierarchy?
+class A {
+    void method() { System.out.println("A"); }
+}
+class B extends A {
+    void method() { System.out.println("B"); }
+}
+class C extends B {
+}
+C c = new C();
+c.method();
+A. A
+B. B
+C. Compilation error
+✅ Answer: B
+
+15. What is the result of this anonymous class inheritance?
+abstract class Shape {
+    abstract void draw();
+}
+Shape s = new Shape() {
+    void draw() { System.out.println("Anonymous shape"); }
+};
+s.draw();
+A. Compilation error
+B. Anonymous shape
+C. Shape
+✅ Answer: B
+
+=======================================================
+TOPIC ID: 17 - Polymorphism
+=======================================================
+
+--- BEGINNER LEVEL - QUIZ QUESTIONS ---
+Class Level: Beginner
+Question Type: Quiz question
+
+1. What is polymorphism in OOP?
+A. Having multiple classes
+B. One interface, multiple implementations
+C. Creating many objects
+✅ Answer: B
+
+2. What does the word "polymorphism" mean?
+A. Many forms
+B. Single form
+C. No form
+✅ Answer: A
+
+3. What are the two main types of polymorphism?
+A. Static and Dynamic
+B. Public and Private
+C. Early and Late
+✅ Answer: A
+
+4. What is method overloading an example of?
+A. Dynamic polymorphism
+B. Static polymorphism
+C. Runtime polymorphism
+✅ Answer: B
+
+5. What is method overriding an example of?
+A. Static polymorphism
+B. Dynamic polymorphism
+C. Compile-time polymorphism
+✅ Answer: B
+
+6. When is the actual method determined in dynamic polymorphism?
+A. At compile time
+B. At runtime
+C. During method declaration
+✅ Answer: B
+
+7. What enables runtime polymorphism in Java?
+A. Method overloading
+B. Method overriding with inheritance
+C. Static methods
+✅ Answer: B
+
+8. What is the key requirement for polymorphism to work?
+A. Same method name and signature
+B. Different class names
+C. Public methods only
+✅ Answer: A
+
+9. Which keyword helps achieve polymorphism through interfaces?
+A. extends
+B. implements
+C. super
+✅ Answer: B
+
+10. What is duck typing in polymorphism?
+A. Creating duck objects
+B. "If it walks like a duck and quacks like a duck, it's a duck"
+C. Using only animal classes
+✅ Answer: B
+
+11. What happens when you call an overridden method on a parent reference?
+A. Parent method is called
+B. Child method is called
+C. Compilation error
+✅ Answer: B
+
+12. What is the benefit of polymorphism?
+A. Faster execution
+B. Code flexibility and extensibility
+C. Less memory usage
+✅ Answer: B
+
+13. What is virtual method invocation?
+A. Creating virtual methods
+B. Runtime method selection based on object type
+C. Static method calling
+✅ Answer: B
+
+14. Can constructors be polymorphic?
+A. Yes, always
+B. No, never
+C. Only in special cases
+✅ Answer: B
+
+15. What is operator overloading a form of?
+A. Dynamic polymorphism
+B. Static polymorphism
+C. Runtime polymorphism
+✅ Answer: B
+
+--- BEGINNER LEVEL - SIMULATION QUESTIONS ---
+Class Level: Beginner
+Question Type: Simulation question
+
+1. What will this polymorphism example output?
+class Animal {
+    void sound() { System.out.println("Animal sound"); }
+}
+class Dog extends Animal {
+    void sound() { System.out.println("Bark"); }
+}
+Animal a = new Dog();
+a.sound();
+A. Animal sound
+B. Bark
+C. Compilation error
+✅ Answer: B
+
+2. What happens with this method overloading?
+class Calculator {
+    int add(int a, int b) { return a + b; }
+    double add(double a, double b) { return a + b; }
+}
+Calculator c = new Calculator();
+System.out.println(c.add(5, 3));
+A. 8
+B. 8.0
+C. Compilation error
+✅ Answer: A
+
+3. What is the output of this interface polymorphism?
+interface Shape {
+    void draw();
+}
+class Circle implements Shape {
+    public void draw() { System.out.println("Drawing Circle"); }
+}
+Shape s = new Circle();
+s.draw();
+A. Compilation error
+B. Drawing Circle
+C. Drawing Shape
+✅ Answer: B
+
+4. What will this array of polymorphic objects output?
+class Animal {
+    void sound() { System.out.println("Animal"); }
+}
+class Cat extends Animal {
+    void sound() { System.out.println("Meow"); }
+}
+class Dog extends Animal {
+    void sound() { System.out.println("Bark"); }
+}
+Animal[] animals = {new Cat(), new Dog()};
+animals[0].sound();
+A. Animal
+B. Meow
+C. Compilation error
+✅ Answer: B
+
+5. What happens with this polymorphic method call?
+class Vehicle {
+    void start() { System.out.println("Vehicle starts"); }
+}
+class Car extends Vehicle {
+    void start() { System.out.println("Car starts"); }
+}
+class Bike extends Vehicle {
+    void start() { System.out.println("Bike starts"); }
+}
+Vehicle v = new Bike();
+v.start();
+A. Vehicle starts
+B. Bike starts
+C. Car starts
+✅ Answer: B
+
+6. What is the result of this overloaded constructor polymorphism?
+class Person {
+    String name;
+    Person() { name = "Unknown"; }
+    Person(String n) { name = n; }
+}
+Person p1 = new Person();
+Person p2 = new Person("John");
+System.out.println(p1.name + " " + p2.name);
+A. null John
+B. Unknown John
+C. John Unknown
+✅ Answer: B
+
+7. What will this polymorphic return type output?
+class Animal {
+    Animal getAnimal() { return this; }
+}
+class Dog extends Animal {
+    Dog getAnimal() { return this; }
+}
+Animal a = new Dog();
+System.out.println(a.getAnimal().getClass().getSimpleName());
+A. Animal
+B. Dog
+C. Object
+✅ Answer: B
+
+8. What happens with this multiple interface implementation?
+interface Drawable {
+    void draw();
+}
+interface Printable {
+    void print();
+}
+class Document implements Drawable, Printable {
+    public void draw() { System.out.println("Drawing document"); }
+    public void print() { System.out.println("Printing document"); }
+}
+Drawable d = new Document();
+d.draw();
+A. Drawing document
+B. Printing document
+C. Compilation error
+✅ Answer: A
+
+9. What is the output of this polymorphic parameter?
+class Printer {
+    void print(Object obj) {
+        System.out.println("Printing: " + obj.toString());
+    }
+}
+Printer p = new Printer();
+p.print("Hello");
+p.print(123);
+A. Only first print works
+B. Printing: Hello Printing: 123
+C. Compilation error
+✅ Answer: B
+
+10. What will this generic polymorphism show?
+class Container<T> {
+    T item;
+    void setItem(T item) { this.item = item; }
+    T getItem() { return item; }
+}
+Container<String> c = new Container<>();
+c.setItem("Hello");
+System.out.println(c.getItem());
+A. Hello
+B. null
+C. Compilation error
+✅ Answer: A
+
+11. What happens with this instanceof polymorphic check?
+class Animal {}
+class Dog extends Animal {}
+class Cat extends Animal {}
+Animal a = new Dog();
+if (a instanceof Dog) {
+    System.out.println("It's a Dog");
+} else if (a instanceof Cat) {
+    System.out.println("It's a Cat");
+}
+A. It's a Cat
+B. It's a Dog
+C. Nothing prints
+✅ Answer: B
+
+12. What is the result of this method overriding chain?
+class A {
+    void method() { System.out.println("A"); }
+}
+class B extends A {
+    void method() { System.out.println("B"); }
+}
+class C extends B {
+    void method() { System.out.println("C"); }
+}
+A obj = new C();
+obj.method();
+A. A
+B. C
+C. B
+✅ Answer: B
+
+13. What will this abstract class polymorphism output?
+abstract class Shape {
+    abstract void draw();
+    void info() { System.out.println("This is a shape"); }
+}
+class Rectangle extends Shape {
+    void draw() { System.out.println("Drawing rectangle"); }
+}
+Shape s = new Rectangle();
+s.draw();
+s.info();
+A. Drawing rectangle This is a shape
+B. This is a shape Drawing rectangle
+C. Compilation error
+✅ Answer: A
+
+14. What happens with this collection polymorphism?
+import java.util.*;
+List<Object> list = new ArrayList<>();
+list.add("String");
+list.add(42);
+list.add(3.14);
+System.out.println(list.get(1));
+A. String
+B. 42
+C. 3.14
+✅ Answer: B
+
+15. What is the output of this lambda polymorphism?
+interface Operation {
+    int perform(int a, int b);
+}
+Operation add = (a, b) -> a + b;
+Operation multiply = (a, b) -> a * b;
+System.out.println(add.perform(3, 4));
+A. 7
+B. 12
+C. Compilation error
+✅ Answer: A
+
+--- INTERMEDIATE LEVEL - QUIZ QUESTIONS ---
+Class Level: Intermediate
+Question Type: Quiz question
+
+1. What is the difference between early binding and late binding?
+A. Early binding is at runtime, late binding at compile time
+B. Early binding is at compile time, late binding at runtime
+C. They are the same concept
+✅ Answer: B
+
+2. What is method dispatch table in polymorphism?
+A. A table listing all methods
+B. Runtime structure mapping method calls to implementations
+C. A debugging tool
+✅ Answer: B
+
+3. What is parametric polymorphism?
+A. Using parameters in methods
+B. Type parameterization using generics
+C. Creating multiple parameters
+✅ Answer: B
+
+4. What is ad-hoc polymorphism?
+A. Random polymorphism
+B. Overloading allowing different types with same interface
+C. Polymorphism without inheritance
+✅ Answer: B
+
+5. What is subtype polymorphism?
+A. Creating subtypes only
+B. Using inheritance hierarchy for polymorphic behavior
+C. Avoiding inheritance
+✅ Answer: B
+
+6. What is the Visitor pattern an example of?
+A. Static polymorphism
+B. Double dispatch polymorphism
+C. Single dispatch polymorphism
+✅ Answer: B
+
+7. What is covariance and contravariance in polymorphism?
+A. Same type relationships
+B. How subtyping relates to more complex types
+C. Unrelated concepts
+✅ Answer: B
+
+8. What is the Strategy pattern's relationship to polymorphism?
+A. No relationship
+B. Encapsulates algorithms using polymorphic interfaces
+C. Replaces polymorphism
+✅ Answer: B
+
+9. What is duck typing in dynamic languages?
+A. Creating duck objects
+B. Type checking based on method availability
+C. Static type checking
+✅ Answer: B
+
+10. What is the Open/Closed Principle's relation to polymorphism?
+A. No relation
+B. Polymorphism enables extension without modification
+C. Polymorphism violates the principle
+✅ Answer: B
+
+11. What is bounded type parameters in generics?
+A. Unlimited type parameters
+B. Type parameters with constraints
+C. Fixed type parameters
+✅ Answer: B
+
+12. What is type erasure in Java generics?
+A. Deleting types permanently
+B. Runtime removal of generic type information
+C. Compile-time type checking only
+✅ Answer: B
+
+13. What is the difference between overriding and hiding?
+A. They are the same
+B. Overriding is for instance methods, hiding for static methods
+C. Hiding is for instance methods
+✅ Answer: B
+
+14. What is virtual function table (vtable)?
+A. A debugging table
+B. Implementation mechanism for dynamic dispatch
+C. A storage table
+✅ Answer: B
+
+15. What is the problem with covariant arrays in Java?
+A. No problem exists
+B. Can lead to ArrayStoreException at runtime
+C. Arrays cannot be covariant
+✅ Answer: B
+
+--- INTERMEDIATE LEVEL - SIMULATION QUESTIONS ---
+Class Level: Intermediate
+Question Type: Simulation question
+
+1. What will this double dispatch pattern output?
+interface Visitor {
+    void visit(Circle c);
+    void visit(Rectangle r);
+}
+abstract class Shape {
+    abstract void accept(Visitor v);
+}
+class Circle extends Shape {
+    void accept(Visitor v) { v.visit(this); }
+}
+class DrawVisitor implements Visitor {
+    public void visit(Circle c) { System.out.println("Drawing circle"); }
+    public void visit(Rectangle r) { System.out.println("Drawing rectangle"); }
+}
+Shape s = new Circle();
+s.accept(new DrawVisitor());
+A. Drawing rectangle
+B. Drawing circle
+C. Compilation error
+✅ Answer: B
+
+2. What happens with this generic wildcard polymorphism?
+import java.util.*;
+List<? extends Number> numbers = new ArrayList<Integer>();
+// numbers.add(42); // This would cause compilation error
+List<Integer> ints = Arrays.asList(1, 2, 3);
+numbers = ints;
+System.out.println(numbers.get(0));
+A. Compilation error
+B. 1
+C. null
+✅ Answer: B
+
+3. What is the output of this strategy pattern polymorphism?
+interface SortStrategy {
+    void sort(int[] array);
+}
+class BubbleSort implements SortStrategy {
+    public void sort(int[] array) { System.out.println("Bubble sorting"); }
+}
+class QuickSort implements SortStrategy {
+    public void sort(int[] array) { System.out.println("Quick sorting"); }
+}
+class Sorter {
+    private SortStrategy strategy;
+    public Sorter(SortStrategy strategy) { this.strategy = strategy; }
+    public void sort(int[] array) { strategy.sort(array); }
+}
+Sorter s = new Sorter(new QuickSort());
+s.sort(new int[]{3,1,2});
+A. Bubble sorting
+B. Quick sorting
+C. Compilation error
+✅ Answer: B
+
+4. What will this method overloading with inheritance output?
+class Animal {
+    void sound(Object o) { System.out.println("Animal-Object"); }
+    void sound(Animal a) { System.out.println("Animal-Animal"); }
+}
+class Dog extends Animal {
+    void sound(Object o) { System.out.println("Dog-Object"); }
+    void sound(Dog d) { System.out.println("Dog-Dog"); }
+}
+Animal a = new Dog();
+a.sound(new Dog());
+A. Animal-Animal
+B. Dog-Object
+C. Dog-Dog
+✅ Answer: B
+
+5. What happens with this covariant return type chain?
+class Animal {
+    Animal reproduce() { return new Animal(); }
+}
+class Mammal extends Animal {
+    Mammal reproduce() { return new Mammal(); }
+}
+class Dog extends Mammal {
+    Dog reproduce() { return new Dog(); }
+}
+Animal a = new Dog();
+System.out.println(a.reproduce().getClass().getSimpleName());
+A. Animal
+B. Dog
+C. Mammal
+✅ Answer: B
+
+6. What is the result of this template method with polymorphism?
+abstract class GameAI {
+    public final void takeTurn() {
+        collectResources();
+        buildStructures();
+        buildUnits();
+        attack();
+    }
+    protected abstract void buildStructures();
+    protected abstract void buildUnits();
+    private void collectResources() { System.out.print("Collect "); }
+    private void attack() { System.out.print("Attack"); }
+}
+class OrcsAI extends GameAI {
+    protected void buildStructures() { System.out.print("Stronghold "); }
+    protected void buildUnits() { System.out.print("Warriors "); }
+}
+new OrcsAI().takeTurn();
+A. Stronghold Warriors Collect Attack
+B. Collect Stronghold Warriors Attack
+C. Collect Attack Stronghold Warriors
+✅ Answer: B
+
+7. What will this factory method polymorphism create?
+abstract class Creator {
+    abstract Product factoryMethod();
+    public void operation() {
+        Product p = factoryMethod();
+        p.use();
+    }
+}
+interface Product { void use(); }
+class ConcreteProduct implements Product {
+    public void use() { System.out.println("Using concrete product"); }
+}
+class ConcreteCreator extends Creator {
+    Product factoryMethod() { return new ConcreteProduct(); }
+}
+new ConcreteCreator().operation();
+A. Compilation error
+B. Using concrete product
+C. Nothing
+✅ Answer: B
+
+8. What happens with this observer pattern polymorphism?
+interface Observer {
+    void update(String message);
+}
+class Subject {
+    private List<Observer> observers = new ArrayList<>();
+    public void addObserver(Observer o) { observers.add(o); }
+    public void notifyObservers(String msg) {
+        observers.forEach(o -> o.update(msg));
+    }
+}
+class ConcreteObserver implements Observer {
+    private String name;
+    ConcreteObserver(String name) { this.name = name; }
+    public void update(String message) { System.out.println(name + ": " + message); }
+}
+Subject s = new Subject();
+s.addObserver(new ConcreteObserver("Observer1"));
+s.notifyObservers("Hello");
+A. Hello
+B. Observer1: Hello
+C. Nothing
+✅ Answer: B
+
+9. What is the output of this polymorphic collection iteration?
+import java.util.*;
+List<Shape> shapes = Arrays.asList(new Circle(), new Rectangle());
+interface Shape { void draw(); }
+class Circle implements Shape { public void draw() { System.out.print("Circle "); } }
+class Rectangle implements Shape { public void draw() { System.out.print("Rectangle"); } }
+shapes.forEach(Shape::draw);
+A. Circle Rectangle
+B. Rectangle Circle
+C. Compilation error
+✅ Answer: A
+
+10. What will this command pattern polymorphism execute?
+interface Command {
+    void execute();
+}
+class Light {
+    void turnOn() { System.out.println("Light on"); }
+    void turnOff() { System.out.println("Light off"); }
+}
+class LightOnCommand implements Command {
+    private Light light;
+    LightOnCommand(Light light) { this.light = light; }
+    public void execute() { light.turnOn(); }
+}
+class RemoteControl {
+    private Command command;
+    void setCommand(Command command) { this.command = command; }
+    void pressButton() { command.execute(); }
+}
+RemoteControl remote = new RemoteControl();
+remote.setCommand(new LightOnCommand(new Light()));
+remote.pressButton();
+A. Light off
+B. Light on
+C. Nothing
+✅ Answer: B
+
+11. What happens with this polymorphic exception handling?
+class CustomException extends Exception {
+    CustomException(String msg) { super(msg); }
+}
+class SpecificException extends CustomException {
+    SpecificException(String msg) { super(msg); }
+}
+try {
+    throw new SpecificException("Error");
+} catch (CustomException e) {
+    System.out.println("Caught: " + e.getClass().getSimpleName());
+}
+A. Caught: CustomException
+B. Caught: SpecificException
+C. Compilation error
+✅ Answer: B
+
+12. What is the result of this decorator pattern polymorphism?
+interface Coffee {
+    double cost();
+    String description();
+}
+class SimpleCoffee implements Coffee {
+    public double cost() { return 2.0; }
+    public String description() { return "Simple coffee"; }
+}
+abstract class CoffeeDecorator implements Coffee {
+    protected Coffee coffee;
+    CoffeeDecorator(Coffee coffee) { this.coffee = coffee; }
+    public double cost() { return coffee.cost(); }
+    public String description() { return coffee.description(); }
+}
+class MilkDecorator extends CoffeeDecorator {
+    MilkDecorator(Coffee coffee) { super(coffee); }
+    public double cost() { return coffee.cost() + 0.5; }
+    public String description() { return coffee.description() + " + milk"; }
+}
+Coffee coffee = new MilkDecorator(new SimpleCoffee());
+System.out.println(coffee.cost());
+A. 2.0
+B. 2.5
+C. 0.5
+✅ Answer: B
+
+13. What will this state pattern polymorphism output?
+interface State {
+    void handle();
+}
+class Context {
+    private State state;
+    public void setState(State state) { this.state = state; }
+    public void request() { state.handle(); }
+}
+class ConcreteStateA implements State {
+    public void handle() { System.out.println("Handling in State A"); }
+}
+class ConcreteStateB implements State {
+    public void handle() { System.out.println("Handling in State B"); }
+}
+Context context = new Context();
+context.setState(new ConcreteStateA());
+context.request();
+A. Handling in State B
+B. Handling in State A
+C. Nothing
+✅ Answer: B
+
+14. What happens with this chain of responsibility polymorphism?
+abstract class Handler {
+    protected Handler nextHandler;
+    public void setNext(Handler handler) { this.nextHandler = handler; }
+    public abstract void handleRequest(String request);
+}
+class ConcreteHandlerA extends Handler {
+    public void handleRequest(String request) {
+        if (request.equals("A")) {
+            System.out.println("Handler A processing");
+        } else if (nextHandler != null) {
+            nextHandler.handleRequest(request);
+        }
+    }
+}
+class ConcreteHandlerB extends Handler {
+    public void handleRequest(String request) {
+        if (request.equals("B")) {
+            System.out.println("Handler B processing");
+        }
+    }
+}
+Handler h1 = new ConcreteHandlerA();
+Handler h2 = new ConcreteHandlerB();
+h1.setNext(h2);
+h1.handleRequest("B");
+A. Handler A processing
+B. Handler B processing
+C. Nothing
+✅ Answer: B
+
+15. What is the output of this bridge pattern polymorphism?
+interface DrawingAPI {
+    void drawCircle(int x, int y, int radius);
+}
+class DrawingAPI1 implements DrawingAPI {
+    public void drawCircle(int x, int y, int radius) {
+        System.out.println("API1 drawing circle");
+    }
+}
+abstract class Shape {
+    protected DrawingAPI drawingAPI;
+    Shape(DrawingAPI drawingAPI) { this.drawingAPI = drawingAPI; }
+    public abstract void draw();
+}
+class Circle extends Shape {
+    private int x, y, radius;
+    Circle(int x, int y, int radius, DrawingAPI drawingAPI) {
+        super(drawingAPI);
+        this.x = x; this.y = y; this.radius = radius;
+    }
+    public void draw() { drawingAPI.drawCircle(x, y, radius); }
+}
+Shape circle = new Circle(1, 2, 3, new DrawingAPI1());
+circle.draw();
+A. Drawing circle
+B. API1 drawing circle
+C. Compilation error
+✅ Answer: B
+
+=======================================================
+USAGE INSTRUCTIONS:
+=======================================================
+1. Copy one section at a time (e.g., "BEGINNER LEVEL - QUIZ QUESTIONS" for Topic 15)
+2. Go to your add_questions.php page
+3. Select the correct Topic ID from dropdown
+4. Set the Class Level (Beginner/Intermediate)
+5. Set the Question Type (Quiz question/Simulation question)
+6. Paste the questions into the textarea
+7. Click "Insert Questions"
+8. Repeat for each section
+
+This file now contains 300 questions total (60 for each of 5 topics):
+- Topic 13: Introduction to OOP Concepts (60 questions)
+- Topic 14: Classes and Objects (60 questions)
+- Topic 15: Encapsulation (60 questions)
+- Topic 16: Inheritance (60 questions)
+- Topic 17: Polymorphism (60 questions)
+
+Complete OOP1 module ready for testing your new pre-test format!
