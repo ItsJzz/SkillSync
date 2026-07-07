@@ -1,0 +1,836 @@
+{
+    "13": {
+        "topic_id": 13,
+        "name": "Introduction to OOP Concepts",
+        "instructions": [
+            {
+                "level": 1,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 1: Understanding Classes (Student Class)",
+                        "description": "Learn what a class is by creating a simple Student class with basic properties.",
+                        "skeleton": "class Student {\n  // TODO: Add a String field for 'name'\n  // TODO: Add an int field for 'age'\n}",
+                        "requirements": {
+                            "Must declare name field": "/String\\s+name/",
+                            "Must declare age field": "/int\\s+age/"
+                        },
+                        "hint": "💡 Hint: A class contains fields (variables) that describe an object. Think about what information a student would have."
+                    },
+                    {
+                        "title": "Level 1: Understanding Classes (Book Class)",
+                        "description": "Create a Book class to understand the concept of classes as blueprints.",
+                        "skeleton": "class Book {\n  // TODO: Add a String field for 'title'\n  // TODO: Add a String field for 'author'\n}",
+                        "requirements": {
+                            "Must declare title field": "/String\\s+title/",
+                            "Must declare author field": "/String\\s+author/"
+                        },
+                        "hint": "💡 Hint: Classes are like blueprints. A Book blueprint should define what properties every book has."
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 2: Creating Objects (Student Instance)",
+                        "description": "Learn how to create objects (instances) from a class.",
+                        "skeleton": "class Student {\n  String name;\n  int age;\n}\n\n// TODO: Create a Student object called 'student1'",
+                        "requirements": {
+                            "Must create Student object": "/Student\\s+student1\\s*=\\s*new\\s+Student\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Objects are created using the 'new' keyword. Think of it as creating a real student from the Student blueprint."
+                    },
+                    {
+                        "title": "Level 2: Creating Objects (Car Instance)",
+                        "description": "Practice creating objects by making a Car instance.",
+                        "skeleton": "class Car {\n  String brand;\n  int year;\n}\n\n// TODO: Create a Car object called 'myCar'",
+                        "requirements": {
+                            "Must create Car object": "/Car\\s+myCar\\s*=\\s*new\\s+Car\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Use the 'new' keyword to create an instance of the Car class. Each object is a separate entity."
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 3: Setting Object Properties (Student Data)",
+                        "description": "Learn how to assign values to object fields after creation.",
+                        "skeleton": "class Student {\n  String name;\n  int age;\n}\n\nStudent student1 = new Student();\n// TODO: Set student1's name to \"Alice\"\n// TODO: Set student1's age to 20",
+                        "requirements": {
+                            "Must set name": "/student1\\.name\\s*=\\s*[\"']Alice[\"']/",
+                            "Must set age": "/student1\\.age\\s*=\\s*20/"
+                        },
+                        "hint": "💡 Hint: Use the dot notation (.) to access object properties. Objects can hold different values even from the same class."
+                    },
+                    {
+                        "title": "Level 3: Setting Object Properties (Product Data)",
+                        "description": "Practice setting object properties with a Product class.",
+                        "skeleton": "class Product {\n  String name;\n  double price;\n}\n\nProduct item = new Product();\n// TODO: Set item's name to \"Laptop\"\n// TODO: Set item's price to 999.99",
+                        "requirements": {
+                            "Must set name": "/item\\.name\\s*=\\s*[\"']Laptop[\"']/",
+                            "Must set price": "/item\\.price\\s*=\\s*999\\.99/"
+                        },
+                        "hint": "💡 Hint: Each object instance can store its own unique data. Access properties using objectName.propertyName"
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 4: Multiple Objects (Student Comparison)",
+                        "description": "Create multiple objects to understand that each object is independent.",
+                        "skeleton": "class Student {\n  String name;\n  int age;\n}\n\n// TODO: Create two Student objects: student1 and student2\n// TODO: Set different names and ages for each",
+                        "requirements": {
+                            "Must create first student": "/Student\\s+student1\\s*=\\s*new\\s+Student\\s*\\(\\s*\\)/",
+                            "Must create second student": "/Student\\s+student2\\s*=\\s*new\\s+Student\\s*\\(\\s*\\)/",
+                            "Must set properties": "/student[12]\\.\\w+\\s*=/"
+                        },
+                        "hint": "💡 Hint: Each object is independent. Creating multiple objects shows how the same class can produce different instances."
+                    },
+                    {
+                        "title": "Level 4: Multiple Objects (Animal Collection)",
+                        "description": "Create multiple Animal objects to see object independence.",
+                        "skeleton": "class Animal {\n  String species;\n  String sound;\n}\n\n// TODO: Create two Animal objects: animal1 and animal2\n// TODO: Set different species and sounds for each",
+                        "requirements": {
+                            "Must create first animal": "/Animal\\s+animal1\\s*=\\s*new\\s+Animal\\s*\\(\\s*\\)/",
+                            "Must create second animal": "/Animal\\s+animal2\\s*=\\s*new\\s+Animal\\s*\\(\\s*\\)/",
+                            "Must set properties": "/animal[12]\\.\\w+\\s*=/"
+                        },
+                        "hint": "💡 Hint: Think about how different animals can be created from the same Animal blueprint but have different characteristics."
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 5: Basic Methods (Student Display)",
+                        "description": "Add a simple method to a class to introduce behavior.",
+                        "skeleton": "class Student {\n  String name;\n  int age;\n  \n  // TODO: Add a method called 'introduce' that prints the student's name\n}",
+                        "requirements": {
+                            "Must declare introduce method": "/void\\s+introduce\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Methods define what objects can do. A simple method might just print information about the object."
+                    },
+                    {
+                        "title": "Level 5: Basic Methods (Calculator Function)",
+                        "description": "Create a method that performs a simple calculation.",
+                        "skeleton": "class Calculator {\n  int number1;\n  int number2;\n  \n  // TODO: Add a method called 'add' that returns the sum of number1 and number2\n}",
+                        "requirements": {
+                            "Must declare add method": "/int\\s+add\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Methods can return values. Think about what type of value an 'add' method should return."
+                    }
+                ]
+            },
+            {
+                "level": 1,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 1: Class Design (Employee Management)",
+                        "description": "Design a more complex class with multiple data types and understand encapsulation basics.",
+                        "skeleton": "class Employee {\n  // TODO: Add private fields for id (int), name (String), salary (double)\n  // TODO: Add a public method to get the employee's name\n}",
+                        "requirements": {
+                            "Must have private id field": "/private\\s+int\\s+id/",
+                            "Must have private name field": "/private\\s+String\\s+name/",
+                            "Must have public getName method": "/public\\s+String\\s+getName/"
+                        },
+                        "hint": "💡 Hint: Use private fields to protect data and public methods to provide controlled access."
+                    },
+                    {
+                        "title": "Level 1: Class Design (Bank Account)",
+                        "description": "Create a BankAccount class that demonstrates data protection principles.",
+                        "skeleton": "class BankAccount {\n  // TODO: Add private fields for accountNumber (String) and balance (double)\n  // TODO: Add a public method to get the current balance\n}",
+                        "requirements": {
+                            "Must have private accountNumber": "/private\\s+String\\s+accountNumber/",
+                            "Must have private balance": "/private\\s+double\\s+balance/",
+                            "Must have public getBalance method": "/public\\s+double\\s+getBalance/"
+                        },
+                        "hint": "💡 Hint: Financial data should be private for security. Provide safe ways to access the information."
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 2: Constructors (Person Initialization)",
+                        "description": "Learn about constructors for proper object initialization.",
+                        "skeleton": "class Person {\n  private String name;\n  private int age;\n  \n  // TODO: Add a constructor that takes name and age parameters\n  // TODO: Add getter methods for both fields\n}",
+                        "requirements": {
+                            "Must have constructor": "/Person\\s*\\(\\s*String\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/",
+                            "Must have getName method": "/public\\s+String\\s+getName/",
+                            "Must have getAge method": "/public\\s+int\\s+getAge/"
+                        },
+                        "hint": "💡 Hint: Constructors ensure objects are properly initialized when created. They have the same name as the class."
+                    },
+                    {
+                        "title": "Level 2: Constructors (Rectangle Setup)",
+                        "description": "Create a Rectangle class with constructor for geometric calculations.",
+                        "skeleton": "class Rectangle {\n  private double width;\n  private double height;\n  \n  // TODO: Add constructor that initializes width and height\n  // TODO: Add a method to calculate area\n}",
+                        "requirements": {
+                            "Must have constructor": "/Rectangle\\s*\\(\\s*double\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*\\)/",
+                            "Must have area method": "/public\\s+double\\s+\\w*[Aa]rea/"
+                        },
+                        "hint": "💡 Hint: Constructors can take parameters to set initial values. Methods can perform calculations using the object's data."
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 3: Method Overloading (Calculator)",
+                        "description": "Implement method overloading to understand polymorphism basics.",
+                        "skeleton": "class Calculator {\n  // TODO: Create multiple 'add' methods:\n  // One that takes two int parameters\n  // One that takes two double parameters\n  // One that takes three int parameters\n}",
+                        "requirements": {
+                            "Must have add with two ints": "/public\\s+int\\s+add\\s*\\(\\s*int\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/",
+                            "Must have add with two doubles": "/public\\s+double\\s+add\\s*\\(\\s*double\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*\\)/",
+                            "Must have add with three ints": "/public\\s+int\\s+add\\s*\\(\\s*int\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Method overloading allows multiple methods with the same name but different parameters."
+                    },
+                    {
+                        "title": "Level 3: Method Overloading (String Processor)",
+                        "description": "Create overloaded methods for string processing.",
+                        "skeleton": "class StringProcessor {\n  // TODO: Create 'process' methods:\n  // One that takes a String and converts to uppercase\n  // One that takes a String and int (repeat count)\n  // One that takes two Strings (concatenate)\n}",
+                        "requirements": {
+                            "Must have process with String": "/public\\s+String\\s+process\\s*\\(\\s*String\\s+\\w+\\s*\\)/",
+                            "Must have process with String and int": "/public\\s+String\\s+process\\s*\\(\\s*String\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/",
+                            "Must have process with two Strings": "/public\\s+String\\s+process\\s*\\(\\s*String\\s+\\w+\\s*,\\s*String\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Different parameter combinations allow the same method name to perform related but different operations."
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 4: Static Members (Math Utilities)",
+                        "description": "Understand static methods and fields that belong to the class, not instances.",
+                        "skeleton": "class MathUtils {\n  // TODO: Add a static field 'PI' with value 3.14159\n  // TODO: Add a static method 'square' that takes an int and returns its square\n  // TODO: Add a static method 'circleArea' that calculates area using PI\n}",
+                        "requirements": {
+                            "Must have static PI": "/static\\s+double\\s+PI/",
+                            "Must have static square method": "/static\\s+int\\s+square\\s*\\(\\s*int\\s+\\w+\\s*\\)/",
+                            "Must have static circleArea method": "/static\\s+double\\s+circleArea/"
+                        },
+                        "hint": "💡 Hint: Static members belong to the class itself, not to any specific instance. They can be accessed without creating objects."
+                    },
+                    {
+                        "title": "Level 4: Static Members (Counter Class)",
+                        "description": "Create a class that tracks how many instances have been created.",
+                        "skeleton": "class Counter {\n  // TODO: Add a static field 'count' to track total instances\n  // TODO: Add an instance field 'id' for this counter's unique number\n  // TODO: Add constructor that increments count and sets id\n  // TODO: Add static method to get total count\n}",
+                        "requirements": {
+                            "Must have static count": "/static\\s+int\\s+count/",
+                            "Must have instance id": "/private\\s+int\\s+id/",
+                            "Must have constructor": "/Counter\\s*\\(\\s*\\)/",
+                            "Must have static getCount": "/static\\s+int\\s+getCount/"
+                        },
+                        "hint": "💡 Hint: Static fields are shared across all instances. Use them to track class-wide information."
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 5: Object Relationships (Student-Course)",
+                        "description": "Model relationships between objects using composition.",
+                        "skeleton": "class Course {\n  private String name;\n  private int credits;\n  // TODO: Add constructor and getter methods\n}\n\nclass Student {\n  private String name;\n  private Course[] courses;\n  // TODO: Add constructor and method to enroll in course\n}",
+                        "requirements": {
+                            "Must have Course constructor": "/Course\\s*\\(\\s*String\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/",
+                            "Must have Student constructor": "/Student\\s*\\(\\s*String\\s+\\w+\\s*\\)/",
+                            "Must have enroll method": "/void\\s+enroll\\s*\\(\\s*Course\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Objects can contain other objects as fields. This models real-world relationships like students taking courses."
+                    },
+                    {
+                        "title": "Level 5: Object Relationships (Library System)",
+                        "description": "Create a simple library system with books and library classes.",
+                        "skeleton": "class Book {\n  private String title;\n  private boolean isAvailable;\n  // TODO: Add constructor and methods\n}\n\nclass Library {\n  private Book[] books;\n  // TODO: Add methods to add books and check availability\n}",
+                        "requirements": {
+                            "Must have Book constructor": "/Book\\s*\\(\\s*String\\s+\\w+\\s*\\)/",
+                            "Must have addBook method": "/void\\s+addBook\\s*\\(\\s*Book\\s+\\w+\\s*\\)/",
+                            "Must have availability check": "/boolean\\s+\\w*[Aa]vailable/"
+                        },
+                        "hint": "💡 Hint: Model real-world systems by having objects interact with each other through methods."
+                    }
+                ]
+            },
+            {
+                "level": 1,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 1: Advanced Design Patterns (Singleton)",
+                        "description": "Implement the Singleton pattern to ensure only one instance exists.",
+                        "skeleton": "class DatabaseConnection {\n  // TODO: Add private static instance field\n  // TODO: Make constructor private\n  // TODO: Add public static getInstance() method\n  // TODO: Add connection status field and methods\n}",
+                        "requirements": {
+                            "Must have private static instance": "/private\\s+static\\s+DatabaseConnection\\s+instance/",
+                            "Must have private constructor": "/private\\s+DatabaseConnection\\s*\\(/",
+                            "Must have getInstance method": "/public\\s+static\\s+DatabaseConnection\\s+getInstance/"
+                        },
+                        "hint": "💡 Hint: Singleton ensures only one instance exists. Use private constructor and static method for controlled access."
+                    },
+                    {
+                        "title": "Level 1: Advanced Design Patterns (Factory)",
+                        "description": "Create a factory pattern for object creation based on type.",
+                        "skeleton": "abstract class Animal {\n  abstract void makeSound();\n}\n\nclass Dog extends Animal {\n  void makeSound() { System.out.println(\"Woof\"); }\n}\n\nclass AnimalFactory {\n  // TODO: Add static method createAnimal(String type)\n}",
+                        "requirements": {
+                            "Must have createAnimal method": "/static\\s+Animal\\s+createAnimal\\s*\\(\\s*String\\s+\\w+\\s*\\)/",
+                            "Must return appropriate animal": "/return\\s+new\\s+(Dog|Cat)/"
+                        },
+                        "hint": "💡 Hint: Factory pattern encapsulates object creation logic. Use conditional statements to return appropriate instances."
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 2: Generic Classes (Container)",
+                        "description": "Create a generic container class that can hold any type of object.",
+                        "skeleton": "class Container<T> {\n  // TODO: Add private field to store item of type T\n  // TODO: Add constructor to initialize with item\n  // TODO: Add getter and setter methods\n  // TODO: Add method to check if container is empty\n}",
+                        "requirements": {
+                            "Must be generic class": "/class\\s+Container\\s*<\\s*T\\s*>/",
+                            "Must have T field": "/private\\s+T\\s+\\w+/",
+                            "Must have generic methods": "/public\\s+T\\s+get/"
+                        },
+                        "hint": "💡 Hint: Generics provide type safety and reusability. Use T as a placeholder for any type."
+                    },
+                    {
+                        "title": "Level 2: Generic Classes (Pair)",
+                        "description": "Create a generic Pair class that can hold two objects of potentially different types.",
+                        "skeleton": "class Pair<T, U> {\n  // TODO: Add private fields for first (type T) and second (type U)\n  // TODO: Add constructor and getter methods\n  // TODO: Add equals method to compare pairs\n}",
+                        "requirements": {
+                            "Must be generic with two types": "/class\\s+Pair\\s*<\\s*T\\s*,\\s*U\\s*>/",
+                            "Must have T and U fields": "/private\\s+[TU]\\s+\\w+/",
+                            "Must have constructor": "/Pair\\s*\\(\\s*T\\s+\\w+\\s*,\\s*U\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Multiple type parameters allow flexibility. Each type parameter can represent a different type."
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 3: Builder Pattern (Computer)",
+                        "description": "Implement the Builder pattern for complex object construction.",
+                        "skeleton": "class Computer {\n  private String cpu, ram, storage;\n  \n  private Computer(Builder builder) {\n    // TODO: Initialize fields from builder\n  }\n  \n  static class Builder {\n    // TODO: Add fields and builder methods\n    // TODO: Add build() method\n  }\n}",
+                        "requirements": {
+                            "Must have private constructor": "/private\\s+Computer\\s*\\(\\s*Builder\\s+\\w+\\s*\\)/",
+                            "Must have Builder class": "/static\\s+class\\s+Builder/",
+                            "Must have builder methods": "/Builder\\s+\\w+\\s*\\([^)]*\\)\\s*{[^}]*return\\s+this/"
+                        },
+                        "hint": "💡 Hint: Builder pattern separates construction from representation. Each builder method returns 'this' for chaining."
+                    },
+                    {
+                        "title": "Level 3: Observer Pattern (Newsletter)",
+                        "description": "Implement observer pattern for notification system.",
+                        "skeleton": "interface Observer {\n  void update(String message);\n}\n\nclass Newsletter {\n  private List<Observer> observers;\n  \n  // TODO: Add methods to subscribe, unsubscribe, and notify observers\n}",
+                        "requirements": {
+                            "Must have List of observers": "/List<Observer>\\s+observers/",
+                            "Must have subscribe method": "/void\\s+subscribe\\s*\\(\\s*Observer\\s+\\w+\\s*\\)/",
+                            "Must have notify method": "/void\\s+notifyObservers/"
+                        },
+                        "hint": "💡 Hint: Observer pattern allows one-to-many dependencies. When subject changes, all observers are notified."
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 4: Thread-Safe Singleton (Logger)",
+                        "description": "Create a thread-safe singleton logger with double-checked locking.",
+                        "skeleton": "class Logger {\n  private static volatile Logger instance;\n  private static final Object lock = new Object();\n  \n  // TODO: Implement thread-safe getInstance() method\n  // TODO: Add logging methods with timestamp\n}",
+                        "requirements": {
+                            "Must have volatile instance": "/volatile\\s+Logger\\s+instance/",
+                            "Must have synchronized block": "/synchronized\\s*\\(\\s*lock\\s*\\)/",
+                            "Must check instance twice": "/if\\s*\\(\\s*instance\\s*==\\s*null\\s*\\).*if\\s*\\(\\s*instance\\s*==\\s*null\\s*\\)/s"
+                        },
+                        "hint": "💡 Hint: Thread safety requires careful synchronization. Double-checked locking optimizes performance while ensuring safety."
+                    },
+                    {
+                        "title": "Level 4: Command Pattern (Remote Control)",
+                        "description": "Implement command pattern for a universal remote control.",
+                        "skeleton": "interface Command {\n  void execute();\n  void undo();\n}\n\nclass RemoteControl {\n  private Command[] commands;\n  private Command lastCommand;\n  \n  // TODO: Add methods to set commands and execute them\n}",
+                        "requirements": {
+                            "Must have Command array": "/Command\\[\\]\\s+commands/",
+                            "Must have setCommand method": "/void\\s+setCommand\\s*\\(\\s*int\\s+\\w+\\s*,\\s*Command\\s+\\w+\\s*\\)/",
+                            "Must have undo functionality": "/void\\s+undo/"
+                        },
+                        "hint": "💡 Hint: Command pattern encapsulates requests as objects. Store commands for execution and undo operations."
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 5: Reflection and Meta-programming (Object Analyzer)",
+                        "description": "Use reflection to analyze object properties and methods dynamically.",
+                        "skeleton": "import java.lang.reflect.*;\n\nclass ObjectAnalyzer {\n  // TODO: Add method to analyze any object's fields and methods\n  // TODO: Add method to invoke methods dynamically\n  // TODO: Add method to get field values using reflection\n}",
+                        "requirements": {
+                            "Must use Class.forName or getClass": "/(Class\\.forName|getClass\\(\\))/",
+                            "Must get fields": "/getDeclaredFields\\(\\)|getFields\\(\\)/",
+                            "Must get methods": "/getDeclaredMethods\\(\\)|getMethods\\(\\)/"
+                        },
+                        "hint": "💡 Hint: Reflection allows runtime inspection of classes. Use Class object to access metadata about fields and methods."
+                    },
+                    {
+                        "title": "Level 5: Custom Annotation Processor (Validator)",
+                        "description": "Create custom annotations and processor for object validation.",
+                        "skeleton": "@interface NotNull {\n}\n\n@interface Range {\n  int min() default 0;\n  int max() default 100;\n}\n\nclass Validator {\n  // TODO: Add method to validate object using annotations\n}",
+                        "requirements": {
+                            "Must process annotations": "/getAnnotation\\(|isAnnotationPresent\\(/",
+                            "Must validate fields": "/validate.*Field|Field.*validate/",
+                            "Must handle annotation values": "/annotation\\.[a-zA-Z]+\\(\\)/"
+                        },
+                        "hint": "💡 Hint: Annotations provide metadata. Use reflection to check if fields have annotations and process their values."
+                    }
+                ]
+            }
+        ]
+    },
+    "14": {
+        "topic_id": 14,
+        "name": "Classes and Objects",
+        "instructions": [
+            {
+                "level": 1,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 1: Class Definition (Person)",
+                        "description": "Learn the basic structure of a class by creating a Person class.",
+                        "skeleton": "class Person {\n  // TODO: Add a String field called 'name'\n  // TODO: Add an int field called 'age'\n  // TODO: Add a String field called 'city'\n}",
+                        "requirements": {
+                            "Must declare name field": "/String\\s+name/",
+                            "Must declare age field": "/int\\s+age/",
+                            "Must declare city field": "/String\\s+city/"
+                        },
+                        "hint": "💡 Hint: Classes contain fields (data) that describe what an object can store. Think about basic information a person would have."
+                    },
+                    {
+                        "title": "Level 1: Class Definition (Vehicle)",
+                        "description": "Create a Vehicle class to understand class structure.",
+                        "skeleton": "class Vehicle {\n  // TODO: Add a String field called 'make'\n  // TODO: Add a String field called 'model'\n  // TODO: Add an int field called 'year'\n}",
+                        "requirements": {
+                            "Must declare make field": "/String\\s+make/",
+                            "Must declare model field": "/String\\s+model/",
+                            "Must declare year field": "/int\\s+year/"
+                        },
+                        "hint": "💡 Hint: A class is like a template. Define what attributes every vehicle should have."
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 2: Object Instantiation (Creating a Person)",
+                        "description": "Learn how to create actual objects from your class blueprint.",
+                        "skeleton": "class Person {\n  String name;\n  int age;\n  String city;\n}\n\n// TODO: Create a Person object called 'person1'\n// TODO: Create another Person object called 'person2'",
+                        "requirements": {
+                            "Must create person1": "/Person\\s+person1\\s*=\\s*new\\s+Person\\s*\\(\\s*\\)/",
+                            "Must create person2": "/Person\\s+person2\\s*=\\s*new\\s+Person\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Use the 'new' keyword to create objects. Each object is a separate instance that can hold different data."
+                    },
+                    {
+                        "title": "Level 2: Object Instantiation (Creating Vehicles)",
+                        "description": "Practice creating multiple objects from the same class.",
+                        "skeleton": "class Vehicle {\n  String make;\n  String model;\n  int year;\n}\n\n// TODO: Create a Vehicle object called 'car1'\n// TODO: Create a Vehicle object called 'car2'",
+                        "requirements": {
+                            "Must create car1": "/Vehicle\\s+car1\\s*=\\s*new\\s+Vehicle\\s*\\(\\s*\\)/",
+                            "Must create car2": "/Vehicle\\s+car2\\s*=\\s*new\\s+Vehicle\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Multiple objects can be created from the same class. Each will be independent of the others."
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 3: Accessing Object Fields (Person Properties)",
+                        "description": "Learn how to set and access object properties using dot notation.",
+                        "skeleton": "class Person {\n  String name;\n  int age;\n  String city;\n}\n\nPerson person = new Person();\n// TODO: Set the person's name to \"John\"\n// TODO: Set the person's age to 25\n// TODO: Set the person's city to \"New York\"",
+                        "requirements": {
+                            "Must set name": "/person\\.name\\s*=\\s*[\"']John[\"']/",
+                            "Must set age": "/person\\.age\\s*=\\s*25/",
+                            "Must set city": "/person\\.city\\s*=\\s*[\"']New York[\"']/"
+                        },
+                        "hint": "💡 Hint: Use dot notation (object.field) to access and modify object properties."
+                    },
+                    {
+                        "title": "Level 3: Accessing Object Fields (Product Details)",
+                        "description": "Practice setting object fields with a Product class.",
+                        "skeleton": "class Product {\n  String name;\n  double price;\n  boolean inStock;\n}\n\nProduct item = new Product();\n// TODO: Set the product name to \"Phone\"\n// TODO: Set the price to 599.99\n// TODO: Set inStock to true",
+                        "requirements": {
+                            "Must set name": "/item\\.name\\s*=\\s*[\"']Phone[\"']/",
+                            "Must set price": "/item\\.price\\s*=\\s*599\\.99/",
+                            "Must set inStock": "/item\\.inStock\\s*=\\s*true/"
+                        },
+                        "hint": "💡 Hint: Objects can store different types of data. Use the appropriate data type for each field."
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 4: Simple Methods (Person Introduction)",
+                        "description": "Add behavior to your class by creating methods.",
+                        "skeleton": "class Person {\n  String name;\n  int age;\n  \n  // TODO: Add a method called 'introduce' that prints \"Hi, I'm [name] and I'm [age] years old\"\n}",
+                        "requirements": {
+                            "Must declare introduce method": "/void\\s+introduce\\s*\\(\\s*\\)/",
+                            "Must use System.out.println": "/System\\.out\\.println/"
+                        },
+                        "hint": "💡 Hint: Methods define what objects can do. Use the object's fields inside the method to create personalized output."
+                    },
+                    {
+                        "title": "Level 4: Simple Methods (Calculator Functions)",
+                        "description": "Create a Calculator class with basic mathematical operations.",
+                        "skeleton": "class Calculator {\n  // TODO: Add a method 'add' that takes two int parameters and returns their sum\n  // TODO: Add a method 'multiply' that takes two int parameters and returns their product\n}",
+                        "requirements": {
+                            "Must have add method": "/int\\s+add\\s*\\(\\s*int\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/",
+                            "Must have multiply method": "/int\\s+multiply\\s*\\(\\s*int\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Methods can take parameters and return values. Consider what type of value each mathematical operation should return."
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "class_level": "Beginner",
+                "variants": [
+                    {
+                        "title": "Level 5: Method Parameters (Student Grade Calculator)",
+                        "description": "Create methods that work with parameters to perform calculations.",
+                        "skeleton": "class Student {\n  String name;\n  \n  // TODO: Add method 'calculateAverage' that takes three test scores and returns the average\n  // TODO: Add method 'getGradeLetter' that takes a score and returns 'A', 'B', 'C', 'D', or 'F'\n}",
+                        "requirements": {
+                            "Must have calculateAverage method": "/double\\s+calculateAverage\\s*\\(\\s*double\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*\\)/",
+                            "Must have getGradeLetter method": "/String\\s+getGradeLetter\\s*\\(\\s*double\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Methods can process input parameters and return results. Think about what logic each method needs to perform."
+                    },
+                    {
+                        "title": "Level 5: Method Parameters (Circle Geometry)",
+                        "description": "Create a Circle class with methods for geometric calculations.",
+                        "skeleton": "class Circle {\n  // TODO: Add method 'calculateArea' that takes radius and returns area (π * r²)\n  // TODO: Add method 'calculateCircumference' that takes radius and returns circumference (2 * π * r)\n}",
+                        "requirements": {
+                            "Must have calculateArea method": "/double\\s+calculateArea\\s*\\(\\s*double\\s+\\w+\\s*\\)/",
+                            "Must have calculateCircumference method": "/double\\s+calculateCircumference\\s*\\(\\s*double\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Mathematical formulas can be implemented as methods. Use 3.14159 for π or Math.PI if you know it."
+                    }
+                ]
+            },
+            {
+                "level": 1,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 1: Constructors (Account Setup)",
+                        "description": "Learn how constructors initialize objects when they're created.",
+                        "skeleton": "class BankAccount {\n  private String accountNumber;\n  private double balance;\n  \n  // TODO: Add constructor that takes accountNumber and initial balance\n  // TODO: Add getter methods for both fields\n}",
+                        "requirements": {
+                            "Must have constructor": "/BankAccount\\s*\\(\\s*String\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*\\)/",
+                            "Must have getter for accountNumber": "/String\\s+getAccountNumber\\s*\\(\\s*\\)/",
+                            "Must have getter for balance": "/double\\s+getBalance\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Constructors ensure objects are properly initialized. They have the same name as the class and no return type."
+                    },
+                    {
+                        "title": "Level 1: Constructors (Employee Setup)",
+                        "description": "Create an Employee class with proper initialization.",
+                        "skeleton": "class Employee {\n  private String name;\n  private int id;\n  private double salary;\n  \n  // TODO: Add constructor that initializes all fields\n  // TODO: Add getter and setter methods for salary\n}",
+                        "requirements": {
+                            "Must have constructor": "/Employee\\s*\\(\\s*String\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*\\)/",
+                            "Must have getSalary": "/double\\s+getSalary\\s*\\(\\s*\\)/",
+                            "Must have setSalary": "/void\\s+setSalary\\s*\\(\\s*double\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Constructors can take parameters to set initial values. Getters and setters provide controlled access to private fields."
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 2: Encapsulation (Student Records)",
+                        "description": "Use private fields and public methods to protect data integrity.",
+                        "skeleton": "class Student {\n  private String name;\n  private int age;\n  private double gpa;\n  \n  // TODO: Add constructor and getter/setter methods\n  // TODO: In setAge, ensure age is between 0 and 120\n  // TODO: In setGpa, ensure GPA is between 0.0 and 4.0\n}",
+                        "requirements": {
+                            "Must validate age": "/if\\s*\\(.*age.*>=.*0.*<=.*120|age.*>.*0.*<.*120/",
+                            "Must validate GPA": "/if\\s*\\(.*gpa.*>=.*0.*<=.*4|gpa.*>.*0.*<.*4/",
+                            "Must have all getters": "/get(Name|Age|Gpa)/"
+                        },
+                        "hint": "💡 Hint: Encapsulation protects data by validating inputs in setter methods. Don't allow invalid values to be stored."
+                    },
+                    {
+                        "title": "Level 2: Encapsulation (Temperature Converter)",
+                        "description": "Create a temperature class that maintains valid temperature ranges.",
+                        "skeleton": "class Temperature {\n  private double celsius;\n  \n  // TODO: Add constructor that validates temperature (above absolute zero: -273.15°C)\n  // TODO: Add method to convert to Fahrenheit\n  // TODO: Add method to convert to Kelvin\n  // TODO: Add setter with validation\n}",
+                        "requirements": {
+                            "Must validate temperature": "/celsius.*>.*-273|celsius.*>=.*-273/",
+                            "Must have toFahrenheit": "/double\\s+toFahrenheit\\s*\\(\\s*\\)/",
+                            "Must have toKelvin": "/double\\s+toKelvin\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Physical laws provide natural validation rules. Temperature cannot go below absolute zero."
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 3: Object Composition (Library System)",
+                        "description": "Create classes that work together to model a library system.",
+                        "skeleton": "class Book {\n  private String title, author;\n  private boolean isCheckedOut;\n  \n  // TODO: Add constructor and methods\n}\n\nclass Member {\n  private String name;\n  private int memberId;\n  \n  // TODO: Add constructor and methods\n}\n\nclass Library {\n  // TODO: Add arrays/lists to store books and members\n  // TODO: Add method to check out book to member\n}",
+                        "requirements": {
+                            "Must have Book constructor": "/Book\\s*\\(\\s*String\\s+\\w+\\s*,\\s*String\\s+\\w+\\s*\\)/",
+                            "Must have Member constructor": "/Member\\s*\\(\\s*String\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/",
+                            "Must have checkOut method": "/void\\s+checkOut\\s*\\(.*Book.*Member|.*Member.*Book\\)/"
+                        },
+                        "hint": "💡 Hint: Composition means objects contain other objects. A library contains books and members that interact."
+                    },
+                    {
+                        "title": "Level 3: Object Composition (Order System)",
+                        "description": "Model an e-commerce order system with multiple related classes.",
+                        "skeleton": "class Product {\n  private String name;\n  private double price;\n  \n  // TODO: Add constructor and methods\n}\n\nclass Customer {\n  private String name, email;\n  \n  // TODO: Add constructor and methods\n}\n\nclass Order {\n  // TODO: Add customer, products array, and total calculation\n}",
+                        "requirements": {
+                            "Must have Product constructor": "/Product\\s*\\(\\s*String\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*\\)/",
+                            "Must have Customer field": "/Customer\\s+\\w+/",
+                            "Must calculate total": "/double\\s+\\w*[Tt]otal/"
+                        },
+                        "hint": "💡 Hint: Real-world systems involve multiple objects working together. Focus on the relationships between entities."
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 4: Static Members (Utility Class)",
+                        "description": "Create utility classes with static methods that don't require object instantiation.",
+                        "skeleton": "class StringUtils {\n  // TODO: Add static method 'reverse' that reverses a string\n  // TODO: Add static method 'isPalindrome' that checks if string reads same forwards/backwards\n  // TODO: Add static method 'wordCount' that counts words in a string\n  // TODO: Make constructor private to prevent instantiation\n}",
+                        "requirements": {
+                            "Must have static reverse": "/static\\s+String\\s+reverse\\s*\\(\\s*String\\s+\\w+\\s*\\)/",
+                            "Must have static isPalindrome": "/static\\s+boolean\\s+isPalindrome\\s*\\(\\s*String\\s+\\w+\\s*\\)/",
+                            "Must have private constructor": "/private\\s+StringUtils\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Utility classes provide functionality without needing object state. Make constructor private and all methods static."
+                    },
+                    {
+                        "title": "Level 4: Static Members (ID Generator)",
+                        "description": "Create a class that generates unique IDs using static fields and methods.",
+                        "skeleton": "class IDGenerator {\n  private static int nextId = 1;\n  \n  // TODO: Add static method 'generateId' that returns and increments nextId\n  // TODO: Add static method 'getCurrentId' that returns current nextId without incrementing\n  // TODO: Add static method 'reset' that resets nextId to 1\n}",
+                        "requirements": {
+                            "Must have static generateId": "/static\\s+int\\s+generateId\\s*\\(\\s*\\)/",
+                            "Must increment nextId": "/nextId\\s*\\+\\+|\\+\\+\\s*nextId/",
+                            "Must have reset method": "/static\\s+void\\s+reset\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Static fields are shared across all instances. Perfect for generating unique IDs across the entire application."
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "class_level": "Intermediate",
+                "variants": [
+                    {
+                        "title": "Level 5: Complex Object Interactions (Shopping Cart)",
+                        "description": "Build a complete shopping cart system with multiple interacting classes.",
+                        "skeleton": "class Item {\n  private String name;\n  private double price;\n  private int quantity;\n  \n  // TODO: Add constructor and methods\n}\n\nclass ShoppingCart {\n  private Item[] items;\n  private int itemCount;\n  \n  // TODO: Add methods to add items, remove items, calculate total\n  // TODO: Add method to apply discount percentage\n}",
+                        "requirements": {
+                            "Must have addItem method": "/void\\s+addItem\\s*\\(\\s*Item\\s+\\w+\\s*\\)/",
+                            "Must calculate total": "/double\\s+\\w*[Tt]otal/",
+                            "Must handle discount": "/double\\s+\\w*[Dd]iscount/"
+                        },
+                        "hint": "💡 Hint: Complex systems require careful design. Think about how items relate to the cart and what operations users need."
+                    },
+                    {
+                        "title": "Level 5: Complex Object Interactions (Grade Management)",
+                        "description": "Create a comprehensive grade management system for a school.",
+                        "skeleton": "class Assignment {\n  private String name;\n  private double maxPoints;\n  \n  // TODO: Add constructor and methods\n}\n\nclass StudentGrade {\n  private Assignment assignment;\n  private double pointsEarned;\n  \n  // TODO: Add methods to calculate percentage\n}\n\nclass GradeBook {\n  // TODO: Manage multiple students and their grades\n}",
+                        "requirements": {
+                            "Must calculate percentage": "/double\\s+\\w*[Pp]ercentage/",
+                            "Must have Assignment constructor": "/Assignment\\s*\\(\\s*String\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*\\)/",
+                            "Must manage student grades": "/StudentGrade.*\\[\\]|List.*StudentGrade/"
+                        },
+                        "hint": "💡 Hint: Educational systems involve relationships between assignments, grades, and students. Model these carefully."
+                    }
+                ]
+            },
+            {
+                "level": 1,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 1: Advanced Design Patterns (Observer)",
+                        "description": "Implement the Observer pattern for event notification system.",
+                        "skeleton": "interface Observer {\n  void update(String event, Object data);\n}\n\nclass EventManager {\n  private List<Observer> observers;\n  \n  // TODO: Add methods to register, unregister, and notify observers\n  // TODO: Add method to trigger specific events with data\n}",
+                        "requirements": {
+                            "Must have register method": "/void\\s+(register|add)\\w*Observer\\s*\\(\\s*Observer\\s+\\w+\\s*\\)/",
+                            "Must have notify method": "/void\\s+notify\\w*\\s*\\(/",
+                            "Must use List": "/List<Observer>/"
+                        },
+                        "hint": "💡 Hint: Observer pattern enables loose coupling. Objects can be notified of changes without tight dependencies."
+                    },
+                    {
+                        "title": "Level 1: Advanced Design Patterns (Strategy)",
+                        "description": "Implement Strategy pattern for interchangeable algorithms.",
+                        "skeleton": "interface SortingStrategy {\n  void sort(int[] array);\n}\n\nclass BubbleSort implements SortingStrategy {\n  // TODO: Implement bubble sort algorithm\n}\n\nclass SortContext {\n  private SortingStrategy strategy;\n  \n  // TODO: Add methods to set strategy and perform sorting\n}",
+                        "requirements": {
+                            "Must implement SortingStrategy": "/implements\\s+SortingStrategy/",
+                            "Must have setStrategy": "/void\\s+setStrategy\\s*\\(\\s*SortingStrategy\\s+\\w+\\s*\\)/",
+                            "Must have sort method in context": "/void\\s+sort\\s*\\(\\s*int\\[\\]\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Strategy pattern allows algorithms to be selected at runtime. Encapsulate each algorithm in its own class."
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 2: Generic Collection (Custom ArrayList)",
+                        "description": "Create a generic dynamic array implementation with type safety.",
+                        "skeleton": "class MyArrayList<T> {\n  private Object[] elements;\n  private int size;\n  private static final int DEFAULT_CAPACITY = 10;\n  \n  // TODO: Add constructor, add, get, remove, and resize methods\n  // TODO: Implement proper type casting and bounds checking\n}",
+                        "requirements": {
+                            "Must be generic": "/class\\s+MyArrayList\\s*<\\s*T\\s*>/",
+                            "Must have add method": "/void\\s+add\\s*\\(\\s*T\\s+\\w+\\s*\\)/",
+                            "Must have get method": "/T\\s+get\\s*\\(\\s*int\\s+\\w+\\s*\\)/",
+                            "Must resize array": "/resize|grow|expand/"
+                        },
+                        "hint": "💡 Hint: Generic collections provide type safety. Handle array resizing when capacity is exceeded."
+                    },
+                    {
+                        "title": "Level 2: Generic Collection (Custom HashMap)",
+                        "description": "Implement a basic hash map with generic key-value pairs.",
+                        "skeleton": "class MyHashMap<K, V> {\n  private Entry<K, V>[] buckets;\n  private int size;\n  \n  static class Entry<K, V> {\n    K key;\n    V value;\n    Entry<K, V> next;\n    \n    // TODO: Add constructor\n  }\n  \n  // TODO: Add put, get, and hash methods\n}",
+                        "requirements": {
+                            "Must be generic with K,V": "/class\\s+MyHashMap\\s*<\\s*K\\s*,\\s*V\\s*>/",
+                            "Must have put method": "/void\\s+put\\s*\\(\\s*K\\s+\\w+\\s*,\\s*V\\s+\\w+\\s*\\)/",
+                            "Must have hash function": "/int\\s+hash\\s*\\(\\s*K\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "💡 Hint: Hash maps use arrays and linked lists for collision handling. Implement a simple hash function."
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 3: Decorator Pattern (Coffee Shop)",
+                        "description": "Implement decorator pattern for a flexible coffee ordering system.",
+                        "skeleton": "interface Coffee {\n  double getCost();\n  String getDescription();\n}\n\nclass SimpleCoffee implements Coffee {\n  // TODO: Implement base coffee\n}\n\nabstract class CoffeeDecorator implements Coffee {\n  protected Coffee coffee;\n  \n  // TODO: Add constructor and delegate methods\n}\n\nclass MilkDecorator extends CoffeeDecorator {\n  // TODO: Add milk functionality and cost\n}",
+                        "requirements": {
+                            "Must extend CoffeeDecorator": "/extends\\s+CoffeeDecorator/",
+                            "Must have constructor with Coffee": "/MilkDecorator\\s*\\(\\s*Coffee\\s+\\w+\\s*\\)/",
+                            "Must add to cost": "/coffee\\.getCost\\(\\)\\s*\\+/"
+                        },
+                        "hint": "💡 Hint: Decorator pattern adds behavior dynamically. Each decorator wraps the original object and adds features."
+                    },
+                    {
+                        "title": "Level 3: Factory Method Pattern (Shape Creator)",
+                        "description": "Create a factory method pattern for shape object creation.",
+                        "skeleton": "abstract class Shape {\n  abstract void draw();\n  abstract double getArea();\n}\n\nabstract class ShapeFactory {\n  abstract Shape createShape();\n  \n  public void processShape() {\n    Shape shape = createShape();\n    shape.draw();\n  }\n}\n\nclass CircleFactory extends ShapeFactory {\n  // TODO: Implement createShape to return Circle\n}",
+                        "requirements": {
+                            "Must extend ShapeFactory": "/extends\\s+ShapeFactory/",
+                            "Must implement createShape": "/Shape\\s+createShape\\s*\\(\\s*\\)/",
+                            "Must return new Circle": "/return\\s+new\\s+Circle/"
+                        },
+                        "hint": "💡 Hint: Factory method delegates object creation to subclasses. Each factory creates a specific type of object."
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 4: Thread-Safe Singleton (Connection Pool)",
+                        "description": "Implement a thread-safe singleton connection pool with lazy initialization.",
+                        "skeleton": "class ConnectionPool {\n  private static volatile ConnectionPool instance;\n  private static final Object lock = new Object();\n  private final int maxConnections = 10;\n  private int currentConnections = 0;\n  \n  // TODO: Implement thread-safe singleton pattern\n  // TODO: Add connection management methods\n}",
+                        "requirements": {
+                            "Must have volatile instance": "/volatile\\s+ConnectionPool\\s+instance/",
+                            "Must use double-checked locking": "/synchronized.*instance.*==.*null.*instance.*==.*null/s",
+                            "Must have private constructor": "/private\\s+ConnectionPool\\s*\\(/"
+                        },
+                        "hint": "💡 Hint: Thread-safe singleton requires careful synchronization. Use double-checked locking for performance."
+                    },
+                    {
+                        "title": "Level 4: Builder Pattern with Validation (Computer Builder)",
+                        "description": "Create a builder pattern with validation for complex object construction.",
+                        "skeleton": "class Computer {\n  private final String cpu, gpu, ram;\n  private final boolean hasWifi, hasBluetooth;\n  \n  private Computer(Builder builder) {\n    // TODO: Initialize from builder with validation\n  }\n  \n  static class Builder {\n    // TODO: Add required and optional fields\n    // TODO: Add validation methods\n    // TODO: Add fluent interface methods\n  }\n}",
+                        "requirements": {
+                            "Must have private constructor": "/private\\s+Computer\\s*\\(\\s*Builder\\s+\\w+\\s*\\)/",
+                            "Must validate in build": "/validate|check.*null|throw.*Exception/",
+                            "Must return this": "/return\\s+this/"
+                        },
+                        "hint": "💡 Hint: Builder pattern with validation ensures objects are created in valid states. Validate required fields before building."
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "class_level": "Expert",
+                "variants": [
+                    {
+                        "title": "Level 5: Reflection Framework (Object Mapper)",
+                        "description": "Create an object mapping framework using reflection to convert between objects.",
+                        "skeleton": "import java.lang.reflect.*;\nimport java.util.*;\n\nclass ObjectMapper {\n  // TODO: Add method to map from one object to another using reflection\n  // TODO: Handle different field types and nested objects\n  // TODO: Add method to create object from Map<String, Object>\n}",
+                        "requirements": {
+                            "Must use reflection": "/getDeclaredFields|Field\\.|Method\\./",
+                            "Must handle field access": "/setAccessible\\(true\\)/",
+                            "Must map objects": "/map.*Object|Object.*map/"
+                        },
+                        "hint": "💡 Hint: Reflection allows runtime inspection and manipulation of objects. Use Field and Method classes for dynamic access."
+                    },
+                    {
+                        "title": "Level 5: Annotation-Based Validation (Custom Validator)",
+                        "description": "Create a validation framework using custom annotations and reflection.",
+                        "skeleton": "@interface NotNull {\n}\n\n@interface Size {\n  int min() default 0;\n  int max() default Integer.MAX_VALUE;\n}\n\nclass ValidationFramework {\n  // TODO: Add validate method that processes annotations\n  // TODO: Return validation results with error messages\n}",
+                        "requirements": {
+                            "Must process annotations": "/getAnnotation\\(|isAnnotationPresent\\(/",
+                            "Must validate NotNull": "/NotNull.*null|null.*NotNull/",
+                            "Must validate Size": "/Size.*length|length.*Size/"
+                        },
+                        "hint": "💡 Hint: Annotations provide metadata for validation rules. Use reflection to check field values against annotation constraints."
+                    }
+                ]
+            }
+        ]
+    }
+}

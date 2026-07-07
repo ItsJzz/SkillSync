@@ -1,0 +1,154 @@
+{
+  "topics": {
+    "introduction": {
+      "id": 13,
+      "title": "Introduction to OOP Concepts",
+      "summary": "Object-Oriented Programming (OOP) is a programming paradigm built around the concept of 'objects' that combine data and behavior. It helps developers design modular, reusable, and scalable software systems.",
+      "intro": [
+        {
+          "section": "What is OOP?",
+          "content": "OOP structures programs into objects. Each object represents a real-world entity (like a car or a student) with its own properties (data) and behaviors (methods). This makes code more intuitive and easier to map to real-world problems."
+        },
+        {
+          "section": "Why OOP?",
+          "content": "Unlike procedural programming, OOP encourages reusability, modularity, and abstraction. It reduces duplication and simplifies collaboration in large projects."
+        },
+        {
+          "section": "Key Concepts",
+          "content": "The four main principles of OOP are:\n1. **Encapsulation** – bundling data and methods.\n2. **Inheritance** – reusing code by deriving new classes.\n3. **Polymorphism** – one interface, many implementations.\n4. **Abstraction** – hiding unnecessary details while exposing essential features."
+        },
+        {
+          "section": "Real-World Analogy",
+          "content": "Think of a smartphone: it has hardware (data) and apps (behavior). You don’t need to know how the circuit board works (abstraction), you just use the apps (methods)."
+        }
+      ]
+    },
+    "classes_objects": {
+      "id": 14,
+      "title": "Classes and Objects",
+      "summary": "Classes define the blueprint for creating objects. Objects are the actual instances that hold real data and perform actions. This is the foundation of all OOP concepts.",
+      "intro": [
+        {
+          "section": "Definition",
+          "content": "A class is like a blueprint or recipe. It defines the attributes (fields) and behaviors (methods) that objects will have. An object is an instance of that class with specific values assigned."
+        },
+        {
+          "section": "Properties and Behaviors",
+          "content": "Properties describe the characteristics of an object (e.g., brand, color, size). Behaviors describe what the object can do (e.g., drive, brake, accelerate)."
+        },
+        {
+          "section": "Example",
+          "content": "Class: **Car** → has fields like brand, year, and methods like drive().\nObject: **myCar** → a 'Red Toyota 2022' with the ability to drive and stop."
+        },
+        {
+          "section": "Why Important?",
+          "content": "Classes and objects allow you to model real-world systems in software. This makes programs easier to design, extend, and maintain."
+        }
+      ]
+    },
+    "encapsulation": {
+      "id": 15,
+      "title": "Encapsulation",
+      "summary": "Encapsulation hides the internal state of an object and forces all interactions through controlled methods, making code secure, robust, and easier to maintain.",
+      "intro": [
+        {
+          "section": "Definition",
+          "content": "Encapsulation means wrapping the data (fields) and methods (functions) that operate on the data into a single unit (class). Access to the internal state is restricted using access modifiers (private, protected, public)."
+        },
+        {
+          "section": "Why use it?",
+          "content": "It prevents unauthorized access, avoids accidental modification of important data, and ensures controlled interactions with objects."
+        },
+        {
+          "section": "Example",
+          "content": "A `BankAccount` class keeps its balance field private. You cannot change balance directly; instead, you use methods like deposit() or withdraw()."
+        },
+        {
+          "section": "Real-World Analogy",
+          "content": "Think of a vending machine: you can’t directly access the drinks inside; you must press buttons (methods) to get what you want. The internal system is hidden (encapsulated)."
+        }
+      ]
+    },
+    "inheritance": {
+      "id": 16,
+      "title": "Inheritance",
+      "summary": "Inheritance allows one class (child) to reuse the properties and methods of another class (parent), supporting code reusability and logical hierarchies.",
+      "intro": [
+        {
+          "section": "Definition",
+          "content": "Inheritance lets one class (called the child or subclass) acquire fields and methods of another class (called the parent or superclass)."
+        },
+        {
+          "section": "Why use it?",
+          "content": "It reduces code duplication, enables code reuse, and creates a natural hierarchy of related classes."
+        },
+        {
+          "section": "Example",
+          "content": "A `Car` class can inherit from a `Vehicle` class. The Car will automatically get fields like speed and methods like move(), while also adding its own specifics like playMusic()."
+        },
+        {
+          "section": "Real-World Analogy",
+          "content": "A 'Dog' is a type of 'Animal'. All dogs inherit basic features of animals (eat, breathe, move), but they also have their unique behaviors (bark)."
+        }
+      ]
+    },
+    "polymorphism": {
+      "id": 17,
+      "title": "Polymorphism",
+      "summary": "Polymorphism means 'many forms'. It allows the same method or interface to perform differently depending on the object, increasing flexibility and extensibility in code.",
+      "intro": [
+        {
+          "section": "Definition",
+          "content": "Polymorphism enables methods to have the same name but behave differently depending on the object calling them."
+        },
+        {
+          "section": "Types of Polymorphism",
+          "content": "1. **Compile-time (Overloading):** Same method name but different parameter lists.\n2. **Runtime (Overriding):** A subclass provides a specific implementation of a method already defined in its parent."
+        },
+        {
+          "section": "Example",
+          "content": "A method `sound()` behaves differently in Dog (barks), Cat (meows), and Bird (chirps)."
+        },
+        {
+          "section": "Why Important?",
+          "content": "Polymorphism allows code to be flexible, extensible, and easier to manage when adding new object types."
+        },
+        {
+          "section": "Real-World Analogy",
+          "content": "The action 'speak' has many forms: a human speaks words, a dog barks, and a cat meows. Same action name, different behaviors."
+        }
+      ]
+    },
+    "css_basics": {
+      "id": 30,
+      "title": "CSS Basics",
+      "summary": "CSS (Cascading Style Sheets) is the language used to style and layout web pages. It controls the visual presentation of HTML elements, including colors, fonts, spacing, and positioning.",
+      "intro": [
+        {
+          "section": "What is CSS?",
+          "content": "CSS stands for Cascading Style Sheets. It's a stylesheet language that describes how HTML elements should be displayed on screen, in print, or in other media. CSS separates content (HTML) from presentation (styling)."
+        },
+        {
+          "section": "Why CSS?",
+          "content": "CSS allows you to control the layout and appearance of multiple web pages all at once. Without CSS, web pages would look plain and unstyled. CSS makes websites visually appealing and user-friendly."
+        },
+        {
+          "section": "CSS Syntax",
+          "content": "CSS rules consist of a selector and a declaration block:\n```css\nselector {\n  property: value;\n  property: value;\n}\n```\nExample: `h1 { color: blue; font-size: 24px; }`"
+        },
+        {
+          "section": "Types of Selectors",
+          "content": "1. **Element Selector** – targets HTML tags (e.g., `p`, `h1`)\n2. **Class Selector** – targets elements with specific class (e.g., `.highlight`)\n3. **ID Selector** – targets element with specific ID (e.g., `#main-title`)\n4. **Universal Selector** – targets all elements (e.g., `*`)"
+        },
+        {
+          "section": "Common Properties",
+          "content": "• **Color & Typography:** color, font-size, font-family\n• **Layout:** margin, padding, border, width, height\n• **Background:** background-color, background-image\n• **Text:** text-align, text-decoration, line-height"
+        },
+        {
+          "section": "Real-World Analogy",
+          "content": "Think of HTML as the structure of a house (walls, rooms, doors) and CSS as the interior design (paint colors, furniture, decorations). CSS makes the house beautiful and functional."
+        }
+      ]
+    }
+  }
+}

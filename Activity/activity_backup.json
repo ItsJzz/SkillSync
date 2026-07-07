@@ -1,0 +1,798 @@
+{
+    "13": {
+        "topic_id": 13,
+        "name": "Introduction to OOP",
+        "instructions": [
+            {
+                "level": 1,
+                "variants": [
+                    {
+                        "title": "Level 1: What is OOP? (Student Class)",
+                        "description": "Complete the definition of a simple Student class.",
+                        "skeleton": "class Student {\n  // TODO: Add name and age fields\n}",
+                        "requirements": {
+                            "Must declare name field": "/String\\s+name/",
+                            "Must declare age field": "/int\\s+age/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `String name;` and `int age;`"
+                    },
+                    {
+                        "title": "Level 1: What is OOP? (Car Class)",
+                        "description": "Complete the definition of a simple Car class.",
+                        "skeleton": "class Car {\n  // TODO: Add brand and year fields\n}",
+                        "requirements": {
+                            "Must declare brand field": "/String\\s+brand/",
+                            "Must declare year field": "/int\\s+year/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `String brand;` and `int year;`"
+                    },
+                    {
+                        "title": "Level 1: What is OOP? (Book Class)",
+                        "description": "Complete the definition of a simple Book class.",
+                        "skeleton": "class Book {\r\n  // TODO: Add title and author fields\r\n}",
+                        "requirements": {
+                            "Must declare title field": "/String\\s+title/",
+                            "Must declare author field": "/String\\s+author/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use String title; and String author;"
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "variants": [
+                    {
+                        "title": "Level 2: Creating Objects (Student)",
+                        "description": "Create an object from the Student class.",
+                        "skeleton": "class Student {\n  String name;\n  int age;\n}\n\n// TODO: Create a Student object named 'student1'",
+                        "requirements": {
+                            "Must create Student object": "/Student\\s+\\w+\\s*=\\s*new\\s+Student\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `Student student1 = new Student();`"
+                    },
+                    {
+                        "title": "Level 2: Creating Objects (Car)",
+                        "description": "Create an object from the Car class.",
+                        "skeleton": "class Car {\n  String brand;\n  int year;\n}\n\n// TODO: Create a Car object named 'myCar'",
+                        "requirements": {
+                            "Must create Car object": "/Car\\s+\\w+\\s*=\\s*new\\s+Car\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `Car myCar = new Car();`"
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "variants": [
+                    {
+                        "title": "Level 3: Object Initialization (Student)",
+                        "description": "Set values for the student object.",
+                        "skeleton": "class Student {\n  String name;\n  int age;\n}\n\nStudent student1 = new Student();\n// TODO: Set student1's name to \"Alice\" and age to 20",
+                        "requirements": {
+                            "Must set name": "/student1\\.name\\s*=\\s*[\"']Alice[\"']/",
+                            "Must set age": "/student1\\.age\\s*=\\s*20/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `student1.name = \"Alice\";` and `student1.age = 20;`"
+                    },
+                    {
+                        "title": "Level 3: Object Initialization (Car)",
+                        "description": "Set values for the car object.",
+                        "skeleton": "class Car {\n  String brand;\n  int year;\n}\n\nCar myCar = new Car();\n// TODO: Set myCar's brand to \"Toyota\" and year to 2023",
+                        "requirements": {
+                            "Must set brand": "/myCar\\.brand\\s*=\\s*[\"']Toyota[\"']/",
+                            "Must set year": "/myCar\\.year\\s*=\\s*2023/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `myCar.brand = \"Toyota\";` and `myCar.year = 2023;`"
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "variants": [
+                    {
+                        "title": "Level 4: Multiple Objects (Students)",
+                        "description": "Create and initialize multiple Student objects.",
+                        "skeleton": "class Student {\n  String name;\n  int age;\n}\n\n// TODO: Create two Student objects with different names and ages",
+                        "requirements": {
+                            "Must create first student": "/Student\\s+\\w+\\s*=\\s*new\\s+Student\\s*\\(\\s*\\)/",
+                            "Must create second student": "/Student\\s+\\w+\\s*=\\s*new\\s+Student\\s*\\(\\s*\\).*Student\\s+\\w+\\s*=\\s*new\\s+Student\\s*\\(\\s*\\)/s"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Create two Student objects and set their properties"
+                    },
+                    {
+                        "title": "Level 4: Multiple Objects (Cars)",
+                        "description": "Create and initialize multiple Car objects.",
+                        "skeleton": "class Car {\n  String brand;\n  int year;\n}\n\n// TODO: Create two Car objects with different brands and years",
+                        "requirements": {
+                            "Must create first car": "/Car\\s+\\w+\\s*=\\s*new\\s+Car\\s*\\(\\s*\\)/",
+                            "Must create second car": "/Car\\s+\\w+\\s*=\\s*new\\s+Car\\s*\\(\\s*\\).*Car\\s+\\w+\\s*=\\s*new\\s+Car\\s*\\(\\s*\\)/s"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Create two Car objects and set their properties"
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "variants": [
+                    {
+                        "title": "Level 5: Class Methods (Student)",
+                        "description": "Add a method to display student information.",
+                        "skeleton": "class Student {\n  String name;\n  int age;\n  \n  // TODO: Add a method called 'displayInfo' that prints name and age\n}",
+                        "requirements": {
+                            "Must declare displayInfo method": "/void\\s+displayInfo\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `void displayInfo() { System.out.println(name + \" is \" + age + \" years old\"); }`"
+                    },
+                    {
+                        "title": "Level 5: Class Methods (Car)",
+                        "description": "Add a method to display car information.",
+                        "skeleton": "class Car {\n  String brand;\n  int year;\n  \n  // TODO: Add a method called 'showDetails' that prints brand and year\n}",
+                        "requirements": {
+                            "Must declare showDetails method": "/void\\s+showDetails\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `void showDetails() { System.out.println(brand + \" \" + year); }`"
+                    }
+                ]
+            }
+        ]
+    },
+    "14": {
+        "topic_id": 14,
+        "name": "Classes & Objects",
+        "instructions": [
+            {
+                "level": 1,
+                "variants": [
+                    {
+                        "title": "Level 1: Basic Object (Person)",
+                        "description": "Complete the code to set obj1's age.",
+                        "skeleton": "class Person {\n  int age;\n  String name;\n}\n\nPerson obj1 = new Person();\n// TODO: set the age of obj1 here\n",
+                        "requirements": {
+                            "Must set obj1.age": "/obj1\\.age\\s*=/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `obj1.age = 20;`"
+                    },
+                    {
+                        "title": "Level 1: Basic Object (Employee)",
+                        "description": "Complete the code to set emp1's salary.",
+                        "skeleton": "class Employee {\n  double salary;\n  String department;\n}\n\nEmployee emp1 = new Employee();\n// TODO: set the salary of emp1 here\n",
+                        "requirements": {
+                            "Must set emp1.salary": "/emp1\\.salary\\s*=/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `emp1.salary = 50000;`"
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "variants": [
+                    {
+                        "title": "Level 2: Multiple Objects (Person)",
+                        "description": "Create obj2 and set its name.",
+                        "skeleton": "class Person {\n  int age;\n  String name;\n}\n\nPerson obj1 = new Person();\nobj1.name = \"Alice\";\n\nPerson obj2 = new Person();\n// TODO: set the name of obj2\n",
+                        "requirements": {
+                            "Must create obj2": "/Person\\s+obj2\\s*=/",
+                            "Must set obj2.name": "/obj2\\.name\\s*=/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Follow how obj1 was created and add a name for obj2."
+                    },
+                    {
+                        "title": "Level 2: Multiple Objects (Employee)",
+                        "description": "Create emp2 and set its department.",
+                        "skeleton": "class Employee {\n  double salary;\n  String department;\n}\n\nEmployee emp1 = new Employee();\nemp1.department = \"IT\";\n\nEmployee emp2 = new Employee();\n// TODO: set the department of emp2\n",
+                        "requirements": {
+                            "Must create emp2": "/Employee\\s+emp2\\s*=/",
+                            "Must set emp2.department": "/emp2\\.department\\s*=/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Follow how emp1 was created and add a department for emp2."
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "variants": [
+                    {
+                        "title": "Level 3: New Field (Person)",
+                        "description": "Add an address field and assign it to obj1.",
+                        "skeleton": "class Person {\n  int age;\n  String name;\n  // TODO: add new field here\n}\n\nPerson obj1 = new Person();\nobj1.name = \"Charlie\";\n// TODO: set obj1's address\n",
+                        "requirements": {
+                            "Must declare address": "/String\\s+address/",
+                            "Must set obj1.address": "/obj1\\.address\\s*=/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Add `String address;` in the class."
+                    },
+                    {
+                        "title": "Level 3: New Field (Employee)",
+                        "description": "Add an id field and assign it to emp1.",
+                        "skeleton": "class Employee {\n  double salary;\n  String department;\n  // TODO: add new field here\n}\n\nEmployee emp1 = new Employee();\nemp1.department = \"HR\";\n// TODO: set emp1's id\n",
+                        "requirements": {
+                            "Must declare id": "/int\\s+id/",
+                            "Must set emp1.id": "/emp1\\.id\\s*=/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Add `int id;` in the class."
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "variants": [
+                    {
+                        "title": "Level 4: Relationships (Person)",
+                        "description": "Make obj1 reference obj2 as a friend.",
+                        "skeleton": "class Person {\n  int age;\n  String name;\n  // TODO: add Person friend\n}\n\nPerson obj1 = new Person();\nPerson obj2 = new Person();\nobj2.name = \"David\";\n// TODO: link obj1.friend = obj2\n",
+                        "requirements": {
+                            "Must declare friend field": "/Person\\s+friend/",
+                            "Must set obj1.friend = obj2": "/obj1\\.friend\\s*=\\s*obj2/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Add `Person friend;` in the class, then connect obj1 to obj2."
+                    },
+                    {
+                        "title": "Level 4: Relationships (Employee)",
+                        "description": "Make emp1 reference emp2 as a manager.",
+                        "skeleton": "class Employee {\n  double salary;\n  String department;\n  // TODO: add Employee manager\n}\n\nEmployee emp1 = new Employee();\nEmployee emp2 = new Employee();\nemp2.department = \"Management\";\n// TODO: link emp1.manager = emp2\n",
+                        "requirements": {
+                            "Must declare manager field": "/Employee\\s+manager/",
+                            "Must set emp1.manager = emp2": "/emp1\\.manager\\s*=\\s*emp2/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Add `Employee manager;` in the class, then connect emp1 to emp2."
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "variants": [
+                    {
+                        "title": "Level 5: Challenge (Person)",
+                        "description": "Fill in details for two persons and connect them as friends.",
+                        "skeleton": "class Person {\n  int age;\n  String name;\n  String address;\n  Person friend;\n}\n\nPerson obj1 = new Person();\n// TODO: set name, age, address for obj1\n\nPerson obj2 = new Person();\n// TODO: set name, age, address for obj2\n\n// TODO: connect obj1.friend to obj2\n",
+                        "requirements": {
+                            "Set obj1 fields": "/obj1\\.name\\s*=/",
+                            "Set obj1 age": "/obj1\\.age\\s*=/",
+                            "Set obj1 address": "/obj1\\.address\\s*=/",
+                            "Set obj2 fields": "/obj2\\.name\\s*=/",
+                            "Friendship relation": "/obj1\\.friend\\s*=\\s*obj2/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Combine everything \u2014 fill obj1 and obj2, then connect them."
+                    },
+                    {
+                        "title": "Level 5: Challenge (Employee)",
+                        "description": "Fill in details for two employees and connect them as manager-employee.",
+                        "skeleton": "class Employee {\n  double salary;\n  String department;\n  int id;\n  Employee manager;\n}\n\nEmployee emp1 = new Employee();\n// TODO: set salary, department, id for emp1\n\nEmployee emp2 = new Employee();\n// TODO: set salary, department, id for emp2\n\n// TODO: connect emp1.manager to emp2\n",
+                        "requirements": {
+                            "Set emp1 salary": "/emp1\\.salary\\s*=/",
+                            "Set emp1 department": "/emp1\\.department\\s*=/",
+                            "Set emp1 id": "/emp1\\.id\\s*=/",
+                            "Set emp2 fields": "/emp2\\.salary\\s*=/",
+                            "Manager relation": "/emp1\\.manager\\s*=\\s*emp2/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Fill both employees' details, then connect emp1 to emp2 as manager."
+                    }
+                ]
+            }
+        ]
+    },
+    "30": {
+        "topic_id": 30,
+        "name": "CSS Basics",
+        "instructions": [
+            {
+                "level": 1,
+                "variants": [
+                    {
+                        "title": "Level 1: Basic CSS Selector (Paragraph)",
+                        "description": "Style the paragraph text to be blue using CSS.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n/* TODO: Add CSS rule to make paragraph text blue */\n</style>\n</head>\n<body>\n<p>This text should be blue.</p>\n</body>\n</html>",
+                        "requirements": {
+                            "Must style paragraph": "/p\\s*\\{[^}]*color\\s*:\\s*blue/i"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `p { color: blue; }`"
+                    },
+                    {
+                        "title": "Level 1: Basic CSS Selector (Heading)",
+                        "description": "Style the heading text to be red using CSS.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n/* TODO: Add CSS rule to make heading text red */\n</style>\n</head>\n<body>\n<h1>This heading should be red.</h1>\n</body>\n</html>",
+                        "requirements": {
+                            "Must style heading": "/h1\\s*\\{[^}]*color\\s*:\\s*red/i"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `h1 { color: red; }`"
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "variants": [
+                    {
+                        "title": "Level 2: Multiple Selectors (H1 and P)",
+                        "description": "Style both h1 and p elements with different colors.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nh1 {\n  color: red;\n}\n/* TODO: Add CSS rule to make paragraph green */\n</style>\n</head>\n<body>\n<h1>This heading is red</h1>\n<p>This paragraph should be green.</p>\n</body>\n</html>",
+                        "requirements": {
+                            "Must style paragraph green": "/p\\s*\\{[^}]*color\\s*:\\s*green/i"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Add `p { color: green; }` rule."
+                    },
+                    {
+                        "title": "Level 2: Multiple Selectors (H2 and Span)",
+                        "description": "Style both h2 and span elements with different colors.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nh2 {\n  color: purple;\n}\n/* TODO: Add CSS rule to make span orange */\n</style>\n</head>\n<body>\n<h2>This heading is purple</h2>\n<p>This paragraph has <span>orange text</span> inside.</p>\n</body>\n</html>",
+                        "requirements": {
+                            "Must style span orange": "/span\\s*\\{[^}]*color\\s*:\\s*orange/i"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Add `span { color: orange; }` rule."
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "variants": [
+                    {
+                        "title": "Level 3: Class Selector (Highlight)",
+                        "description": "Create a CSS class called 'highlight' that makes text yellow background.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n/* TODO: Create .highlight class with yellow background */\n</style>\n</head>\n<body>\n<p class=\"highlight\">This text should have yellow background.</p>\n<p>This text is normal.</p>\n</body>\n</html>",
+                        "requirements": {
+                            "Must create highlight class": "/\\.highlight\\s*\\{/",
+                            "Must set background yellow": "/background(-color)?\\s*:\\s*yellow/i"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `.highlight { background-color: yellow; }`"
+                    },
+                    {
+                        "title": "Level 3: Class Selector (Important)",
+                        "description": "Create a CSS class called 'important' that makes text bold and red.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n/* TODO: Create .important class with red color and bold font */\n</style>\n</head>\n<body>\n<p class=\"important\">This text should be red and bold.</p>\n<p>This text is normal.</p>\n</body>\n</html>",
+                        "requirements": {
+                            "Must create important class": "/\\.important\\s*\\{/",
+                            "Must set color red": "/color\\s*:\\s*red/i",
+                            "Must set font bold": "/font-weight\\s*:\\s*bold/i"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `.important { color: red; font-weight: bold; }`"
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "variants": [
+                    {
+                        "title": "Level 4: ID Selector (Main Title)",
+                        "description": "Style the element with ID 'main-title' to be centered and large.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n/* TODO: Style #main-title with font-size: 24px and text-align: center */\n</style>\n</head>\n<body>\n<h1 id=\"main-title\">Main Title</h1>\n<p>Regular paragraph text.</p>\n</body>\n</html>",
+                        "requirements": {
+                            "Must use ID selector": "/#main-title\\s*\\{/",
+                            "Must set font size": "/font-size\\s*:\\s*24px/",
+                            "Must center text": "/text-align\\s*:\\s*center/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `#main-title { font-size: 24px; text-align: center; }`"
+                    },
+                    {
+                        "title": "Level 4: ID Selector (Header)",
+                        "description": "Style the element with ID 'header' to have blue background and white text.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n/* TODO: Style #header with blue background and white text */\n</style>\n</head>\n<body>\n<div id=\"header\">This is the header</div>\n<p>Regular paragraph text.</p>\n</body>\n</html>",
+                        "requirements": {
+                            "Must use ID selector": "/#header\\s*\\{/",
+                            "Must set background blue": "/background(-color)?\\s*:\\s*blue/i",
+                            "Must set text white": "/color\\s*:\\s*white/i"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Use `#header { background-color: blue; color: white; }`"
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "variants": [
+                    {
+                        "title": "Level 5: Combined Styling Challenge (Card)",
+                        "description": "Apply multiple CSS properties to create a styled card layout.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.card {\n  /* TODO: Add border, padding, margin, and background color */\n}\n\n.card h2 {\n  /* TODO: Style the heading inside card */\n}\n</style>\n</head>\n<body>\n<div class=\"card\">\n  <h2>Card Title</h2>\n  <p>This is a card with styled content.</p>\n</div>\n</body>\n</html>",
+                        "requirements": {
+                            "Must add border to card": "/\\.card\\s*\\{[^}]*border/i",
+                            "Must add padding": "/padding\\s*:/",
+                            "Must add background": "/background(-color)?\\s*:/",
+                            "Must style card heading": "/\\.card\\s+h2\\s*\\{/"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Add border, padding, background-color to .card and style .card h2"
+                    },
+                    {
+                        "title": "Level 5: Combined Styling Challenge (Button)",
+                        "description": "Create a styled button with hover effects.",
+                        "skeleton": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.btn {\n  /* TODO: Add padding, background, border, and text styling */\n}\n\n.btn:hover {\n  /* TODO: Add hover effect styling */\n}\n</style>\n</head>\n<body>\n<button class=\"btn\">Click Me</button>\n<p>Hover over the button to see the effect.</p>\n</body>\n</html>",
+                        "requirements": {
+                            "Must style btn class": "/\\.btn\\s*\\{[^}]*padding/i",
+                            "Must add background": "/background(-color)?\\s*:/",
+                            "Must add hover effect": "/\\.btn:hover\\s*\\{/",
+                            "Must change hover background": "/\\.btn:hover\\s*\\{[^}]*background(-color)?\\s*:/i"
+                        },
+                        "hint": "\ud83d\udca1 Hint: Style .btn with padding and background, then add .btn:hover with different background"
+                    }
+                ]
+            }
+        ]
+    },
+    "15": {
+        "topic_id": 15,
+        "name": "Inheritance",
+        "instructions": [
+            {
+                "level": 1,
+                "variants": [
+                    {
+                        "title": "Level 1: Basic Inheritance (Animal → Dog)",
+                        "description": "Create a Dog class that inherits from Animal.",
+                        "skeleton": "class Animal {\n  String name;\n  int age;\n}\n\n// TODO: Create Dog class that extends Animal\nclass Dog {\n}",
+                        "requirements": {
+                            "Must extend Animal": "/class\\s+Dog\\s+extends\\s+Animal/"
+                        },
+                        "hint": "🔧 Hint: Use `class Dog extends Animal {}`"
+                    },
+                    {
+                        "title": "Level 1: Basic Inheritance (Vehicle → Car)",
+                        "description": "Create a Car class that inherits from Vehicle.",
+                        "skeleton": "class Vehicle {\n  String brand;\n  int year;\n}\n\n// TODO: Create Car class that extends Vehicle\nclass Car {\n}",
+                        "requirements": {
+                            "Must extend Vehicle": "/class\\s+Car\\s+extends\\s+Vehicle/"
+                        },
+                        "hint": "🔧 Hint: Use `class Car extends Vehicle {}`"
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "variants": [
+                    {
+                        "title": "Level 2: Add Child Properties (Dog)",
+                        "description": "Add specific properties to the Dog class.",
+                        "skeleton": "class Animal {\n  String name;\n  int age;\n}\n\nclass Dog extends Animal {\n  // TODO: Add breed field\n}",
+                        "requirements": {
+                            "Must declare breed field": "/String\\s+breed/"
+                        },
+                        "hint": "🔧 Hint: Add `String breed;` inside Dog class"
+                    },
+                    {
+                        "title": "Level 2: Add Child Properties (Car)",
+                        "description": "Add specific properties to the Car class.",
+                        "skeleton": "class Vehicle {\n  String brand;\n  int year;\n}\n\nclass Car extends Vehicle {\n  // TODO: Add doors field\n}",
+                        "requirements": {
+                            "Must declare doors field": "/int\\s+doors/"
+                        },
+                        "hint": "🔧 Hint: Add `int doors;` inside Car class"
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "variants": [
+                    {
+                        "title": "Level 3: Using Inherited Properties (Dog)",
+                        "description": "Create a Dog object and set both inherited and own properties.",
+                        "skeleton": "class Animal {\n  String name;\n  int age;\n}\n\nclass Dog extends Animal {\n  String breed;\n}\n\nDog myDog = new Dog();\n// TODO: Set name, age, and breed for myDog",
+                        "requirements": {
+                            "Must set inherited name": "/myDog\\.name\\s*=/",
+                            "Must set inherited age": "/myDog\\.age\\s*=/",
+                            "Must set own breed": "/myDog\\.breed\\s*=/"
+                        },
+                        "hint": "🔧 Hint: Use myDog.name, myDog.age, and myDog.breed to set values"
+                    },
+                    {
+                        "title": "Level 3: Using Inherited Properties (Car)",
+                        "description": "Create a Car object and set both inherited and own properties.",
+                        "skeleton": "class Vehicle {\n  String brand;\n  int year;\n}\n\nclass Car extends Vehicle {\n  int doors;\n}\n\nCar myCar = new Car();\n// TODO: Set brand, year, and doors for myCar",
+                        "requirements": {
+                            "Must set inherited brand": "/myCar\\.brand\\s*=/",
+                            "Must set inherited year": "/myCar\\.year\\s*=/",
+                            "Must set own doors": "/myCar\\.doors\\s*=/"
+                        },
+                        "hint": "🔧 Hint: Use myCar.brand, myCar.year, and myCar.doors to set values"
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "variants": [
+                    {
+                        "title": "Level 4: Method Inheritance (Animal → Dog)",
+                        "description": "Add a method to Animal and use it in Dog.",
+                        "skeleton": "class Animal {\n  String name;\n  int age;\n  \n  // TODO: Add makeSound method\n}\n\nclass Dog extends Animal {\n  String breed;\n}\n\nDog myDog = new Dog();\nmyDog.name = \"Buddy\";\n// TODO: Call makeSound method on myDog",
+                        "requirements": {
+                            "Must declare makeSound method": "/void\\s+makeSound\\s*\\(\\s*\\)/",
+                            "Must call makeSound": "/myDog\\.makeSound\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "🔧 Hint: Add `void makeSound() { System.out.println(\"Animal sound\"); }` and call `myDog.makeSound();`"
+                    },
+                    {
+                        "title": "Level 4: Method Inheritance (Vehicle → Car)",
+                        "description": "Add a method to Vehicle and use it in Car.",
+                        "skeleton": "class Vehicle {\n  String brand;\n  int year;\n  \n  // TODO: Add start method\n}\n\nclass Car extends Vehicle {\n  int doors;\n}\n\nCar myCar = new Car();\nmyCar.brand = \"Toyota\";\n// TODO: Call start method on myCar",
+                        "requirements": {
+                            "Must declare start method": "/void\\s+start\\s*\\(\\s*\\)/",
+                            "Must call start": "/myCar\\.start\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "🔧 Hint: Add `void start() { System.out.println(\"Vehicle started\"); }` and call `myCar.start();`"
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "variants": [
+                    {
+                        "title": "Level 5: Method Overriding (Dog)",
+                        "description": "Override the makeSound method in Dog class.",
+                        "skeleton": "class Animal {\n  String name;\n  \n  void makeSound() {\n    System.out.println(\"Generic animal sound\");\n  }\n}\n\nclass Dog extends Animal {\n  String breed;\n  \n  // TODO: Override makeSound method to print \"Woof!\"\n}\n\nDog myDog = new Dog();\nmyDog.makeSound();",
+                        "requirements": {
+                            "Must override makeSound": "/void\\s+makeSound\\s*\\(\\s*\\)\\s*\\{[^}]*Woof/"
+                        },
+                        "hint": "🔧 Hint: Add `void makeSound() { System.out.println(\"Woof!\"); }` in Dog class"
+                    },
+                    {
+                        "title": "Level 5: Method Overriding (Car)",
+                        "description": "Override the start method in Car class.",
+                        "skeleton": "class Vehicle {\n  String brand;\n  \n  void start() {\n    System.out.println(\"Vehicle starting\");\n  }\n}\n\nclass Car extends Vehicle {\n  int doors;\n  \n  // TODO: Override start method to print \"Car engine started!\"\n}\n\nCar myCar = new Car();\nmyCar.start();",
+                        "requirements": {
+                            "Must override start": "/void\\s+start\\s*\\(\\s*\\)\\s*\\{[^}]*Car\\s+engine\\s+started/"
+                        },
+                        "hint": "🔧 Hint: Add `void start() { System.out.println(\"Car engine started!\"); }` in Car class"
+                    }
+                ]
+            }
+        ]
+    },
+    "16": {
+        "topic_id": 16,
+        "name": "Encapsulation",
+        "instructions": [
+            {
+                "level": 1,
+                "variants": [
+                    {
+                        "title": "Level 1: Private Fields (Person)",
+                        "description": "Make the name field private in Person class.",
+                        "skeleton": "class Person {\n  // TODO: Make name field private\n  String name;\n  int age;\n}",
+                        "requirements": {
+                            "Must declare private name": "/private\\s+String\\s+name/"
+                        },
+                        "hint": "🔧 Hint: Use `private String name;`"
+                    },
+                    {
+                        "title": "Level 1: Private Fields (BankAccount)",
+                        "description": "Make the balance field private in BankAccount class.",
+                        "skeleton": "class BankAccount {\n  String accountNumber;\n  // TODO: Make balance field private\n  double balance;\n}",
+                        "requirements": {
+                            "Must declare private balance": "/private\\s+double\\s+balance/"
+                        },
+                        "hint": "🔧 Hint: Use `private double balance;`"
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "variants": [
+                    {
+                        "title": "Level 2: Getter Method (Person)",
+                        "description": "Add a getter method for the private name field.",
+                        "skeleton": "class Person {\n  private String name;\n  int age;\n  \n  // TODO: Add getName() method\n}",
+                        "requirements": {
+                            "Must declare getName method": "/String\\s+getName\\s*\\(\\s*\\)/",
+                            "Must return name": "/return\\s+name/"
+                        },
+                        "hint": "🔧 Hint: Add `String getName() { return name; }`"
+                    },
+                    {
+                        "title": "Level 2: Getter Method (BankAccount)",
+                        "description": "Add a getter method for the private balance field.",
+                        "skeleton": "class BankAccount {\n  String accountNumber;\n  private double balance;\n  \n  // TODO: Add getBalance() method\n}",
+                        "requirements": {
+                            "Must declare getBalance method": "/double\\s+getBalance\\s*\\(\\s*\\)/",
+                            "Must return balance": "/return\\s+balance/"
+                        },
+                        "hint": "🔧 Hint: Add `double getBalance() { return balance; }`"
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "variants": [
+                    {
+                        "title": "Level 3: Setter Method (Person)",
+                        "description": "Add a setter method for the private name field.",
+                        "skeleton": "class Person {\n  private String name;\n  int age;\n  \n  String getName() {\n    return name;\n  }\n  \n  // TODO: Add setName(String newName) method\n}",
+                        "requirements": {
+                            "Must declare setName method": "/void\\s+setName\\s*\\(\\s*String\\s+\\w+\\s*\\)/",
+                            "Must assign to name": "/name\\s*=/"
+                        },
+                        "hint": "🔧 Hint: Add `void setName(String newName) { name = newName; }`"
+                    },
+                    {
+                        "title": "Level 3: Setter Method (BankAccount)",
+                        "description": "Add a setter method for the private balance field.",
+                        "skeleton": "class BankAccount {\n  String accountNumber;\n  private double balance;\n  \n  double getBalance() {\n    return balance;\n  }\n  \n  // TODO: Add setBalance(double newBalance) method\n}",
+                        "requirements": {
+                            "Must declare setBalance method": "/void\\s+setBalance\\s*\\(\\s*double\\s+\\w+\\s*\\)/",
+                            "Must assign to balance": "/balance\\s*=/"
+                        },
+                        "hint": "🔧 Hint: Add `void setBalance(double newBalance) { balance = newBalance; }`"
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "variants": [
+                    {
+                        "title": "Level 4: Using Getters and Setters (Person)",
+                        "description": "Use getter and setter methods to access private fields.",
+                        "skeleton": "class Person {\n  private String name;\n  private int age;\n  \n  String getName() { return name; }\n  void setName(String newName) { name = newName; }\n  int getAge() { return age; }\n  void setAge(int newAge) { age = newAge; }\n}\n\nPerson person = new Person();\n// TODO: Use setter to set name to \"John\"\n// TODO: Use getter to get and print the name",
+                        "requirements": {
+                            "Must use setName": "/person\\.setName\\s*\\(/",
+                            "Must use getName": "/person\\.getName\\s*\\(/"
+                        },
+                        "hint": "🔧 Hint: Use `person.setName(\"John\");` and `System.out.println(person.getName());`"
+                    },
+                    {
+                        "title": "Level 4: Using Getters and Setters (BankAccount)",
+                        "description": "Use getter and setter methods to access private balance.",
+                        "skeleton": "class BankAccount {\n  String accountNumber;\n  private double balance;\n  \n  double getBalance() { return balance; }\n  void setBalance(double newBalance) { balance = newBalance; }\n}\n\nBankAccount account = new BankAccount();\n// TODO: Use setter to set balance to 1000.0\n// TODO: Use getter to get and print the balance",
+                        "requirements": {
+                            "Must use setBalance": "/account\\.setBalance\\s*\\(/",
+                            "Must use getBalance": "/account\\.getBalance\\s*\\(/"
+                        },
+                        "hint": "🔧 Hint: Use `account.setBalance(1000.0);` and `System.out.println(account.getBalance());`"
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "variants": [
+                    {
+                        "title": "Level 5: Validation in Setters (Person)",
+                        "description": "Add validation in setter to ensure age is not negative.",
+                        "skeleton": "class Person {\n  private String name;\n  private int age;\n  \n  String getName() { return name; }\n  void setName(String newName) { name = newName; }\n  int getAge() { return age; }\n  \n  void setAge(int newAge) {\n    // TODO: Add validation - only set age if newAge >= 0\n  }\n}\n\nPerson person = new Person();\nperson.setAge(-5); // Should not set negative age\nperson.setAge(25); // Should set valid age",
+                        "requirements": {
+                            "Must check if newAge >= 0": "/if\\s*\\(\\s*newAge\\s*>=\\s*0/",
+                            "Must assign age inside condition": "/age\\s*=\\s*newAge/"
+                        },
+                        "hint": "🔧 Hint: Add `if (newAge >= 0) { age = newAge; }`"
+                    },
+                    {
+                        "title": "Level 5: Validation in Setters (BankAccount)",
+                        "description": "Add validation in setter to ensure balance is not negative.",
+                        "skeleton": "class BankAccount {\n  String accountNumber;\n  private double balance;\n  \n  double getBalance() { return balance; }\n  \n  void setBalance(double newBalance) {\n    // TODO: Add validation - only set balance if newBalance >= 0\n  }\n}\n\nBankAccount account = new BankAccount();\naccount.setBalance(-100.0); // Should not set negative balance\naccount.setBalance(1000.0); // Should set valid balance",
+                        "requirements": {
+                            "Must check if newBalance >= 0": "/if\\s*\\(\\s*newBalance\\s*>=\\s*0/",
+                            "Must assign balance inside condition": "/balance\\s*=\\s*newBalance/"
+                        },
+                        "hint": "🔧 Hint: Add `if (newBalance >= 0) { balance = newBalance; }`"
+                    }
+                ]
+            }
+        ]
+    },
+    "17": {
+        "topic_id": 17,
+        "name": "Polymorphism",
+        "instructions": [
+            {
+                "level": 1,
+                "variants": [
+                    {
+                        "title": "Level 1: Base Method (Animal)",
+                        "description": "Create a base method in Animal class that can be overridden.",
+                        "skeleton": "class Animal {\n  String name;\n  \n  // TODO: Add makeSound() method that prints \"Some generic animal sound\"\n}",
+                        "requirements": {
+                            "Must declare makeSound method": "/void\\s+makeSound\\s*\\(\\s*\\)/",
+                            "Must print generic sound": "/System\\.out\\.println.*generic.*animal.*sound/i"
+                        },
+                        "hint": "🔧 Hint: Add `void makeSound() { System.out.println(\"Some generic animal sound\"); }`"
+                    },
+                    {
+                        "title": "Level 1: Base Method (Shape)",
+                        "description": "Create a base method in Shape class that can be overridden.",
+                        "skeleton": "class Shape {\n  String color;\n  \n  // TODO: Add draw() method that prints \"Drawing a generic shape\"\n}",
+                        "requirements": {
+                            "Must declare draw method": "/void\\s+draw\\s*\\(\\s*\\)/",
+                            "Must print generic shape": "/System\\.out\\.println.*generic.*shape/i"
+                        },
+                        "hint": "🔧 Hint: Add `void draw() { System.out.println(\"Drawing a generic shape\"); }`"
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "variants": [
+                    {
+                        "title": "Level 2: Override Method (Dog)",
+                        "description": "Override the makeSound method in Dog class.",
+                        "skeleton": "class Animal {\n  String name;\n  \n  void makeSound() {\n    System.out.println(\"Some generic animal sound\");\n  }\n}\n\nclass Dog extends Animal {\n  // TODO: Override makeSound() to print \"Woof! Woof!\"\n}",
+                        "requirements": {
+                            "Must override makeSound": "/void\\s+makeSound\\s*\\(\\s*\\)/",
+                            "Must print Woof": "/System\\.out\\.println.*Woof/i"
+                        },
+                        "hint": "🔧 Hint: Add `void makeSound() { System.out.println(\"Woof! Woof!\"); }`"
+                    },
+                    {
+                        "title": "Level 2: Override Method (Circle)",
+                        "description": "Override the draw method in Circle class.",
+                        "skeleton": "class Shape {\n  String color;\n  \n  void draw() {\n    System.out.println(\"Drawing a generic shape\");\n  }\n}\n\nclass Circle extends Shape {\n  // TODO: Override draw() to print \"Drawing a circle\"\n}",
+                        "requirements": {
+                            "Must override draw": "/void\\s+draw\\s*\\(\\s*\\)/",
+                            "Must print circle": "/System\\.out\\.println.*circle/i"
+                        },
+                        "hint": "🔧 Hint: Add `void draw() { System.out.println(\"Drawing a circle\"); }`"
+                    }
+                ]
+            },
+            {
+                "level": 3,
+                "variants": [
+                    {
+                        "title": "Level 3: Polymorphic Reference (Animal)",
+                        "description": "Use Animal reference to point to Dog object.",
+                        "skeleton": "class Animal {\n  void makeSound() {\n    System.out.println(\"Generic animal sound\");\n  }\n}\n\nclass Dog extends Animal {\n  void makeSound() {\n    System.out.println(\"Woof!\");\n  }\n}\n\n// TODO: Create Animal reference pointing to Dog object\n// TODO: Call makeSound() on the reference",
+                        "requirements": {
+                            "Must create Animal reference to Dog": "/Animal\\s+\\w+\\s*=\\s*new\\s+Dog\\s*\\(/",
+                            "Must call makeSound": "/\\.makeSound\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "🔧 Hint: Use `Animal animal = new Dog();` then `animal.makeSound();`"
+                    },
+                    {
+                        "title": "Level 3: Polymorphic Reference (Shape)",
+                        "description": "Use Shape reference to point to Circle object.",
+                        "skeleton": "class Shape {\n  void draw() {\n    System.out.println(\"Drawing generic shape\");\n  }\n}\n\nclass Circle extends Shape {\n  void draw() {\n    System.out.println(\"Drawing a circle\");\n  }\n}\n\n// TODO: Create Shape reference pointing to Circle object\n// TODO: Call draw() on the reference",
+                        "requirements": {
+                            "Must create Shape reference to Circle": "/Shape\\s+\\w+\\s*=\\s*new\\s+Circle\\s*\\(/",
+                            "Must call draw": "/\\.draw\\s*\\(\\s*\\)/"
+                        },
+                        "hint": "🔧 Hint: Use `Shape shape = new Circle();` then `shape.draw();`"
+                    }
+                ]
+            },
+            {
+                "level": 4,
+                "variants": [
+                    {
+                        "title": "Level 4: Multiple Polymorphic Objects (Animals)",
+                        "description": "Create array of Animal references with different animal types.",
+                        "skeleton": "class Animal {\n  void makeSound() { System.out.println(\"Generic sound\"); }\n}\n\nclass Dog extends Animal {\n  void makeSound() { System.out.println(\"Woof!\"); }\n}\n\nclass Cat extends Animal {\n  void makeSound() { System.out.println(\"Meow!\"); }\n}\n\n// TODO: Create Animal array with Dog and Cat objects\n// TODO: Loop through array and call makeSound() on each",
+                        "requirements": {
+                            "Must create Animal array": "/Animal\\[\\]\\s+\\w+\\s*=\\s*\\{.*new\\s+Dog.*new\\s+Cat/s",
+                            "Must loop and call makeSound": "/for.*makeSound\\s*\\(/s"
+                        },
+                        "hint": "🔧 Hint: Create `Animal[] animals = {new Dog(), new Cat()};` and loop with `animals[i].makeSound();`"
+                    },
+                    {
+                        "title": "Level 4: Multiple Polymorphic Objects (Shapes)",
+                        "description": "Create array of Shape references with different shape types.",
+                        "skeleton": "class Shape {\n  void draw() { System.out.println(\"Drawing shape\"); }\n}\n\nclass Circle extends Shape {\n  void draw() { System.out.println(\"Drawing circle\"); }\n}\n\nclass Rectangle extends Shape {\n  void draw() { System.out.println(\"Drawing rectangle\"); }\n}\n\n// TODO: Create Shape array with Circle and Rectangle objects\n// TODO: Loop through array and call draw() on each",
+                        "requirements": {
+                            "Must create Shape array": "/Shape\\[\\]\\s+\\w+\\s*=\\s*\\{.*new\\s+Circle.*new\\s+Rectangle/s",
+                            "Must loop and call draw": "/for.*draw\\s*\\(/s"
+                        },
+                        "hint": "🔧 Hint: Create `Shape[] shapes = {new Circle(), new Rectangle()};` and loop with `shapes[i].draw();`"
+                    }
+                ]
+            },
+            {
+                "level": 5,
+                "variants": [
+                    {
+                        "title": "Level 5: Method Overloading (Calculator)",
+                        "description": "Create method overloading for add method with different parameters.",
+                        "skeleton": "class Calculator {\n  // TODO: Add method: int add(int a, int b)\n  \n  // TODO: Add method: double add(double a, double b)\n  \n  // TODO: Add method: int add(int a, int b, int c)\n}\n\nCalculator calc = new Calculator();\n// Test all three add methods\nint result1 = calc.add(5, 3);\ndouble result2 = calc.add(5.5, 3.2);\nint result3 = calc.add(1, 2, 3);",
+                        "requirements": {
+                            "Must have int add(int, int)": "/int\\s+add\\s*\\(\\s*int\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/",
+                            "Must have double add(double, double)": "/double\\s+add\\s*\\(\\s*double\\s+\\w+\\s*,\\s*double\\s+\\w+\\s*\\)/",
+                            "Must have int add(int, int, int)": "/int\\s+add\\s*\\(\\s*int\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*,\\s*int\\s+\\w+\\s*\\)/"
+                        },
+                        "hint": "🔧 Hint: Create three add methods with different parameter types/counts"
+                    },
+                    {
+                        "title": "Level 5: Abstract Polymorphism (Vehicle)",
+                        "description": "Demonstrate runtime polymorphism with different vehicle types.",
+                        "skeleton": "class Vehicle {\n  void start() { System.out.println(\"Vehicle starting\"); }\n  void stop() { System.out.println(\"Vehicle stopping\"); }\n}\n\nclass Car extends Vehicle {\n  void start() { System.out.println(\"Car engine started\"); }\n}\n\nclass Motorcycle extends Vehicle {\n  void start() { System.out.println(\"Motorcycle engine started\"); }\n}\n\n// TODO: Create method that takes Vehicle parameter and calls start()\n// TODO: Test with both Car and Motorcycle objects",
+                        "requirements": {
+                            "Must create method with Vehicle parameter": "/void\\s+\\w+\\s*\\(\\s*Vehicle\\s+\\w+\\s*\\)/",
+                            "Must call start in method": "/\\w+\\.start\\s*\\(/",
+                            "Must test with Car": "/new\\s+Car\\s*\\(/",
+                            "Must test with Motorcycle": "/new\\s+Motorcycle\\s*\\(/"
+                        },
+                        "hint": "🔧 Hint: Create `void testVehicle(Vehicle v) { v.start(); }` and call with Car and Motorcycle objects"
+                    }
+                ]
+            }
+        ]
+    }
+}
