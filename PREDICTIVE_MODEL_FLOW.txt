@@ -1,0 +1,273 @@
+# 🎓 SkillSync Predictive Model - Visual Flow
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                     STUDENT TAKES PRE-TEST                          │
+│                                                                     │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐          │
+│  │ Topic 1  │  │ Topic 2  │  │ Topic 3  │  │ Topic 4  │ ...      │
+│  │ 8 Quiz   │  │ 8 Quiz   │  │ 8 Quiz   │  │ 8 Quiz   │          │
+│  │ 8 Sim    │  │ 8 Sim    │  │ 8 Sim    │  │ 8 Sim    │          │
+│  │ Hands-on │  │ Hands-on │  │ Hands-on │  │ Hands-on │          │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘          │
+└─────────────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    SYSTEM CALCULATES SCORES                         │
+│                                                                     │
+│  Overall Score: 42/150 = 28%                                       │
+│  ├─ Quiz Total: 18/40 = 45%                                        │
+│  ├─ Simulation Total: 15/40 = 38%                                  │
+│  └─ Hands-On Total: 9/50 = 18%                                     │
+│                                                                     │
+│  Per Topic Breakdown:                                               │
+│  ├─ Topic 1: Quiz 6/8, Sim 5/8, Hands-on 3/10 → 60%               │
+│  ├─ Topic 2: Quiz 4/8, Sim 3/8, Hands-on 2/10 → 35% ⚠️            │
+│  ├─ Topic 3: Quiz 5/8, Sim 4/8, Hands-on 2/10 → 45% ⚠️            │
+│  └─ Topic 4: Quiz 3/8, Sim 3/8, Hands-on 2/10 → 30% ⚠️            │
+└─────────────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                  PREDICTIVE MODEL ANALYZES                          │
+│                                                                     │
+│  ┌──────────────────────────────────────────────────────────┐     │
+│  │ CHECK 1: Overall Progress to Next Level                  │     │
+│  │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │     │
+│  │ Score: 28% < 50% ❌                                       │     │
+│  │ Result: NOT ready to advance                             │     │
+│  │ Progress: 56% of the way to next level (28/50 * 100)    │     │
+│  └──────────────────────────────────────────────────────────┘     │
+│                                                                     │
+│  ┌──────────────────────────────────────────────────────────┐     │
+│  │ CHECK 2: Identify Strong vs Weak Topics                  │     │
+│  │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │     │
+│  │ Strong (≥60%): Topic 1 (60%)                             │     │
+│  │ Weak (<60%): Topic 2 (35%), Topic 3 (45%), Topic 4 (30%) │     │
+│  └──────────────────────────────────────────────────────────┘     │
+│                                                                     │
+│  ┌──────────────────────────────────────────────────────────┐     │
+│  │ CHECK 3: Analyze Question Type Performance                │     │
+│  │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │     │
+│  │ Quiz: 45% < 60% ❌ → Trigger "Modular Learning"          │     │
+│  │ Simulation: 38% < 60% ❌ → Trigger "Visual Learning"     │     │
+│  │ Hands-On: 18% < 60% ❌ → Trigger "Coding Practice"       │     │
+│  └──────────────────────────────────────────────────────────┘     │
+│                                                                     │
+│  ┌──────────────────────────────────────────────────────────┐     │
+│  │ CHECK 4: Topic-Specific Weakness Analysis                 │     │
+│  │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │     │
+│  │ Topic 2 (35%): Quiz 50%, Sim 38%, Hands-on 20%          │     │
+│  │ └─ Weakest: Hands-on → Recommend coding practice        │     │
+│  │                                                            │     │
+│  │ Topic 3 (45%): Quiz 63%, Sim 50%, Hands-on 20%          │     │
+│  │ └─ Weakest: Hands-on → Recommend coding practice        │     │
+│  │                                                            │     │
+│  │ Topic 4 (30%): Quiz 38%, Sim 38%, Hands-on 20%          │     │
+│  │ └─ Weakest: All low → Recommend full review             │     │
+│  └──────────────────────────────────────────────────────────┘     │
+└─────────────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                  GENERATE RECOMMENDATIONS                           │
+│                                                                     │
+│  ┌─────────────────────────────────────────────────────────┐      │
+│  │ 📊 SECTION 1: Progress to Next Level                    │      │
+│  │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │      │
+│  │ [==========--------] 28% / 50% (Need 50%)              │      │
+│  │ "Keep Going! Focus on weak areas below"                │      │
+│  │                                                          │      │
+│  │ ✅ You Excel In: Topic 1                                │      │
+│  │ ⚠️ Improve: Topic 2, Topic 3, Topic 4                  │      │
+│  └─────────────────────────────────────────────────────────┘      │
+│                                                                     │
+│  ┌─────────────────────────────────────────────────────────┐      │
+│  │ 💡 SECTION 2: Learning Type Recommendations             │      │
+│  │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │      │
+│  │                                                          │      │
+│  │ 📚 Strengthen Conceptual Understanding (Quiz: 45%)      │      │
+│  │ • Focus on modular learning                             │      │
+│  │ • Review materials systematically                       │      │
+│  │ • Create concept maps                                   │      │
+│  │ [Study Materials] [Documentation] [Practice Quizzes]    │      │
+│  │                                                          │      │
+│  │ 🖥️ Improve Problem-Solving (Simulation: 38%)           │      │
+│  │ • Watch video tutorials                                 │      │
+│  │ • Practice in simulation playground                     │      │
+│  │ • Analyze sample code                                   │      │
+│  │ [Videos] [Playground] [Examples]                        │      │
+│  │                                                          │      │
+│  │ ⌨️ Build Coding Skills (Hands-On: 18%)                  │      │
+│  │ • Complete enhancement activities                       │      │
+│  │ • Daily coding practice                                 │      │
+│  │ • Start simple, increase complexity                     │      │
+│  │ [Enhancement] [Coding Practice] [Projects]              │      │
+│  └─────────────────────────────────────────────────────────┘      │
+│                                                                     │
+│  ┌─────────────────────────────────────────────────────────┐      │
+│  │ 🗺️ SECTION 3: Topic-Specific Learning Maps             │      │
+│  │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │      │
+│  │                                                          │      │
+│  │ 📌 Topic 2: Inheritance (35%)                           │      │
+│  │ Quiz: 50% | Simulation: 38% | Hands-on: 20% ⚠️         │      │
+│  │ Recommended Path:                                        │      │
+│  │ 1. Complete hands-on activities for Inheritance         │      │
+│  │ 2. Practice coding in enhancement environment           │      │
+│  │ 3. Build small projects using these concepts            │      │
+│  │ 4. Review and optimize your code                        │      │
+│  │                                                          │      │
+│  │ 📌 Topic 3: Polymorphism (45%)                          │      │
+│  │ Quiz: 63% | Simulation: 50% | Hands-on: 20% ⚠️         │      │
+│  │ Recommended Path:                                        │      │
+│  │ 1. Complete hands-on activities for Polymorphism        │      │
+│  │ 2. Practice coding in enhancement environment           │      │
+│  │ 3. Build small projects using these concepts            │      │
+│  │ 4. Review and optimize your code                        │      │
+│  │                                                          │      │
+│  │ 📌 Topic 4: Encapsulation (30%)                         │      │
+│  │ Quiz: 38% | Simulation: 38% | Hands-on: 20% ⚠️         │      │
+│  │ Recommended Path:                                        │      │
+│  │ 1. Review Encapsulation learning materials              │      │
+│  │ 2. Watch introductory videos                            │      │
+│  │ 3. Take practice quizzes                                │      │
+│  │ 4. Move to simulation exercises                         │      │
+│  └─────────────────────────────────────────────────────────┘      │
+└─────────────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                   STUDENT FOLLOWS RECOMMENDATIONS                   │
+│                                                                     │
+│  Week 1: Focus on Quiz performance                                 │
+│  ├─ Study materials for weak topics                                │
+│  ├─ Create concept maps                                            │
+│  └─ Take practice quizzes                                          │
+│                                                                     │
+│  Week 2: Improve Simulation skills                                 │
+│  ├─ Watch video tutorials                                          │
+│  ├─ Practice in simulation playground                              │
+│  └─ Analyze sample code                                            │
+│                                                                     │
+│  Week 3: Build Hands-On skills                                     │
+│  ├─ Complete enhancement activities                                │
+│  ├─ Daily coding practice                                          │
+│  └─ Build small projects                                           │
+│                                                                     │
+│  Week 4: Comprehensive review                                      │
+│  └─ RETAKE ASSESSMENT                                              │
+└─────────────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    NEW ASSESSMENT RESULTS                           │
+│                                                                     │
+│  Overall Score: 78/150 = 52% ✅ (was 28%)                          │
+│  ├─ Quiz: 65% ✅ (was 45%)                                          │
+│  ├─ Simulation: 58% ⚠️ (was 38%)                                   │
+│  └─ Hands-On: 35% ⚠️ (was 18%)                                     │
+│                                                                     │
+│  Status: READY TO ADVANCE! 🎉                                       │
+│  New Recommendations: Focus on Simulation and Hands-On              │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔑 Decision Tree
+
+```
+START
+  │
+  ├─ Is overall_score >= 50%?
+  │   ├─ YES → "Ready to Advance" ✅
+  │   │   └─ Continue with focused improvements
+  │   └─ NO → "Keep Going" 📈
+  │       └─ Show aggressive recommendations
+  │
+  ├─ For each TOPIC:
+  │   ├─ Is topic_score >= 60%?
+  │   │   ├─ YES → Add to "Strong Topics" ✅
+  │   │   └─ NO → Add to "Weak Topics" ⚠️
+  │   │       └─ Generate topic-specific learning path
+  │   │
+  │   └─ For weak topics:
+  │       ├─ Find weakest area (quiz/sim/hands-on)
+  │       ├─ Quiz weakest? → Recommend materials/reading
+  │       ├─ Simulation weakest? → Recommend videos/playground
+  │       └─ Hands-on weakest? → Recommend coding practice
+  │
+  └─ For each QUESTION TYPE:
+      ├─ Is quiz_percentage < 60%?
+      │   └─ YES → Add "Modular Learning" recommendation
+      │
+      ├─ Is simulation_percentage < 60%?
+      │   └─ YES → Add "Visual Learning" recommendation
+      │
+      └─ Is hands_on_percentage < 60%?
+          └─ YES → Add "Coding Practice" recommendation
+```
+
+---
+
+## 📈 Example Progression Timeline
+
+```
+┌─────────────┬─────────────┬─────────────┬─────────────┬─────────────┐
+│  INITIAL    │   WEEK 1    │   WEEK 2    │   WEEK 3    │   WEEK 4    │
+│  Assessment │  Study      │  Practice   │  Code       │  Retest     │
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+│ Overall:    │ Focus:      │ Focus:      │ Focus:      │ Overall:    │
+│ 28% ❌      │ Quiz (45%)  │ Sim (38%)   │ Hands (18%) │ 52% ✅      │
+│             │             │             │             │             │
+│ Quiz:       │ Materials   │ Videos      │ Activities  │ Quiz:       │
+│ 45% ⚠️      │ Concept maps│ Playground  │ Projects    │ 65% ✅      │
+│             │             │             │             │             │
+│ Simulation: │ Review      │ Practice    │ Enhancement │ Simulation: │
+│ 38% ⚠️      │ Key topics  │ Examples    │ Daily code  │ 58% ⚠️      │
+│             │             │             │             │             │
+│ Hands-On:   │ Read docs   │ Trace code  │ Build apps  │ Hands-On:   │
+│ 18% ❌      │             │             │             │ 35% ⚠️      │
+└─────────────┴─────────────┴─────────────┴─────────────┴─────────────┘
+
+Legend: ✅ Strong (>60%) | ⚠️ Moderate (40-60%) | ❌ Weak (<40%)
+```
+
+---
+
+## 🎯 Recommendation Priority Matrix
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                PERFORMANCE LEVEL                            │
+│                                                             │
+│         Quiz        Simulation     Hands-On                │
+│       Performance   Performance    Performance             │
+├─────────────────────────────────────────────────────────────┤
+│ <40%  ❌ CRITICAL  ❌ CRITICAL   ❌ CRITICAL               │
+│       Priority 1    Priority 1    Priority 1               │
+│       → Modular     → Videos      → Coding                 │
+│         Learning    → Playground  → Practice               │
+│                                                             │
+│ 40-   ⚠️ NEEDS     ⚠️ NEEDS      ⚠️ NEEDS                 │
+│ 60%     WORK        WORK          WORK                     │
+│       Priority 2    Priority 2    Priority 2               │
+│       → Review      → Examples    → Enhancement            │
+│         Materials   → Guided      → Simple                 │
+│                       Practice      Projects               │
+│                                                             │
+│ 60-   ✅ ADEQUATE  ✅ ADEQUATE   ✅ ADEQUATE               │
+│ 80%   Priority 3    Priority 3    Priority 3               │
+│       → Maintain    → Continue    → Advanced               │
+│         Level       → Refine        Projects               │
+│                       Skills                                │
+│                                                             │
+│ >80%  ⭐ STRONG    ⭐ STRONG     ⭐ STRONG                 │
+│       → Build on    → Challenge   → Complex                │
+│         Strength      Self         Projects                │
+│       → Advanced    → No guidance → Mentoring              │
+│         Topics        needed        Others                 │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+**Created:** 2025-10-02  
+**Purpose:** Visual guide to SkillSync Predictive Model flow and logic  
+**For:** Developers and educators understanding the system

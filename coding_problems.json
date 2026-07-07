@@ -1,0 +1,1544 @@
+{
+  "problems": [
+    {
+      "id": 1,
+      "title": "Sum of Two Numbers",
+      "difficulty": "Easy",
+      "description": "Write a function that takes two numbers and returns their sum.",
+      "hint": "Use the + operator to add the two numbers together.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function sum(a, b) {\n  // Return the sum of a and b\n  \n}",
+          "testCases": [
+            {
+              "input": "sum(5, 3)",
+              "expected": "8",
+              "description": "Basic addition"
+            },
+            {
+              "input": "sum(10, 20)",
+              "expected": "30",
+              "description": "Larger numbers"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def sum_numbers(a, b):\n    # Return the sum of a and b\n    pass",
+          "testCases": [
+            {
+              "input": "sum_numbers(5, 3)",
+              "expected": "8",
+              "description": "Basic addition"
+            },
+            {
+              "input": "sum_numbers(10, 20)",
+              "expected": "30",
+              "description": "Larger numbers"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int sum(int a, int b) {\n    // Return the sum of a and b\n    \n}",
+          "testCases": [
+            {
+              "input": "sum(5, 3)",
+              "expected": "8",
+              "description": "Basic addition"
+            },
+            {
+              "input": "sum(10, 20)",
+              "expected": "30",
+              "description": "Larger numbers"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int sum(int a, int b) {\n    // Return the sum of a and b\n    \n}",
+          "testCases": [
+            {
+              "input": "sum(5, 3)",
+              "expected": "8",
+              "description": "Basic addition"
+            },
+            {
+              "input": "sum(10, 20)",
+              "expected": "30",
+              "description": "Larger numbers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Check Even or Odd",
+      "difficulty": "Easy",
+      "description": "Write a function that checks if a number is even or odd. Return 'Even' if the number is even, or 'Odd' if it's odd.",
+      "hint": "Use the modulo operator (%) to check if a number is divisible by 2.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function checkEvenOdd(num) {\n  // Return 'Even' or 'Odd'\n  \n}",
+          "testCases": [
+            {
+              "input": "checkEvenOdd(4)",
+              "expected": "Even",
+              "description": "4 is even"
+            },
+            {
+              "input": "checkEvenOdd(7)",
+              "expected": "Odd",
+              "description": "7 is odd"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def check_even_odd(num):\n    # Return 'Even' or 'Odd'\n    pass",
+          "testCases": [
+            {
+              "input": "check_even_odd(4)",
+              "expected": "Even",
+              "description": "4 is even"
+            },
+            {
+              "input": "check_even_odd(7)",
+              "expected": "Odd",
+              "description": "7 is odd"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static String checkEvenOdd(int num) {\n    // Return \"Even\" or \"Odd\"\n    \n}",
+          "testCases": [
+            {
+              "input": "checkEvenOdd(4)",
+              "expected": "Even",
+              "description": "4 is even"
+            },
+            {
+              "input": "checkEvenOdd(7)",
+              "expected": "Odd",
+              "description": "7 is odd"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "string checkEvenOdd(int num) {\n    // Return \"Even\" or \"Odd\"\n    \n}",
+          "testCases": [
+            {
+              "input": "checkEvenOdd(4)",
+              "expected": "Even",
+              "description": "4 is even"
+            },
+            {
+              "input": "checkEvenOdd(7)",
+              "expected": "Odd",
+              "description": "7 is odd"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Find Maximum of Three Numbers",
+      "difficulty": "Easy",
+      "description": "Write a function that takes three numbers and returns the largest one.",
+      "hint": "Compare the numbers using if statements or use the max function.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function findMax(a, b, c) {\n  // Return the largest of a, b, c\n  \n}",
+          "testCases": [
+            {
+              "input": "findMax(5, 10, 3)",
+              "expected": "10",
+              "description": "10 is the largest"
+            },
+            {
+              "input": "findMax(15, 8, 12)",
+              "expected": "15",
+              "description": "15 is the largest"
+            },
+            {
+              "input": "findMax(7, 7, 7)",
+              "expected": "7",
+              "description": "All equal"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def find_max(a, b, c):\n    # Return the largest of a, b, c\n    pass",
+          "testCases": [
+            {
+              "input": "find_max(5, 10, 3)",
+              "expected": "10",
+              "description": "10 is the largest"
+            },
+            {
+              "input": "find_max(15, 8, 12)",
+              "expected": "15",
+              "description": "15 is the largest"
+            },
+            {
+              "input": "find_max(7, 7, 7)",
+              "expected": "7",
+              "description": "All equal"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int findMax(int a, int b, int c) {\n    // Return the largest of a, b, c\n    \n}",
+          "testCases": [
+            {
+              "input": "findMax(5, 10, 3)",
+              "expected": "10",
+              "description": "10 is the largest"
+            },
+            {
+              "input": "findMax(15, 8, 12)",
+              "expected": "15",
+              "description": "15 is the largest"
+            },
+            {
+              "input": "findMax(7, 7, 7)",
+              "expected": "7",
+              "description": "All equal"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int findMax(int a, int b, int c) {\n    // Return the largest of a, b, c\n    \n}",
+          "testCases": [
+            {
+              "input": "findMax(5, 10, 3)",
+              "expected": "10",
+              "description": "10 is the largest"
+            },
+            {
+              "input": "findMax(15, 8, 12)",
+              "expected": "15",
+              "description": "15 is the largest"
+            },
+            {
+              "input": "findMax(7, 7, 7)",
+              "expected": "7",
+              "description": "All equal"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Reverse a String",
+      "difficulty": "Easy",
+      "description": "Write a function that takes a string and returns it reversed.",
+      "hint": "You can loop through the string backwards, or use built-in reverse functions.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function reverseString(str) {\n  // Return the reversed string\n  \n}",
+          "testCases": [
+            {
+              "input": "reverseString('hello')",
+              "expected": "olleh",
+              "description": "Reverse 'hello'"
+            },
+            {
+              "input": "reverseString('world')",
+              "expected": "dlrow",
+              "description": "Reverse 'world'"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def reverse_string(s):\n    # Return the reversed string\n    pass",
+          "testCases": [
+            {
+              "input": "reverse_string('hello')",
+              "expected": "olleh",
+              "description": "Reverse 'hello'"
+            },
+            {
+              "input": "reverse_string('world')",
+              "expected": "dlrow",
+              "description": "Reverse 'world'"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static String reverseString(String str) {\n    // Return the reversed string\n    \n}",
+          "testCases": [
+            {
+              "input": "reverseString(\"hello\")",
+              "expected": "olleh",
+              "description": "Reverse 'hello'"
+            },
+            {
+              "input": "reverseString(\"world\")",
+              "expected": "dlrow",
+              "description": "Reverse 'world'"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "string reverseString(string str) {\n    // Return the reversed string\n    \n}",
+          "testCases": [
+            {
+              "input": "reverseString(\"hello\")",
+              "expected": "olleh",
+              "description": "Reverse 'hello'"
+            },
+            {
+              "input": "reverseString(\"world\")",
+              "expected": "dlrow",
+              "description": "Reverse 'world'"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "title": "Count Vowels in a String",
+      "difficulty": "Easy",
+      "description": "Write a function that counts the number of vowels (a, e, i, o, u) in a given string.",
+      "hint": "Loop through the string and check if each character is a vowel. Remember to check both uppercase and lowercase.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function countVowels(str) {\n  // Return the number of vowels\n  \n}",
+          "testCases": [
+            {
+              "input": "countVowels('hello')",
+              "expected": "2",
+              "description": "'hello' has 2 vowels"
+            },
+            {
+              "input": "countVowels('programming')",
+              "expected": "3",
+              "description": "'programming' has 3 vowels"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def count_vowels(s):\n    # Return the number of vowels\n    pass",
+          "testCases": [
+            {
+              "input": "count_vowels('hello')",
+              "expected": "2",
+              "description": "'hello' has 2 vowels"
+            },
+            {
+              "input": "count_vowels('programming')",
+              "expected": "3",
+              "description": "'programming' has 3 vowels"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int countVowels(String str) {\n    // Return the number of vowels\n    \n}",
+          "testCases": [
+            {
+              "input": "countVowels(\"hello\")",
+              "expected": "2",
+              "description": "'hello' has 2 vowels"
+            },
+            {
+              "input": "countVowels(\"programming\")",
+              "expected": "3",
+              "description": "'programming' has 3 vowels"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int countVowels(string str) {\n    // Return the number of vowels\n    \n}",
+          "testCases": [
+            {
+              "input": "countVowels(\"hello\")",
+              "expected": "2",
+              "description": "'hello' has 2 vowels"
+            },
+            {
+              "input": "countVowels(\"programming\")",
+              "expected": "3",
+              "description": "'programming' has 3 vowels"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "title": "Calculate Factorial",
+      "difficulty": "Easy",
+      "description": "Write a function that calculates the factorial of a number. Factorial of n (n!) is the product of all positive integers less than or equal to n.",
+      "hint": "Use a loop or recursion. Remember that 0! = 1.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function factorial(n) {\n  // Return the factorial of n\n  \n}",
+          "testCases": [
+            {
+              "input": "factorial(5)",
+              "expected": "120",
+              "description": "5! = 120"
+            },
+            {
+              "input": "factorial(3)",
+              "expected": "6",
+              "description": "3! = 6"
+            },
+            {
+              "input": "factorial(0)",
+              "expected": "1",
+              "description": "0! = 1"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def factorial(n):\n    # Return the factorial of n\n    pass",
+          "testCases": [
+            {
+              "input": "factorial(5)",
+              "expected": "120",
+              "description": "5! = 120"
+            },
+            {
+              "input": "factorial(3)",
+              "expected": "6",
+              "description": "3! = 6"
+            },
+            {
+              "input": "factorial(0)",
+              "expected": "1",
+              "description": "0! = 1"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int factorial(int n) {\n    // Return the factorial of n\n    \n}",
+          "testCases": [
+            {
+              "input": "factorial(5)",
+              "expected": "120",
+              "description": "5! = 120"
+            },
+            {
+              "input": "factorial(3)",
+              "expected": "6",
+              "description": "3! = 6"
+            },
+            {
+              "input": "factorial(0)",
+              "expected": "1",
+              "description": "0! = 1"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int factorial(int n) {\n    // Return the factorial of n\n    \n}",
+          "testCases": [
+            {
+              "input": "factorial(5)",
+              "expected": "120",
+              "description": "5! = 120"
+            },
+            {
+              "input": "factorial(3)",
+              "expected": "6",
+              "description": "3! = 6"
+            },
+            {
+              "input": "factorial(0)",
+              "expected": "1",
+              "description": "0! = 1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "title": "Check if String is Palindrome",
+      "difficulty": "Easy",
+      "description": "Write a function that checks if a string is a palindrome (reads the same forwards and backwards). Return true if it is, false otherwise.",
+      "hint": "Compare the string with its reversed version, or use two pointers from both ends.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function isPalindrome(str) {\n  // Return true if palindrome, false otherwise\n  \n}",
+          "testCases": [
+            {
+              "input": "isPalindrome('racecar')",
+              "expected": "true",
+              "description": "'racecar' is a palindrome"
+            },
+            {
+              "input": "isPalindrome('hello')",
+              "expected": "false",
+              "description": "'hello' is not a palindrome"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def is_palindrome(s):\n    # Return True if palindrome, False otherwise\n    pass",
+          "testCases": [
+            {
+              "input": "is_palindrome('racecar')",
+              "expected": "True",
+              "description": "'racecar' is a palindrome"
+            },
+            {
+              "input": "is_palindrome('hello')",
+              "expected": "False",
+              "description": "'hello' is not a palindrome"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static boolean isPalindrome(String str) {\n    // Return true if palindrome, false otherwise\n    \n}",
+          "testCases": [
+            {
+              "input": "isPalindrome(\"racecar\")",
+              "expected": "true",
+              "description": "'racecar' is a palindrome"
+            },
+            {
+              "input": "isPalindrome(\"hello\")",
+              "expected": "false",
+              "description": "'hello' is not a palindrome"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "bool isPalindrome(string str) {\n    // Return true if palindrome, false otherwise\n    \n}",
+          "testCases": [
+            {
+              "input": "isPalindrome(\"racecar\")",
+              "expected": "true",
+              "description": "'racecar' is a palindrome"
+            },
+            {
+              "input": "isPalindrome(\"hello\")",
+              "expected": "false",
+              "description": "'hello' is not a palindrome"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 8,
+      "title": "Sum of Array Elements",
+      "difficulty": "Easy",
+      "description": "Write a function that calculates the sum of all elements in an array of numbers.",
+      "hint": "Use a loop to iterate through the array and add each element to a running total.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function arraySum(arr) {\n  // Return the sum of all array elements\n  \n}",
+          "testCases": [
+            {
+              "input": "arraySum([1, 2, 3, 4, 5])",
+              "expected": "15",
+              "description": "Sum of 1+2+3+4+5"
+            },
+            {
+              "input": "arraySum([10, 20, 30])",
+              "expected": "60",
+              "description": "Sum of 10+20+30"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def array_sum(arr):\n    # Return the sum of all array elements\n    pass",
+          "testCases": [
+            {
+              "input": "array_sum([1, 2, 3, 4, 5])",
+              "expected": "15",
+              "description": "Sum of 1+2+3+4+5"
+            },
+            {
+              "input": "array_sum([10, 20, 30])",
+              "expected": "60",
+              "description": "Sum of 10+20+30"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int arraySum(int[] arr) {\n    // Return the sum of all array elements\n    \n}",
+          "testCases": [
+            {
+              "input": "arraySum(new int[]{1, 2, 3, 4, 5})",
+              "expected": "15",
+              "description": "Sum of 1+2+3+4+5"
+            },
+            {
+              "input": "arraySum(new int[]{10, 20, 30})",
+              "expected": "60",
+              "description": "Sum of 10+20+30"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int arraySum(int arr[], int size) {\n    // Return the sum of all array elements\n    \n}",
+          "testCases": [
+            {
+              "input": "arraySum([1, 2, 3, 4, 5], 5)",
+              "expected": "15",
+              "description": "Sum of 1+2+3+4+5"
+            },
+            {
+              "input": "arraySum([10, 20, 30], 3)",
+              "expected": "60",
+              "description": "Sum of 10+20+30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 9,
+      "title": "Find Largest Number in Array",
+      "difficulty": "Easy",
+      "description": "Write a function that finds and returns the largest number in an array.",
+      "hint": "Keep track of the maximum value as you loop through the array.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function findLargest(arr) {\n  // Return the largest number in the array\n  \n}",
+          "testCases": [
+            {
+              "input": "findLargest([3, 7, 2, 9, 1])",
+              "expected": "9",
+              "description": "9 is the largest"
+            },
+            {
+              "input": "findLargest([15, 8, 23, 12])",
+              "expected": "23",
+              "description": "23 is the largest"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def find_largest(arr):\n    # Return the largest number in the array\n    pass",
+          "testCases": [
+            {
+              "input": "find_largest([3, 7, 2, 9, 1])",
+              "expected": "9",
+              "description": "9 is the largest"
+            },
+            {
+              "input": "find_largest([15, 8, 23, 12])",
+              "expected": "23",
+              "description": "23 is the largest"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int findLargest(int[] arr) {\n    // Return the largest number in the array\n    \n}",
+          "testCases": [
+            {
+              "input": "findLargest(new int[]{3, 7, 2, 9, 1})",
+              "expected": "9",
+              "description": "9 is the largest"
+            },
+            {
+              "input": "findLargest(new int[]{15, 8, 23, 12})",
+              "expected": "23",
+              "description": "23 is the largest"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int findLargest(int arr[], int size) {\n    // Return the largest number in the array\n    \n}",
+          "testCases": [
+            {
+              "input": "findLargest([3, 7, 2, 9, 1], 5)",
+              "expected": "9",
+              "description": "9 is the largest"
+            },
+            {
+              "input": "findLargest([15, 8, 23, 12], 4)",
+              "expected": "23",
+              "description": "23 is the largest"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "title": "Convert Celsius to Fahrenheit",
+      "difficulty": "Easy",
+      "description": "Write a function that converts a temperature from Celsius to Fahrenheit. Formula: F = (C × 9/5) + 32",
+      "hint": "Use the formula: multiply by 9/5, then add 32.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function celsiusToFahrenheit(celsius) {\n  // Return temperature in Fahrenheit\n  \n}",
+          "testCases": [
+            {
+              "input": "celsiusToFahrenheit(0)",
+              "expected": "32",
+              "description": "0°C = 32°F"
+            },
+            {
+              "input": "celsiusToFahrenheit(100)",
+              "expected": "212",
+              "description": "100°C = 212°F"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def celsius_to_fahrenheit(celsius):\n    # Return temperature in Fahrenheit\n    pass",
+          "testCases": [
+            {
+              "input": "celsius_to_fahrenheit(0)",
+              "expected": "32",
+              "description": "0°C = 32°F"
+            },
+            {
+              "input": "celsius_to_fahrenheit(100)",
+              "expected": "212",
+              "description": "100°C = 212°F"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static double celsiusToFahrenheit(double celsius) {\n    // Return temperature in Fahrenheit\n    \n}",
+          "testCases": [
+            {
+              "input": "celsiusToFahrenheit(0)",
+              "expected": "32",
+              "description": "0°C = 32°F"
+            },
+            {
+              "input": "celsiusToFahrenheit(100)",
+              "expected": "212",
+              "description": "100°C = 212°F"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "double celsiusToFahrenheit(double celsius) {\n    // Return temperature in Fahrenheit\n    \n}",
+          "testCases": [
+            {
+              "input": "celsiusToFahrenheit(0)",
+              "expected": "32",
+              "description": "0°C = 32°F"
+            },
+            {
+              "input": "celsiusToFahrenheit(100)",
+              "expected": "212",
+              "description": "100°C = 212°F"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 11,
+      "title": "Find Duplicate Numbers in Array",
+      "difficulty": "Medium",
+      "description": "Write a function that finds and returns all duplicate numbers in an array. Return an array of unique duplicates.",
+      "hint": "Use a hash map or set to track numbers you've seen. Add to result when you find a duplicate.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function findDuplicates(arr) {\n  // Return array of duplicate numbers\n  \n}",
+          "testCases": [
+            {
+              "input": "findDuplicates([1, 2, 3, 2, 4, 5, 1])",
+              "expected": "[1, 2]",
+              "description": "1 and 2 are duplicated"
+            },
+            {
+              "input": "findDuplicates([5, 5, 5, 1, 2])",
+              "expected": "[5]",
+              "description": "Only 5 is duplicated"
+            },
+            {
+              "input": "findDuplicates([1, 2, 3, 4])",
+              "expected": "[]",
+              "description": "No duplicates"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def find_duplicates(arr):\n    # Return list of duplicate numbers\n    pass",
+          "testCases": [
+            {
+              "input": "find_duplicates([1, 2, 3, 2, 4, 5, 1])",
+              "expected": "[1, 2]",
+              "description": "1 and 2 are duplicated"
+            },
+            {
+              "input": "find_duplicates([5, 5, 5, 1, 2])",
+              "expected": "[5]",
+              "description": "Only 5 is duplicated"
+            },
+            {
+              "input": "find_duplicates([1, 2, 3, 4])",
+              "expected": "[]",
+              "description": "No duplicates"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int[] findDuplicates(int[] arr) {\n    // Return array of duplicate numbers\n    \n}",
+          "testCases": [
+            {
+              "input": "findDuplicates(new int[]{1, 2, 3, 2, 4, 5, 1})",
+              "expected": "[1, 2]",
+              "description": "1 and 2 are duplicated"
+            },
+            {
+              "input": "findDuplicates(new int[]{5, 5, 5, 1, 2})",
+              "expected": "[5]",
+              "description": "Only 5 is duplicated"
+            },
+            {
+              "input": "findDuplicates(new int[]{1, 2, 3, 4})",
+              "expected": "[]",
+              "description": "No duplicates"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "vector<int> findDuplicates(int arr[], int size) {\n    // Return vector of duplicate numbers\n    \n}",
+          "testCases": [
+            {
+              "input": "findDuplicates([1, 2, 3, 2, 4, 5, 1], 7)",
+              "expected": "[1, 2]",
+              "description": "1 and 2 are duplicated"
+            },
+            {
+              "input": "findDuplicates([5, 5, 5, 1, 2], 5)",
+              "expected": "[5]",
+              "description": "Only 5 is duplicated"
+            },
+            {
+              "input": "findDuplicates([1, 2, 3, 4], 4)",
+              "expected": "[]",
+              "description": "No duplicates"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "title": "FizzBuzz",
+      "difficulty": "Medium",
+      "description": "Write a function that returns an array of strings from 1 to n. For multiples of 3, add 'Fizz'. For multiples of 5, add 'Buzz'. For multiples of both, add 'FizzBuzz'. Otherwise, add the number as a string.",
+      "hint": "Check divisibility by 15 first (both 3 and 5), then check 3, then 5, then default to the number.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function fizzBuzz(n) {\n  // Return array of FizzBuzz results\n  \n}",
+          "testCases": [
+            {
+              "input": "fizzBuzz(15)",
+              "expected": "['1','2','Fizz','4','Buzz','Fizz','7','8','Fizz','Buzz','11','Fizz','13','14','FizzBuzz']",
+              "description": "FizzBuzz from 1 to 15"
+            },
+            {
+              "input": "fizzBuzz(5)",
+              "expected": "['1','2','Fizz','4','Buzz']",
+              "description": "FizzBuzz from 1 to 5"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def fizz_buzz(n):\n    # Return list of FizzBuzz results\n    pass",
+          "testCases": [
+            {
+              "input": "fizz_buzz(15)",
+              "expected": "['1','2','Fizz','4','Buzz','Fizz','7','8','Fizz','Buzz','11','Fizz','13','14','FizzBuzz']",
+              "description": "FizzBuzz from 1 to 15"
+            },
+            {
+              "input": "fizz_buzz(5)",
+              "expected": "['1','2','Fizz','4','Buzz']",
+              "description": "FizzBuzz from 1 to 5"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static String[] fizzBuzz(int n) {\n    // Return array of FizzBuzz results\n    \n}",
+          "testCases": [
+            {
+              "input": "fizzBuzz(15)",
+              "expected": "['1','2','Fizz','4','Buzz','Fizz','7','8','Fizz','Buzz','11','Fizz','13','14','FizzBuzz']",
+              "description": "FizzBuzz from 1 to 15"
+            },
+            {
+              "input": "fizzBuzz(5)",
+              "expected": "['1','2','Fizz','4','Buzz']",
+              "description": "FizzBuzz from 1 to 5"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "vector<string> fizzBuzz(int n) {\n    // Return vector of FizzBuzz results\n    \n}",
+          "testCases": [
+            {
+              "input": "fizzBuzz(15)",
+              "expected": "['1','2','Fizz','4','Buzz','Fizz','7','8','Fizz','Buzz','11','Fizz','13','14','FizzBuzz']",
+              "description": "FizzBuzz from 1 to 15"
+            },
+            {
+              "input": "fizzBuzz(5)",
+              "expected": "['1','2','Fizz','4','Buzz']",
+              "description": "FizzBuzz from 1 to 5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 13,
+      "title": "Find Second Largest Number",
+      "difficulty": "Medium",
+      "description": "Write a function that finds the second largest number in an array. If there's no second largest (all numbers are the same), return -1.",
+      "hint": "Keep track of the largest and second largest values as you iterate through the array.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function secondLargest(arr) {\n  // Return the second largest number\n  \n}",
+          "testCases": [
+            {
+              "input": "secondLargest([5, 2, 9, 1, 7])",
+              "expected": "7",
+              "description": "7 is second largest"
+            },
+            {
+              "input": "secondLargest([10, 10, 10])",
+              "expected": "-1",
+              "description": "All same, return -1"
+            },
+            {
+              "input": "secondLargest([3, 8, 8, 2])",
+              "expected": "3",
+              "description": "3 is second largest"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def second_largest(arr):\n    # Return the second largest number\n    pass",
+          "testCases": [
+            {
+              "input": "second_largest([5, 2, 9, 1, 7])",
+              "expected": "7",
+              "description": "7 is second largest"
+            },
+            {
+              "input": "second_largest([10, 10, 10])",
+              "expected": "-1",
+              "description": "All same, return -1"
+            },
+            {
+              "input": "second_largest([3, 8, 8, 2])",
+              "expected": "3",
+              "description": "3 is second largest"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int secondLargest(int[] arr) {\n    // Return the second largest number\n    \n}",
+          "testCases": [
+            {
+              "input": "secondLargest(new int[]{5, 2, 9, 1, 7})",
+              "expected": "7",
+              "description": "7 is second largest"
+            },
+            {
+              "input": "secondLargest(new int[]{10, 10, 10})",
+              "expected": "-1",
+              "description": "All same, return -1"
+            },
+            {
+              "input": "secondLargest(new int[]{3, 8, 8, 2})",
+              "expected": "3",
+              "description": "3 is second largest"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int secondLargest(int arr[], int size) {\n    // Return the second largest number\n    \n}",
+          "testCases": [
+            {
+              "input": "secondLargest([5, 2, 9, 1, 7], 5)",
+              "expected": "7",
+              "description": "7 is second largest"
+            },
+            {
+              "input": "secondLargest([10, 10, 10], 3)",
+              "expected": "-1",
+              "description": "All same, return -1"
+            },
+            {
+              "input": "secondLargest([3, 8, 8, 2], 4)",
+              "expected": "3",
+              "description": "3 is second largest"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 14,
+      "title": "Remove Duplicates from Array",
+      "difficulty": "Medium",
+      "description": "Write a function that removes all duplicate elements from an array and returns a new array with only unique elements in their original order.",
+      "hint": "Use a Set to track unique elements, or check if element already exists before adding to result.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function removeDuplicates(arr) {\n  // Return array with unique elements only\n  \n}",
+          "testCases": [
+            {
+              "input": "removeDuplicates([1, 2, 2, 3, 4, 4, 5])",
+              "expected": "[1, 2, 3, 4, 5]",
+              "description": "Remove duplicates"
+            },
+            {
+              "input": "removeDuplicates([5, 5, 5])",
+              "expected": "[5]",
+              "description": "All same"
+            },
+            {
+              "input": "removeDuplicates([1, 2, 3])",
+              "expected": "[1, 2, 3]",
+              "description": "No duplicates"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def remove_duplicates(arr):\n    # Return list with unique elements only\n    pass",
+          "testCases": [
+            {
+              "input": "remove_duplicates([1, 2, 2, 3, 4, 4, 5])",
+              "expected": "[1, 2, 3, 4, 5]",
+              "description": "Remove duplicates"
+            },
+            {
+              "input": "remove_duplicates([5, 5, 5])",
+              "expected": "[5]",
+              "description": "All same"
+            },
+            {
+              "input": "remove_duplicates([1, 2, 3])",
+              "expected": "[1, 2, 3]",
+              "description": "No duplicates"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int[] removeDuplicates(int[] arr) {\n    // Return array with unique elements only\n    \n}",
+          "testCases": [
+            {
+              "input": "removeDuplicates(new int[]{1, 2, 2, 3, 4, 4, 5})",
+              "expected": "[1, 2, 3, 4, 5]",
+              "description": "Remove duplicates"
+            },
+            {
+              "input": "removeDuplicates(new int[]{5, 5, 5})",
+              "expected": "[5]",
+              "description": "All same"
+            },
+            {
+              "input": "removeDuplicates(new int[]{1, 2, 3})",
+              "expected": "[1, 2, 3]",
+              "description": "No duplicates"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "vector<int> removeDuplicates(int arr[], int size) {\n    // Return vector with unique elements only\n    \n}",
+          "testCases": [
+            {
+              "input": "removeDuplicates([1, 2, 2, 3, 4, 4, 5], 7)",
+              "expected": "[1, 2, 3, 4, 5]",
+              "description": "Remove duplicates"
+            },
+            {
+              "input": "removeDuplicates([5, 5, 5], 3)",
+              "expected": "[5]",
+              "description": "All same"
+            },
+            {
+              "input": "removeDuplicates([1, 2, 3], 3)",
+              "expected": "[1, 2, 3]",
+              "description": "No duplicates"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 15,
+      "title": "Count Word Frequency",
+      "difficulty": "Medium",
+      "description": "Write a function that counts the frequency of each word in a string. Return an object/dictionary with words as keys and their counts as values. Ignore case and punctuation.",
+      "hint": "Split the string into words, convert to lowercase, then use a map/dictionary to count occurrences.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function wordFrequency(str) {\n  // Return object with word frequencies\n  \n}",
+          "testCases": [
+            {
+              "input": "wordFrequency('hello world hello')",
+              "expected": "{hello: 2, world: 1}",
+              "description": "Count word occurrences"
+            },
+            {
+              "input": "wordFrequency('the quick brown fox')",
+              "expected": "{the: 1, quick: 1, brown: 1, fox: 1}",
+              "description": "All unique words"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def word_frequency(s):\n    # Return dictionary with word frequencies\n    pass",
+          "testCases": [
+            {
+              "input": "word_frequency('hello world hello')",
+              "expected": "{'hello': 2, 'world': 1}",
+              "description": "Count word occurrences"
+            },
+            {
+              "input": "word_frequency('the quick brown fox')",
+              "expected": "{'the': 1, 'quick': 1, 'brown': 1, 'fox': 1}",
+              "description": "All unique words"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static Map<String, Integer> wordFrequency(String str) {\n    // Return map with word frequencies\n    \n}",
+          "testCases": [
+            {
+              "input": "wordFrequency(\"hello world hello\")",
+              "expected": "{hello=2, world=1}",
+              "description": "Count word occurrences"
+            },
+            {
+              "input": "wordFrequency(\"the quick brown fox\")",
+              "expected": "{the=1, quick=1, brown=1, fox=1}",
+              "description": "All unique words"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "map<string, int> wordFrequency(string str) {\n    // Return map with word frequencies\n    \n}",
+          "testCases": [
+            {
+              "input": "wordFrequency(\"hello world hello\")",
+              "expected": "{hello: 2, world: 1}",
+              "description": "Count word occurrences"
+            },
+            {
+              "input": "wordFrequency(\"the quick brown fox\")",
+              "expected": "{the: 1, quick: 1, brown: 1, fox: 1}",
+              "description": "All unique words"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 16,
+      "title": "Binary Search",
+      "difficulty": "Medium",
+      "description": "Implement binary search to find the index of a target value in a sorted array. Return -1 if not found.",
+      "hint": "Use two pointers (left and right). Compare middle element with target and adjust pointers accordingly.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function binarySearch(arr, target) {\n  // Return index of target, or -1 if not found\n  \n}",
+          "testCases": [
+            {
+              "input": "binarySearch([1, 3, 5, 7, 9], 5)",
+              "expected": "2",
+              "description": "Found at index 2"
+            },
+            {
+              "input": "binarySearch([1, 3, 5, 7, 9], 6)",
+              "expected": "-1",
+              "description": "Not found"
+            },
+            {
+              "input": "binarySearch([2, 4, 6, 8, 10], 2)",
+              "expected": "0",
+              "description": "Found at index 0"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def binary_search(arr, target):\n    # Return index of target, or -1 if not found\n    pass",
+          "testCases": [
+            {
+              "input": "binary_search([1, 3, 5, 7, 9], 5)",
+              "expected": "2",
+              "description": "Found at index 2"
+            },
+            {
+              "input": "binary_search([1, 3, 5, 7, 9], 6)",
+              "expected": "-1",
+              "description": "Not found"
+            },
+            {
+              "input": "binary_search([2, 4, 6, 8, 10], 2)",
+              "expected": "0",
+              "description": "Found at index 0"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int binarySearch(int[] arr, int target) {\n    // Return index of target, or -1 if not found\n    \n}",
+          "testCases": [
+            {
+              "input": "binarySearch(new int[]{1, 3, 5, 7, 9}, 5)",
+              "expected": "2",
+              "description": "Found at index 2"
+            },
+            {
+              "input": "binarySearch(new int[]{1, 3, 5, 7, 9}, 6)",
+              "expected": "-1",
+              "description": "Not found"
+            },
+            {
+              "input": "binarySearch(new int[]{2, 4, 6, 8, 10}, 2)",
+              "expected": "0",
+              "description": "Found at index 0"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int binarySearch(int arr[], int size, int target) {\n    // Return index of target, or -1 if not found\n    \n}",
+          "testCases": [
+            {
+              "input": "binarySearch([1, 3, 5, 7, 9], 5, 5)",
+              "expected": "2",
+              "description": "Found at index 2"
+            },
+            {
+              "input": "binarySearch([1, 3, 5, 7, 9], 5, 6)",
+              "expected": "-1",
+              "description": "Not found"
+            },
+            {
+              "input": "binarySearch([2, 4, 6, 8, 10], 5, 2)",
+              "expected": "0",
+              "description": "Found at index 0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 17,
+      "title": "Merge Two Sorted Arrays",
+      "difficulty": "Medium",
+      "description": "Write a function that merges two sorted arrays into one sorted array.",
+      "hint": "Use two pointers, one for each array. Compare elements and add the smaller one to the result.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function mergeSortedArrays(arr1, arr2) {\n  // Return merged sorted array\n  \n}",
+          "testCases": [
+            {
+              "input": "mergeSortedArrays([1, 3, 5], [2, 4, 6])",
+              "expected": "[1, 2, 3, 4, 5, 6]",
+              "description": "Merge two arrays"
+            },
+            {
+              "input": "mergeSortedArrays([1, 2], [3, 4, 5])",
+              "expected": "[1, 2, 3, 4, 5]",
+              "description": "Different lengths"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def merge_sorted_arrays(arr1, arr2):\n    # Return merged sorted list\n    pass",
+          "testCases": [
+            {
+              "input": "merge_sorted_arrays([1, 3, 5], [2, 4, 6])",
+              "expected": "[1, 2, 3, 4, 5, 6]",
+              "description": "Merge two arrays"
+            },
+            {
+              "input": "merge_sorted_arrays([1, 2], [3, 4, 5])",
+              "expected": "[1, 2, 3, 4, 5]",
+              "description": "Different lengths"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int[] mergeSortedArrays(int[] arr1, int[] arr2) {\n    // Return merged sorted array\n    \n}",
+          "testCases": [
+            {
+              "input": "mergeSortedArrays(new int[]{1, 3, 5}, new int[]{2, 4, 6})",
+              "expected": "[1, 2, 3, 4, 5, 6]",
+              "description": "Merge two arrays"
+            },
+            {
+              "input": "mergeSortedArrays(new int[]{1, 2}, new int[]{3, 4, 5})",
+              "expected": "[1, 2, 3, 4, 5]",
+              "description": "Different lengths"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "vector<int> mergeSortedArrays(int arr1[], int size1, int arr2[], int size2) {\n    // Return merged sorted vector\n    \n}",
+          "testCases": [
+            {
+              "input": "mergeSortedArrays([1, 3, 5], 3, [2, 4, 6], 3)",
+              "expected": "[1, 2, 3, 4, 5, 6]",
+              "description": "Merge two arrays"
+            },
+            {
+              "input": "mergeSortedArrays([1, 2], 2, [3, 4, 5], 3)",
+              "expected": "[1, 2, 3, 4, 5]",
+              "description": "Different lengths"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 18,
+      "title": "Rotate Array",
+      "difficulty": "Medium",
+      "description": "Write a function that rotates an array to the right by k positions. For example, [1,2,3,4,5] rotated by 2 becomes [4,5,1,2,3].",
+      "hint": "You can reverse parts of the array, or use extra space to store elements temporarily.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function rotateArray(arr, k) {\n  // Return rotated array\n  \n}",
+          "testCases": [
+            {
+              "input": "rotateArray([1, 2, 3, 4, 5], 2)",
+              "expected": "[4, 5, 1, 2, 3]",
+              "description": "Rotate by 2"
+            },
+            {
+              "input": "rotateArray([1, 2, 3], 1)",
+              "expected": "[3, 1, 2]",
+              "description": "Rotate by 1"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def rotate_array(arr, k):\n    # Return rotated list\n    pass",
+          "testCases": [
+            {
+              "input": "rotate_array([1, 2, 3, 4, 5], 2)",
+              "expected": "[4, 5, 1, 2, 3]",
+              "description": "Rotate by 2"
+            },
+            {
+              "input": "rotate_array([1, 2, 3], 1)",
+              "expected": "[3, 1, 2]",
+              "description": "Rotate by 1"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int[] rotateArray(int[] arr, int k) {\n    // Return rotated array\n    \n}",
+          "testCases": [
+            {
+              "input": "rotateArray(new int[]{1, 2, 3, 4, 5}, 2)",
+              "expected": "[4, 5, 1, 2, 3]",
+              "description": "Rotate by 2"
+            },
+            {
+              "input": "rotateArray(new int[]{1, 2, 3}, 1)",
+              "expected": "[3, 1, 2]",
+              "description": "Rotate by 1"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "vector<int> rotateArray(int arr[], int size, int k) {\n    // Return rotated vector\n    \n}",
+          "testCases": [
+            {
+              "input": "rotateArray([1, 2, 3, 4, 5], 5, 2)",
+              "expected": "[4, 5, 1, 2, 3]",
+              "description": "Rotate by 2"
+            },
+            {
+              "input": "rotateArray([1, 2, 3], 3, 1)",
+              "expected": "[3, 1, 2]",
+              "description": "Rotate by 1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "title": "Find Missing Number",
+      "difficulty": "Medium",
+      "description": "Given an array containing n distinct numbers from 0 to n, find the one number that is missing from the array.",
+      "hint": "Use the formula: sum of 0 to n = n*(n+1)/2. Subtract the sum of array elements.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function findMissingNumber(arr) {\n  // Return the missing number\n  \n}",
+          "testCases": [
+            {
+              "input": "findMissingNumber([0, 1, 3, 4, 5])",
+              "expected": "2",
+              "description": "2 is missing"
+            },
+            {
+              "input": "findMissingNumber([1, 2, 3, 4])",
+              "expected": "0",
+              "description": "0 is missing"
+            },
+            {
+              "input": "findMissingNumber([0, 1, 2, 3])",
+              "expected": "4",
+              "description": "4 is missing"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def find_missing_number(arr):\n    # Return the missing number\n    pass",
+          "testCases": [
+            {
+              "input": "find_missing_number([0, 1, 3, 4, 5])",
+              "expected": "2",
+              "description": "2 is missing"
+            },
+            {
+              "input": "find_missing_number([1, 2, 3, 4])",
+              "expected": "0",
+              "description": "0 is missing"
+            },
+            {
+              "input": "find_missing_number([0, 1, 2, 3])",
+              "expected": "4",
+              "description": "4 is missing"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int findMissingNumber(int[] arr) {\n    // Return the missing number\n    \n}",
+          "testCases": [
+            {
+              "input": "findMissingNumber(new int[]{0, 1, 3, 4, 5})",
+              "expected": "2",
+              "description": "2 is missing"
+            },
+            {
+              "input": "findMissingNumber(new int[]{1, 2, 3, 4})",
+              "expected": "0",
+              "description": "0 is missing"
+            },
+            {
+              "input": "findMissingNumber(new int[]{0, 1, 2, 3})",
+              "expected": "4",
+              "description": "4 is missing"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "int findMissingNumber(int arr[], int size) {\n    // Return the missing number\n    \n}",
+          "testCases": [
+            {
+              "input": "findMissingNumber([0, 1, 3, 4, 5], 5)",
+              "expected": "2",
+              "description": "2 is missing"
+            },
+            {
+              "input": "findMissingNumber([1, 2, 3, 4], 4)",
+              "expected": "0",
+              "description": "0 is missing"
+            },
+            {
+              "input": "findMissingNumber([0, 1, 2, 3], 4)",
+              "expected": "4",
+              "description": "4 is missing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 20,
+      "title": "Two Sum Problem",
+      "difficulty": "Medium",
+      "description": "Given an array of integers and a target sum, return the indices of two numbers that add up to the target. Each input has exactly one solution, and you cannot use the same element twice.",
+      "hint": "Use a hash map to store values you've seen and their indices. Check if (target - current value) exists in the map.",
+      "languages": {
+        "javascript": {
+          "skeleton": "function twoSum(arr, target) {\n  // Return array of two indices\n  \n}",
+          "testCases": [
+            {
+              "input": "twoSum([2, 7, 11, 15], 9)",
+              "expected": "[0, 1]",
+              "description": "2 + 7 = 9"
+            },
+            {
+              "input": "twoSum([3, 2, 4], 6)",
+              "expected": "[1, 2]",
+              "description": "2 + 4 = 6"
+            },
+            {
+              "input": "twoSum([1, 5, 3, 7], 8)",
+              "expected": "[1, 3]",
+              "description": "5 + 3 = 8 (can also be 1 + 7)"
+            }
+          ]
+        },
+        "python": {
+          "skeleton": "def two_sum(arr, target):\n    # Return list of two indices\n    pass",
+          "testCases": [
+            {
+              "input": "two_sum([2, 7, 11, 15], 9)",
+              "expected": "[0, 1]",
+              "description": "2 + 7 = 9"
+            },
+            {
+              "input": "two_sum([3, 2, 4], 6)",
+              "expected": "[1, 2]",
+              "description": "2 + 4 = 6"
+            },
+            {
+              "input": "two_sum([1, 5, 3, 7], 8)",
+              "expected": "[1, 3]",
+              "description": "5 + 3 = 8 (can also be 1 + 7)"
+            }
+          ]
+        },
+        "java": {
+          "skeleton": "public static int[] twoSum(int[] arr, int target) {\n    // Return array of two indices\n    \n}",
+          "testCases": [
+            {
+              "input": "twoSum(new int[]{2, 7, 11, 15}, 9)",
+              "expected": "[0, 1]",
+              "description": "2 + 7 = 9"
+            },
+            {
+              "input": "twoSum(new int[]{3, 2, 4}, 6)",
+              "expected": "[1, 2]",
+              "description": "2 + 4 = 6"
+            },
+            {
+              "input": "twoSum(new int[]{1, 5, 3, 7}, 8)",
+              "expected": "[1, 3]",
+              "description": "5 + 3 = 8 (can also be 1 + 7)"
+            }
+          ]
+        },
+        "cpp": {
+          "skeleton": "vector<int> twoSum(int arr[], int size, int target) {\n    // Return vector of two indices\n    \n}",
+          "testCases": [
+            {
+              "input": "twoSum([2, 7, 11, 15], 4, 9)",
+              "expected": "[0, 1]",
+              "description": "2 + 7 = 9"
+            },
+            {
+              "input": "twoSum([3, 2, 4], 3, 6)",
+              "expected": "[1, 2]",
+              "description": "2 + 4 = 6"
+            },
+            {
+              "input": "twoSum([1, 5, 3, 7], 4, 8)",
+              "expected": "[1, 3]",
+              "description": "5 + 3 = 8 (can also be 1 + 7)"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

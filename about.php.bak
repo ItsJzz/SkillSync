@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SkillSync - About</title>
+  <link rel="shortcut icon" sizes="32x32" href="LOGO.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #ffffff;
+    }
+
+    header {
+      width: 100%;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, #ffffff, #27ae60);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-container img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .logo-container span {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #004e64;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .register-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border: 2px solid white;
+      border-radius: 30px;
+      background-color: transparent;
+      color: #004e64;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .register-link:hover {
+      background-color: #27ae60;
+      color: white;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      color: white;
+      padding: 60px 10%;
+      min-height: 100vh;
+    }
+
+    .about-text {
+      flex: 1;
+      padding-right: 40px;
+      color: #004e64
+        /* light blue text */
+    }
+
+    .about-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #004e64;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .about-illustration {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .about-illustration::before {
+      content: '';
+      position: absolute;
+      width: 510px;
+      height: 510px;
+      background: rgba(39, 174, 96, 0.6);
+      /* transparent green */
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .about-illustration img {
+      max-width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .about-text {
+        padding-right: 0;
+      }
+    }
+
+    .highlight-key {
+      color: #27ae60;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="LOGO.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="registration.html" class="register-link">
+        <i class="fas fa-user"></i> Register
+      </a>
+    </nav>
+  </header>
+
+  <div class="about-section">
+    <div class="about-text">
+  <h1><i class="fas fa-info-circle"></i> About</h1>
+
+  <div class="about-point">
+    <i class="fas fa-chart-line"></i>
+    <p><strong>SkillSync</strong> is a <span class="highlight-key">data-driven platform</span> that puts analytics at the heart of skill development. Our goal is to help <span class="highlight-key">BSIT students</span> enhance and track their programming abilities
+        through clear, actionable insights.
+      </p>
+  </div>
+
+  <div class="about-point">
+    <i class="fas fa-brain"></i>
+    <p>We utilize <span class="highlight-key">regression analysis</span> to assess student performance, helping
+        identify both strengths and areas for
+        improvement.
+  </div>
+
+  <div class="about-point">
+    <i class="fas fa-bullseye"></i>
+    <p><strong>SkillSync</strong> empowers learners to take control of their growth with support, structured tracking,
+        and help them focusing on their 
+        <span class="highlight-key"> goal</span> every step of the way.
+      </p>
+      </div>
+</div>
+
+    <div class="about-illustration">
+      <img src="DESIGN.png" alt="SkillSync Illustration">
+    </div>
+  </div>
+
+</body>
+
+</html>
